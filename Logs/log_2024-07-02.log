@@ -1,0 +1,38 @@
+2024-07-02 20:16:37.686 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(){}
+2024-07-02 20:16:38.482 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-02 20:16:38.492 | INFO | Page_Object_Model.Boss.Base.Base_Page:input_username_locator_sendkeys:26 | input_username_locator_sendkeys定位成功
+2024-07-02 20:16:38.544 | INFO | Page_Object_Model.Boss.Base.Base_Page:input_password_locator_sendkeys:37 | input_password_locator_sendkeys定位成功
+2024-07-02 20:16:38.593 | INFO | Page_Object_Model.Boss.Base.Base_Page:click_login_button:57 | click_login_button定位成功
+2024-07-02 20:16:40.648 | INFO | __main__:login_page_object:14 | 登录操作完成
+2024-07-02 20:16:40.648 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：None
+
+2024-07-02 20:31:34.952 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(){}
+2024-07-02 20:31:35.874 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-02 20:31:35.883 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_username +定位成功
+2024-07-02 20:31:35.885 | ERROR | Common.logger:wrapper:52 | 函数 login_page_object 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Page_Objects\login_page.py", line 11, in login_page_object
+    login_page.element_locator_sendkeys(page_name='login', element_name='input_username')
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Base\Base_Page.py", line 39, in element_locator_sendkeys
+    element_locator_sendkeys = element_locator.send_keys(input_data)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 232, in send_keys
+    Command.SEND_KEYS_TO_ELEMENT, {"text": "".join(keys_to_typing(value)), "value": keys_to_typing(value)}
+                                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\common\utils.py", line 137, in keys_to_typing
+    characters.extend(val)
+TypeError: 'NoneType' object is not iterable
+
+
+2024-07-02 20:32:44.635 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(){}
+2024-07-02 20:32:45.473 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-02 20:32:45.482 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_username +定位成功
+2024-07-02 20:32:45.530 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_username输入数据：onelap成功
+2024-07-02 20:32:45.538 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_password +定位成功
+2024-07-02 20:32:45.578 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_password输入数据：onelap@123成功
+2024-07-02 20:32:45.586 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_login_button +定位成功
+2024-07-02 20:32:47.795 | INFO | __main__:login_page_object:14 | 登录操作完成
+2024-07-02 20:32:47.796 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：None
+

@@ -1,0 +1,24 @@
+add_report:
+  url: https://rfs-fitness-informal.rfsvr.net/indoor/api/user/report
+  headers:
+    token:
+    data:
+      # 详细描述
+      desc: 脚本测试——详细描
+      # 评论id
+      source_id: 714
+      # 图片地址
+      imgs: uploads/20240703/files/1719972587819IMG_20240703_100702.jpg
+      # 举报原因
+      reason_id: 1
+      #举报来源，目前只有1，代表路线库评论
+      source_type: 1
+
+onelap_login:
+  url: http://rfs-fitness-informal.rfsvr.net/api/account/v1/login
+  headers:
+    Platform: 22
+    App-Version: 3.6.3
+  data:
+    username: 13001723386
+    password: dc158e485dba3cb7a6cfc9063568ac9e

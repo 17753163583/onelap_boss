@@ -1,0 +1,626 @@
+2024-07-03 09:25:58.864 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(){}
+2024-07-03 09:25:58.865 | ERROR | Common.logger:wrapper:52 | 函数 login_page_object 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: Login.login_page_object() missing 1 required positional argument: 'self'
+
+
+2024-07-03 09:27:42.330 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-03 09:27:42.341 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_username +定位成功
+2024-07-03 09:27:42.396 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_username输入数据：onelap成功
+2024-07-03 09:27:42.404 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_password +定位成功
+2024-07-03 09:27:42.441 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_password输入数据：onelap@123成功
+2024-07-03 09:27:42.450 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_login_button +定位成功
+2024-07-03 09:27:43.942 | INFO | __main__:login_page_object:13 | 登录操作完成
+2024-07-03 09:28:25.967 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x000001456406A4B0>,){}
+2024-07-03 09:28:26.571 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-03 09:28:26.580 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_username +定位成功
+2024-07-03 09:28:26.625 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_username输入数据：onelap成功
+2024-07-03 09:28:26.633 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_password +定位成功
+2024-07-03 09:28:26.671 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_password输入数据：onelap@123成功
+2024-07-03 09:28:26.679 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_login_button +定位成功
+2024-07-03 09:28:27.972 | INFO | __main__:login_page_object:13 | 登录操作完成
+2024-07-03 09:28:27.973 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：None
+
+2024-07-03 09:38:53.458 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x000001DED53AA930>,){}
+2024-07-03 09:38:54.745 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-03 09:38:54.754 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_username +定位成功
+2024-07-03 09:38:54.800 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_username输入数据：onelap成功
+2024-07-03 09:38:54.809 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_password +定位成功
+2024-07-03 09:38:54.847 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_password输入数据：onelap@123成功
+2024-07-03 09:38:54.855 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_login_button +定位成功
+2024-07-03 09:38:56.423 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_home_page_title +定位成功
+2024-07-03 09:38:56.434 | ERROR | __main__:login_page_object:20 | home_page_title断言失败，错误信息为：home_page_title错误
+2024-07-03 09:38:56.435 | INFO | __main__:login_page_object:21 | 登录操作完成
+2024-07-03 09:38:56.435 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 09:42:42.620 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x000001BC9901A930>,){}
+2024-07-03 09:42:43.946 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:16 | login页面跳转成功
+2024-07-03 09:42:43.956 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_username +定位成功
+2024-07-03 09:42:44.003 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_username输入数据：onelap成功
+2024-07-03 09:42:44.010 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:37 | login + "_" + input_password +定位成功
+2024-07-03 09:42:44.046 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:41 | login_input_password输入数据：onelap@123成功
+2024-07-03 09:42:44.054 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_login_button +定位成功
+2024-07-03 09:42:46.229 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:26 | login_home_page_title +定位成功
+2024-07-03 09:42:46.239 | INFO | __main__:login_page_object:20 | 登录操作完成
+2024-07-03 09:42:46.239 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 10:52:14.645 | INFO | Common.logger:wrapper:42 | 函数 report_page_object 开始执行，入参:(<__main__.Report object at 0x00000224CA85D460>,){}
+2024-07-03 10:52:15.441 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:18 | login页面跳转成功
+2024-07-03 10:52:15.827 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:18 | report页面跳转成功
+2024-07-03 10:52:15.827 | INFO | Common.logger:wrapper:47 | 函数 report_page_object 执行完成，函数返回结果：True
+
+2024-07-03 10:53:25.316 | INFO | Common.logger:wrapper:42 | 函数 report_page_object 开始执行，入参:(<__main__.Report object at 0x000001EF12F9A9F0>,){}
+2024-07-03 10:53:26.224 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:18 | login页面跳转成功
+2024-07-03 10:53:26.645 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:18 | report页面跳转成功
+2024-07-03 10:53:28.646 | INFO | Common.logger:wrapper:47 | 函数 report_page_object 执行完成，函数返回结果：True
+
+2024-07-03 10:54:03.697 | INFO | Common.logger:wrapper:42 | 函数 report_page_object 开始执行，入参:(<__main__.Report object at 0x000001332F4A1910>,){}
+2024-07-03 10:54:04.507 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:18 | login页面跳转成功
+2024-07-03 10:54:04.518 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:39 | login + "_" + input_username +定位成功
+2024-07-03 10:54:04.565 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:43 | login_input_username输入数据：onelap成功
+2024-07-03 10:54:04.573 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:39 | login + "_" + input_password +定位成功
+2024-07-03 10:54:04.611 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:43 | login_input_password输入数据：onelap@123成功
+2024-07-03 10:54:04.619 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:28 | login_login_button +定位成功
+2024-07-03 10:54:09.443 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:18 | report页面跳转成功
+2024-07-03 10:54:11.445 | INFO | Common.logger:wrapper:47 | 函数 report_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:48:11.628 | INFO | Common.logger:wrapper:42 | 函数 report_page_object 开始执行，入参:(<__main__.Report object at 0x00000185F71EA180>,){}
+2024-07-03 11:48:12.617 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:48:12.617 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | login页面跳转成功
+2024-07-03 11:48:12.630 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:48:12.632 | ERROR | Common.logger:wrapper:52 | 函数 report_page_object 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Page_Objects\report_page.py", line 12, in report_page_object
+    self.login_with_cookie()
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Base\Base_Page.py", line 43, in login_with_cookie
+    cookies = get_login_cookies()
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\Common\get_boss_login_cookies.py", line 7, in get_login_cookies
+    with open(project_path() + "/Test_Data/boss_login_cookies.json", 'r') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\python_project\\onelap_boss/Test_Data/boss_login_cookies.json'
+
+
+2024-07-03 11:48:55.150 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x0000022AF116A000>,){}
+2024-07-03 11:48:56.143 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:48:56.157 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:48:56.166 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login + "_" + input_username +定位成功
+2024-07-03 11:48:56.213 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 11:48:56.221 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login + "_" + input_password +定位成功
+2024-07-03 11:48:56.261 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:48:56.270 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button +定位成功
+2024-07-03 11:48:56.757 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:30 | 读取Cookies成功
+2024-07-03 11:48:56.758 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:35 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:48:56.766 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_home_page_title +定位成功
+2024-07-03 11:48:56.776 | ERROR | __main__:login_page_object:26 | home_page_title断言失败，错误信息为：home页欢迎文案不正确
+2024-07-03 11:48:56.776 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:49:51.612 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x00000253272CAA20>,){}
+2024-07-03 11:49:52.659 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:49:52.673 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:49:52.680 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login + "_" + input_username +定位成功
+2024-07-03 11:49:52.726 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 11:49:52.734 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login + "_" + input_password +定位成功
+2024-07-03 11:49:52.772 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:49:52.780 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button +定位成功
+2024-07-03 11:49:53.315 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:30 | 读取Cookies成功
+2024-07-03 11:49:53.317 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:35 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:49:53.325 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_home_page_title +定位成功
+2024-07-03 11:49:53.335 | ERROR | __main__:login_page_object:26 | home_page_title断言失败，错误信息为：
+2024-07-03 11:49:53.336 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:51:59.474 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x000001F261C32EA0>,){}
+2024-07-03 11:52:00.489 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:52:00.500 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:52:00.509 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_username定位成功
+2024-07-03 11:52:00.554 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 11:52:00.562 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_password定位成功
+2024-07-03 11:52:00.601 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:52:00.608 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button定位成功
+2024-07-03 11:52:01.123 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:30 | 读取Cookies成功
+2024-07-03 11:52:01.124 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:35 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:52:01.132 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_home_page_title定位成功
+2024-07-03 11:52:01.147 | ERROR | __main__:login_page_object:27 | home_page_title断言失败，错误信息为：
+2024-07-03 11:52:01.148 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:52:57.469 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x0000019CDF86E8D0>,){}
+2024-07-03 11:52:58.497 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:52:58.512 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:52:58.521 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_username定位成功
+2024-07-03 11:52:58.566 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 11:52:58.575 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_password定位成功
+2024-07-03 11:52:58.614 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:52:58.623 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button定位成功
+2024-07-03 11:53:01.105 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:30 | 读取Cookies成功
+2024-07-03 11:53:01.106 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:35 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:53:01.113 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_home_page_title定位成功
+2024-07-03 11:53:01.128 | ERROR | __main__:login_page_object:29 | home_page_title断言失败，错误信息为：
+2024-07-03 11:53:01.129 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:53:20.394 | INFO | Common.logger:wrapper:42 | 函数 report_page_object 开始执行，入参:(<__main__.Report object at 0x000002DB55216CF0>,){}
+2024-07-03 11:53:21.430 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:53:21.430 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | login页面跳转成功
+2024-07-03 11:53:21.444 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:53:21.448 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:46 | 导入cookies成功
+2024-07-03 11:53:21.671 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:49 | 携带cookie登录成功
+2024-07-03 11:53:22.081 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | report页面跳转成功
+2024-07-03 11:53:24.083 | INFO | Common.logger:wrapper:47 | 函数 report_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:53:49.758 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x000001BA764FE8D0>,){}
+2024-07-03 11:53:50.723 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:53:50.736 | INFO | Page_Object_Model.Boss.Base.Base_Page:delete_cookies:26 | 清理Cookies成功
+2024-07-03 11:53:50.745 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_username定位成功
+2024-07-03 11:53:50.790 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 11:53:50.797 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_password定位成功
+2024-07-03 11:53:50.836 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:53:50.842 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button定位成功
+2024-07-03 11:53:53.291 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:30 | 读取Cookies成功
+2024-07-03 11:53:53.292 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:35 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:53:53.299 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_home_page_title定位成功
+2024-07-03 11:53:53.313 | ERROR | __main__:login_page_object:31 | home_page_title断言失败，错误信息为：
+2024-07-03 11:53:53.313 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:54:57.543 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x0000021DD728C770>,){}
+2024-07-03 11:54:58.440 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:54:58.449 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_username定位成功
+2024-07-03 11:54:58.497 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 11:54:58.504 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_password定位成功
+2024-07-03 11:54:58.543 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:54:58.552 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button定位成功
+2024-07-03 11:55:02.638 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:30 | 读取Cookies成功
+2024-07-03 11:55:02.640 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:35 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:55:02.648 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_home_page_title定位成功
+2024-07-03 11:55:02.666 | INFO | __main__:login_page_object:29 | 登录操作完成
+2024-07-03 11:55:02.666 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:56:02.957 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x0000021BDE2A9C10>,){}
+2024-07-03 11:56:03.825 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:56:03.833 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:67 | login_input_username定位成功
+2024-07-03 11:56:03.879 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:71 | login_input_username输入数据：onelap成功
+2024-07-03 11:56:03.887 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:67 | login_input_password定位成功
+2024-07-03 11:56:03.924 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:71 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:56:03.931 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:56 | login_login_button定位成功
+2024-07-03 11:56:08.139 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:26 | 读取Cookies成功
+2024-07-03 11:56:08.140 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:31 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:56:08.147 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:56 | login_home_page_title定位成功
+2024-07-03 11:56:08.161 | INFO | __main__:login_page_object:28 | 登录操作完成
+2024-07-03 11:56:08.161 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:57:47.624 | INFO | Common.logger:wrapper:42 | 函数 login_page_object 开始执行，入参:(<__main__.Login object at 0x0000023967EAB200>,){}
+2024-07-03 11:57:48.572 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:57:48.581 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:67 | login_input_username定位成功
+2024-07-03 11:57:48.627 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:71 | login_input_username输入数据：onelap成功
+2024-07-03 11:57:48.635 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:67 | login_input_password定位成功
+2024-07-03 11:57:48.673 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:71 | login_input_password输入数据：onelap@123成功
+2024-07-03 11:57:48.680 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:56 | login_login_button定位成功
+2024-07-03 11:57:50.716 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:26 | 读取Cookies成功
+2024-07-03 11:57:50.717 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:31 | 保存cookies至boss_login_cookies.json成功
+2024-07-03 11:57:50.736 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:56 | login_home_page_title定位成功
+2024-07-03 11:57:50.747 | INFO | __main__:login_page_object:25 | 登录操作完成
+2024-07-03 11:57:50.748 | INFO | Common.logger:wrapper:47 | 函数 login_page_object 执行完成，函数返回结果：True
+
+2024-07-03 11:58:12.922 | INFO | Common.logger:wrapper:42 | 函数 report_page_object 开始执行，入参:(<__main__.Report object at 0x0000023F166985C0>,){}
+2024-07-03 11:58:13.955 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转成功
+2024-07-03 11:58:13.955 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:35 | login页面跳转成功
+2024-07-03 11:58:13.968 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:38 | 清理Cookies成功
+2024-07-03 11:58:13.977 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:43 | 导入cookies成功
+2024-07-03 11:58:15.893 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:46 | 携带cookie登录成功
+2024-07-03 11:58:19.223 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | report页面跳转成功
+2024-07-03 11:58:21.225 | INFO | Common.logger:wrapper:47 | 函数 report_page_object 执行完成，函数返回结果：True
+
+2024-07-03 13:30:27.171 | INFO | Common.logger:wrapper:42 | 函数 login 开始执行，入参:(<__main__.LoginPage object at 0x0000024C7F517860>,){}
+2024-07-03 13:30:28.034 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 13:30:28.043 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:66 | login_input_username定位成功
+2024-07-03 13:30:28.093 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_username输入数据：onelap成功
+2024-07-03 13:30:28.102 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:66 | login_input_password定位成功
+2024-07-03 13:30:28.141 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_password输入数据：onelap@123成功
+2024-07-03 13:30:28.150 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:55 | login_login_button定位成功
+2024-07-03 13:30:30.135 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:26 | 读取Cookies成功
+2024-07-03 13:30:30.136 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:31 | 保存cookies至boss_login_cookies.json
+2024-07-03 13:30:30.147 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:55 | login_home_page_title定位成功
+2024-07-03 13:30:30.158 | INFO | __main__:login:25 | 登录操作完成
+2024-07-03 13:30:30.158 | INFO | Common.logger:wrapper:47 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-03 13:31:57.460 | INFO | Common.logger:wrapper:42 | 函数 report_list 开始执行，入参:(<__main__.ReportPage object at 0x000002CD3806C920>,){}
+2024-07-03 13:31:58.346 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 13:31:58.358 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 13:31:58.369 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 13:32:00.343 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:45 | 携带cookie登录
+2024-07-03 13:32:03.452 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | report_list页面跳转
+2024-07-03 13:32:05.453 | INFO | Common.logger:wrapper:47 | 函数 report_list 执行完成，函数返回结果：True
+
+2024-07-03 15:07:33.974 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 15:10:03.069 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 15:10:03.070 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x0000026F9CE61250>,){}
+2024-07-03 15:10:06.235 | INFO | __main__:report_review_failure:44 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140
+2024-07-03 15:10:06.235 | INFO | Common.logger:wrapper:47 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-03 15:12:19.451 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 15:12:19.452 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x00000276C39C5070>,){}
+2024-07-03 15:12:20.265 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:12:20.281 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:12:20.290 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:12:22.185 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:45 | 携带cookie登录
+2024-07-03 15:12:25.543 | INFO | __main__:report_review_failure:45 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140
+2024-07-03 15:12:25.543 | INFO | Common.logger:wrapper:47 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-03 15:12:58.299 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 15:12:58.300 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x00000126213615E0>,){}
+2024-07-03 15:12:59.158 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:12:59.170 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:12:59.179 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:13:01.197 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:45 | 携带cookie登录
+2024-07-03 15:13:04.195 | INFO | __main__:report_review_failure:46 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140
+2024-07-03 15:13:04.195 | INFO | Common.logger:wrapper:47 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-03 15:26:01.773 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:26:51.627 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:26:51.642 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:26:51.653 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:26:53.495 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:45 | 携带cookie登录
+2024-07-03 15:27:16.382 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:27:16.397 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:27:16.405 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:27:18.301 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:45 | 携带cookie登录
+2024-07-03 15:27:18.302 | INFO | Common.logger:wrapper:42 | 函数 report_review_page 开始执行，入参:(<__main__.ReportPage object at 0x000001DDFA471520>,){}
+2024-07-03 15:27:19.186 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:27:19.219 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:27:19.228 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:27:19.862 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:45 | 携带cookie登录
+2024-07-03 15:27:19.865 | INFO | __main__:report_review_page:40 | 跳转home页
+2024-07-03 15:27:20.838 | INFO | __main__:report_review_page:53 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140
+2024-07-03 15:27:20.838 | INFO | Common.logger:wrapper:47 | 函数 report_review_page 执行完成，函数返回结果：True
+
+2024-07-03 15:33:20.851 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:33:20.865 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:33:20.874 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:35:29.395 | INFO | Common.logger:wrapper:42 | 函数 login 开始执行，入参:(<__main__.LoginPage object at 0x0000020F56979E50>,){}
+2024-07-03 15:35:30.366 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:35:30.377 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_username定位成功
+2024-07-03 15:35:30.423 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_username输入数据：onelap成功
+2024-07-03 15:35:30.431 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:70 | login_input_password定位成功
+2024-07-03 15:35:30.476 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator_sendkeys:74 | login_input_password输入数据：onelap@123成功
+2024-07-03 15:35:30.484 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | login_login_button定位成功
+2024-07-03 15:35:32.642 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:26 | 读取Cookies成功
+2024-07-03 15:35:32.643 | INFO | Page_Object_Model.Boss.Base.Base_Page:save_boss_cookies_to_json:31 | 保存cookies至boss_login_cookies.json
+2024-07-03 15:35:32.652 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | home_page_title定位成功
+2024-07-03 15:35:32.663 | INFO | __main__:login:30 | 登录操作完成
+2024-07-03 15:35:32.663 | INFO | Common.logger:wrapper:47 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-03 15:35:53.080 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 15:35:53.096 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 15:35:53.106 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 15:35:55.218 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 15:35:55.218 | INFO | Common.logger:wrapper:42 | 函数 report_review_page 开始执行，入参:(<__main__.ReportPage object at 0x000001E67DEB4F20>,){}
+2024-07-03 15:35:56.219 | INFO | __main__:report_review_page:46 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140
+2024-07-03 15:35:56.219 | INFO | Common.logger:wrapper:47 | 函数 report_review_page 执行完成，函数返回结果：True
+
+2024-07-03 16:04:05.002 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 16:04:05.014 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 16:04:05.024 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 16:04:06.915 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 16:04:07.190 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 16:04:07.191 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x000002003F301C40>,){}
+2024-07-03 16:04:08.187 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_report_tr定位成功
+2024-07-03 16:04:08.197 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-03 16:04:08.239 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_failure_button定位成功
+2024-07-03 16:04:08.255 | ERROR | Common.logger:wrapper:52 | 函数 report_review_failure 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Page_Objects\report_page.py", line 44, in report_review_failure
+    self.element_locator('report', 'review_failure_button').click()
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6846E3E32+31618]
+	(No symbol) [0x00007FF68465B099]
+	(No symbol) [0x00007FF6845186B9]
+	(No symbol) [0x00007FF6845698B2]
+	(No symbol) [0x00007FF68455C281]
+	(No symbol) [0x00007FF68458D10A]
+	(No symbol) [0x00007FF68455BBA6]
+	(No symbol) [0x00007FF68458D320]
+	(No symbol) [0x00007FF6845ACA80]
+	(No symbol) [0x00007FF68458CEB3]
+	(No symbol) [0x00007FF68455A46B]
+	(No symbol) [0x00007FF68455B001]
+	GetHandleVerifier [0x00007FF6849E9FFD+3202381]
+	GetHandleVerifier [0x00007FF684A36A1D+3516269]
+	GetHandleVerifier [0x00007FF684A2C490+3473888]
+	GetHandleVerifier [0x00007FF684795D36+760454]
+	(No symbol) [0x00007FF684666B3F]
+	(No symbol) [0x00007FF684661CD4]
+	(No symbol) [0x00007FF684661E62]
+	(No symbol) [0x00007FF68465120F]
+	BaseThreadInitThunk [0x00007FFF75637034+20]
+	RtlUserThreadStart [0x00007FFF757E26A1+33]
+
+
+
+2024-07-03 16:05:11.422 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 16:05:11.433 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 16:05:11.443 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 16:05:13.607 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 16:05:13.894 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 16:05:13.894 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x000001EDF3E714F0>,){}
+2024-07-03 16:05:15.816 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_report_tr定位成功
+2024-07-03 16:05:15.824 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-03 16:05:16.868 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_failure_button定位成功
+2024-07-03 16:05:16.907 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_success_button定位成功
+2024-07-03 16:05:16.939 | ERROR | Common.logger:wrapper:52 | 函数 report_review_failure 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Page_Objects\report_page.py", line 51, in report_review_failure
+    self.switch_to_alert_accept()
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Base\Base_Page.py", line 79, in switch_to_alert_accept
+    alert = self.driver.switch_to.alert
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 58, in alert
+    _ = alert.text
+        ^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\common\alert.py", line 58, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6846E3E32+31618]
+	(No symbol) [0x00007FF68465B099]
+	(No symbol) [0x00007FF6845186B9]
+	(No symbol) [0x00007FF684508237]
+	(No symbol) [0x00007FF68453BEEF]
+	(No symbol) [0x00007FF68458D1BD]
+	(No symbol) [0x00007FF68453BD6B]
+	(No symbol) [0x00007FF68458CEB3]
+	(No symbol) [0x00007FF68455A46B]
+	(No symbol) [0x00007FF68455B001]
+	GetHandleVerifier [0x00007FF6849E9FFD+3202381]
+	GetHandleVerifier [0x00007FF684A36A1D+3516269]
+	GetHandleVerifier [0x00007FF684A2C490+3473888]
+	GetHandleVerifier [0x00007FF684795D36+760454]
+	(No symbol) [0x00007FF684666B3F]
+	(No symbol) [0x00007FF684661CD4]
+	(No symbol) [0x00007FF684661E62]
+	(No symbol) [0x00007FF68465120F]
+	BaseThreadInitThunk [0x00007FFF75637034+20]
+	RtlUserThreadStart [0x00007FFF757E26A1+33]
+
+
+
+2024-07-03 16:07:18.734 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 16:07:18.748 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 16:07:18.758 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 16:07:21.034 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 16:07:21.297 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 16:07:21.298 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x0000017C8A5ADBE0>,){}
+2024-07-03 16:07:23.260 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_report_tr定位成功
+2024-07-03 16:07:23.267 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-03 16:07:24.306 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_failure_button定位成功
+2024-07-03 16:07:24.351 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_success_button定位成功
+2024-07-03 16:07:24.383 | ERROR | Common.logger:wrapper:52 | 函数 report_review_failure 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Page_Objects\report_page.py", line 50, in report_review_failure
+    self.driver.switch_to.alert.accept()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\switch_to.py", line 58, in alert
+    _ = alert.text
+        ^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\common\alert.py", line 58, in text
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6846E3E32+31618]
+	(No symbol) [0x00007FF68465B099]
+	(No symbol) [0x00007FF6845186B9]
+	(No symbol) [0x00007FF684508237]
+	(No symbol) [0x00007FF68453BEEF]
+	(No symbol) [0x00007FF68458D1BD]
+	(No symbol) [0x00007FF68453BD6B]
+	(No symbol) [0x00007FF68458CEB3]
+	(No symbol) [0x00007FF68455A46B]
+	(No symbol) [0x00007FF68455B001]
+	GetHandleVerifier [0x00007FF6849E9FFD+3202381]
+	GetHandleVerifier [0x00007FF684A36A1D+3516269]
+	GetHandleVerifier [0x00007FF684A2C490+3473888]
+	GetHandleVerifier [0x00007FF684795D36+760454]
+	(No symbol) [0x00007FF684666B3F]
+	(No symbol) [0x00007FF684661CD4]
+	(No symbol) [0x00007FF684661E62]
+	(No symbol) [0x00007FF68465120F]
+	BaseThreadInitThunk [0x00007FFF75637034+20]
+	RtlUserThreadStart [0x00007FFF757E26A1+33]
+
+
+
+2024-07-03 16:07:43.357 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 16:07:43.372 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 16:07:43.380 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 16:07:45.235 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 16:07:45.511 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 16:07:45.511 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x000002092642DAC0>,){}
+2024-07-03 16:07:47.478 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_report_tr定位成功
+2024-07-03 16:07:47.486 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-03 16:07:48.527 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_failure_button定位成功
+2024-07-03 16:07:48.567 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_success_button定位成功
+2024-07-03 16:07:49.594 | INFO | __main__:report_review_failure:52 | 处理alert
+2024-07-03 16:07:50.567 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_status定位成功
+2024-07-03 16:07:50.603 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_reason定位成功
+2024-07-03 16:07:50.615 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_method定位成功
+2024-07-03 16:07:50.628 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_message定位成功
+2024-07-03 16:07:50.633 | INFO | Common.logger:wrapper:47 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-03 16:08:36.943 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 16:08:36.959 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 16:08:36.968 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 16:08:38.938 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 16:08:39.186 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 16:08:39.187 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x0000025CC7D0DB20>,){}
+2024-07-03 16:08:40.070 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_report_tr定位成功
+2024-07-03 16:08:40.079 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-03 16:08:40.138 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_failure_button定位成功
+2024-07-03 16:08:40.150 | ERROR | Common.logger:wrapper:52 | 函数 report_review_failure 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\Common\logger.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\Page_Object_Model\Boss\Page_Objects\report_page.py", line 46, in report_review_failure
+    self.element_locator('report', 'review_failure_button').click()
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6846E3E32+31618]
+	(No symbol) [0x00007FF68465B099]
+	(No symbol) [0x00007FF6845186B9]
+	(No symbol) [0x00007FF6845698B2]
+	(No symbol) [0x00007FF68455C281]
+	(No symbol) [0x00007FF68458D10A]
+	(No symbol) [0x00007FF68455BBA6]
+	(No symbol) [0x00007FF68458D320]
+	(No symbol) [0x00007FF6845ACA80]
+	(No symbol) [0x00007FF68458CEB3]
+	(No symbol) [0x00007FF68455A46B]
+	(No symbol) [0x00007FF68455B001]
+	GetHandleVerifier [0x00007FF6849E9FFD+3202381]
+	GetHandleVerifier [0x00007FF684A36A1D+3516269]
+	GetHandleVerifier [0x00007FF684A2C490+3473888]
+	GetHandleVerifier [0x00007FF684795D36+760454]
+	(No symbol) [0x00007FF684666B3F]
+	(No symbol) [0x00007FF684661CD4]
+	(No symbol) [0x00007FF684661E62]
+	(No symbol) [0x00007FF68465120F]
+	BaseThreadInitThunk [0x00007FFF75637034+20]
+	RtlUserThreadStart [0x00007FFF757E26A1+33]
+
+
+
+2024-07-03 16:12:59.747 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:22 | login页面跳转
+2024-07-03 16:12:59.761 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:37 | 清理Cookies
+2024-07-03 16:12:59.771 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:42 | 导入cookies
+2024-07-03 16:13:01.784 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 16:13:02.077 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 16:13:02.078 | INFO | Common.logger:wrapper:42 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPage object at 0x000001F74B0DDBE0>,){}
+2024-07-03 16:13:02.994 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_report_tr定位成功
+2024-07-03 16:13:03.007 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-03 16:13:04.054 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_failure_button定位成功
+2024-07-03 16:13:04.092 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_review_success_button定位成功
+2024-07-03 16:13:05.121 | INFO | __main__:report_review_failure:51 | 处理alert
+2024-07-03 16:13:06.264 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_status定位成功
+2024-07-03 16:13:06.280 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_reason定位成功
+2024-07-03 16:13:06.295 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_method定位成功
+2024-07-03 16:13:06.308 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:59 | report_table_review_message定位成功
+2024-07-03 16:13:06.313 | INFO | Common.logger:wrapper:47 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-03 17:15:51.372 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:24 | login页面跳转
+2024-07-03 17:15:51.386 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | 清理Cookies
+2024-07-03 17:15:51.395 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:44 | 导入cookies
+2024-07-03 17:15:53.245 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 17:15:53.557 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 17:15:54.525 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_report_tr定位成功
+2024-07-03 17:15:54.533 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-03 17:15:55.575 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_pass_button定位成功
+2024-07-03 17:15:55.617 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_method_select定位成功
+2024-07-03 17:15:55.673 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_success_button定位成功
+2024-07-03 17:15:56.701 | INFO | Page_Object_Model.Boss.Base.Base_Page:switch_to_alert_accept:83 | alert弹窗处理
+2024-07-03 17:15:57.787 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_status定位成功
+2024-07-03 17:15:57.803 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_method定位成功
+2024-07-03 17:21:39.531 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:24 | login页面跳转
+2024-07-03 17:21:39.545 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | 清理Cookies
+2024-07-03 17:21:39.555 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:44 | 导入cookies
+2024-07-03 17:21:41.449 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 17:21:41.731 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 17:21:42.833 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_report_tr定位成功
+2024-07-03 17:21:42.841 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-03 17:21:43.885 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_pass_button定位成功
+2024-07-03 17:21:43.925 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_method_select定位成功
+2024-07-03 17:21:43.980 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_success_button定位成功
+2024-07-03 17:21:45.008 | INFO | Page_Object_Model.Boss.Base.Base_Page:switch_to_alert_accept:83 | alert弹窗处理
+2024-07-03 17:21:45.840 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_status定位成功
+2024-07-03 17:21:45.858 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_method定位成功
+2024-07-03 17:21:45.864 | INFO | __main__:report_review_pass_warning:84 | 审核通过断言成功
+2024-07-03 17:21:45.865 | INFO | __main__:report_review_pass_warning:86 | 通知警告断言成功
+2024-07-03 17:30:29.139 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:24 | login页面跳转
+2024-07-03 17:30:29.151 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | 清理Cookies
+2024-07-03 17:30:29.159 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:44 | 导入cookies
+2024-07-03 17:30:31.040 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 17:30:31.324 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 17:30:32.454 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_report_tr定位成功
+2024-07-03 17:30:32.466 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-03 17:30:33.513 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_pass_button定位成功
+2024-07-03 17:30:33.547 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_method_select定位成功
+2024-07-03 17:32:07.016 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:24 | login页面跳转
+2024-07-03 17:32:07.028 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | 清理Cookies
+2024-07-03 17:32:07.037 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:44 | 导入cookies
+2024-07-03 17:32:08.945 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 17:32:09.219 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 17:32:10.177 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_report_tr定位成功
+2024-07-03 17:32:10.185 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-03 17:32:11.232 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_pass_button定位成功
+2024-07-03 17:32:11.272 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_method_select定位成功
+2024-07-03 17:32:11.328 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_publish_time_input_hours定位成功
+2024-07-03 17:32:11.416 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_success_button定位成功
+2024-07-03 17:32:12.828 | INFO | Page_Object_Model.Boss.Base.Base_Page:switch_to_alert_accept:83 | alert弹窗处理
+2024-07-03 17:32:13.679 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_status定位成功
+2024-07-03 17:32:13.697 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_method定位成功
+2024-07-03 17:32:13.702 | INFO | __main__:report_review_pass_forbid_speak_hours:125 | 审核通过断言成功
+2024-07-03 17:32:13.702 | ERROR | __main__:report_review_pass_forbid_speak_hours:129 | 断言失败
+2024-07-03 17:40:19.520 | INFO | Page_Object_Model.Boss.Base.Base_Page:get_url:24 | login页面跳转
+2024-07-03 17:40:19.533 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:39 | 清理Cookies
+2024-07-03 17:40:19.542 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:44 | 导入cookies
+2024-07-03 17:40:21.595 | INFO | Page_Object_Model.Boss.Base.Base_Page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-03 17:40:21.863 | INFO | Common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-03 17:40:22.909 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_report_tr定位成功
+2024-07-03 17:40:22.918 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-03 17:40:23.963 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_pass_button定位成功
+2024-07-03 17:40:24.005 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_method_select定位成功
+2024-07-03 17:40:24.060 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_publish_time_input_hours定位成功
+2024-07-03 17:40:24.148 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_review_success_button定位成功
+2024-07-03 17:40:25.444 | INFO | Page_Object_Model.Boss.Base.Base_Page:switch_to_alert_accept:83 | alert弹窗处理
+2024-07-03 17:40:26.175 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_status定位成功
+2024-07-03 17:40:26.192 | INFO | Page_Object_Model.Boss.Base.Base_Page:element_locator:61 | report_table_review_method定位成功
+2024-07-03 17:40:26.197 | INFO | __main__:report_review_pass_forbid_login_hours:165 | 审核通过断言成功
+2024-07-03 17:40:26.197 | ERROR | __main__:report_review_pass_forbid_login_hours:169 | 断言失败

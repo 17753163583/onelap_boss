@@ -1,3 +1,90 @@
-{
+home:
+  url: https://boss-informal.rfsvr.net/
+  page_title:
+    type: class name
+    key: title
 
-}
+login:
+  url: https://boss-informal.rfsvr.net/auth/login
+
+  input_username:
+    type: xpath
+    key: /html/body/div/div[2]/form/div[1]/input
+
+  input_password:
+    type: xpath
+    key: /html/body/div/div[2]/form/div[2]/input
+
+  hidden_token:
+    type: xpath
+    key: /html/body/div/div[2]/form/div[3]/div[2]/input
+    _token:
+
+  login_button:
+    type: xpath
+    key: /html/body/div/div[2]/form/div[3]/div[2]/button
+
+
+
+report:
+  url: https://boss-informal.rfsvr.net/admin/wl/social/user/report/list
+
+  table:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody
+
+  report_tr:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody/tr
+
+  open_report_review_button:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody/tr/td[11]/span/a
+
+  review_failure_button:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[1]/th/div/span/label[2]
+
+  review_pass_button:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[1]/th/div/span/label[1]
+
+  reason_select:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[2]/th/div/span/select
+
+  method_select:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[3]/th/div/span[1]/select
+
+  publish_time_input_hours:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[3]/th/div/span[2]/span[1]/input
+
+  publish_time_input_days:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[3]/th/div/span[2]/span[2]/input
+
+  publish_time_input_years:
+    type: xpath
+    key: //*[@class="box-body no-padding"]/table/tbody/tr[3]/th/div/span[2]/span[3]/input
+
+  review_success_button:
+    type: xpath
+    key: //*[@class="clearfix"]/div/a
+
+  table_review_status:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody/tr/td[12]
+
+  table_review_reason:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody/tr/td[14]
+
+  table_review_method:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody/tr/td[15]
+
+  table_review_message:
+    type: xpath
+    key: //*[@class="table table-hover grid-table"]/tbody/tr/td[16]
