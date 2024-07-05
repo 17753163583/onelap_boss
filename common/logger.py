@@ -1,13 +1,15 @@
 import traceback
+import os
 from datetime import datetime
-from functools import wraps
 from pathlib import Path
+from functools import wraps
 from loguru import logger
 
-# 日志目录的创建
 log_dir = Path(__file__).resolve().parent.parent.joinpath("Logs")
 
-if not log_dir.exists() or not log_dir.is_dir():
+if os.path.exists(log_dir):
+    pass
+else:
     try:
         log_dir.mkdir(parents=True)
     except PermissionError:

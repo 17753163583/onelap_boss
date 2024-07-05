@@ -1,22 +1,20 @@
 import json
-import time
 import selenium.common.exceptions
 from loguru import logger
 from selenium import webdriver
 
-from Common.get_path import project_path
-from Common.find_ele import find_ele
-from Common.get_yaml import GetYamlData
-from Common.get_boss_login_cookies import get_login_cookies
-from selenium.common.exceptions import NoAlertPresentException
+from common.get_path import project_path
+from common.find_ele import find_ele
+from common.get_yaml import GetYamlData
+from common.get_boss_login_cookies import get_login_cookies
 import requests
 
 
-class BasePage(GetYamlData):
+class BossBasePage(GetYamlData):
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.boss_element = GetYamlData.get_boss_element_data()
-        self.api_param = GetYamlData.get_api_param_data()
+        self.onelap_api_param = GetYamlData.get_onelap_api_param_data()
 
     def get_url(self, page_name):
         login_url = self.boss_element[page_name]['url']
@@ -28,7 +26,7 @@ class BasePage(GetYamlData):
         logger.info("读取Cookies成功")
 
         json_cookies = json.dumps(dict_cookies)
-        with open(project_path() + "/Test_Data/boss_login_cookies.json", 'w') as file:
+        with open(project_path() + "/test_data/boss_login_cookies.json", 'w') as file:
             file.write(json_cookies)
             logger.info("保存cookies至boss_login_cookies.json")
 
@@ -48,7 +46,7 @@ class BasePage(GetYamlData):
             assert self.driver.current_url == self.boss_element['home']['url']
             logger.info(f"跳转{self.driver.current_url}")
         except AssertionError as error:
-            logger.error(f"跳转{self.boss_element('home')}失败:{error}")
+            logger.error(f"跳转{self.boss_element['home']}失败:{error}")
 
     def element_locator(self, page_name, element_name):
         locator_message = self.boss_element[page_name][element_name]
@@ -88,7 +86,7 @@ class BasePage(GetYamlData):
         self.driver.refresh()
 
     def add_report_message_with_request_post(self, page_name, headers, data):
-        report_url = self.api_param[page_name]['url']
+        report_url = self.onelap_api_param[page_name]['url']
 
         response = requests.post(report_url, headers=headers, data=data)
 
@@ -108,7 +106,7 @@ class BasePage(GetYamlData):
 
         # report_id = self.add_report_message_with_request_post('report', self.headers, self.data)
 
-        report_id_url = self.boss_element['report_list']['url'] + f'?report_id={report_id}'
+        report_id_url = self.boss_element['report']['url'] + f'?report_id={report_id}'
 
         try:
             self.driver.get(report_id_url)
@@ -117,8 +115,3 @@ class BasePage(GetYamlData):
             logger.info(f'跳转{report_id_url}')
         except AssertionError as error:
             logger.error(f"跳转{report_id_url}失败：{error}")
-
-        self.element_locator('report', 'report_tr')
-        self.element_locator('report', 'open_report_review_button').click()
-        time.sleep(1)
-        self.element_locator('report', 'review_pass_button').click()

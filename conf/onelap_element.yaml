@@ -1,0 +1,10 @@
+login:
+  # 第一次打开app的用户服务协议和隐私协议
+  # 同意
+  agree_privacy:
+    type: id
+    key: com.onelap.bls.dear:id/tv_agree_privacy_dialog
+  # 不同意
+  refuse_privacy:
+    type: id
+    key: com.onelap.bls.dear:id/tv_refuse_privacy_dialog

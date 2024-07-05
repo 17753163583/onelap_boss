@@ -1,6 +1,6 @@
 import requests
-from Common.get_yaml import GetYamlData
-from Common.find_ele import find_ele
+from common.get_yaml import GetYamlData
+from common.find_ele import find_ele
 
 from loguru import logger
 

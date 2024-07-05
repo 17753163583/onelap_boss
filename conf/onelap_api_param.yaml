@@ -1,0 +1,49 @@
+onelap_login:
+  url: http://rfs-fitness-informal.rfsvr.net/api/account/v1/login
+  headers:
+    Platform: '22'
+    App-Version: 3.6.3
+  data:
+    account:
+    password:
+
+check_passwd:
+  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/passwd_check
+  headers:
+    Authorization:
+    UserId:
+  data:
+    password:
+
+account_cancellation:
+  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/cancellation
+  headers:
+    Authorization:
+    UserId:
+
+
+change_passwd_verification_code:
+  url: http://rfs-fitness-informal.rfsvr.net/api/account/v1/reset/mobile
+  data:
+    tac: +86
+    mobile:
+    password:
+    code:
+
+add_report:
+  url: https://rfs-fitness-informal.rfsvr.net/indoor/api/user/report
+  headers:
+    token:
+  data:
+    # 详细描述
+    desc: 脚本测试——详细描
+    # 评论id
+    source_id: 714
+    # 图片地址
+    imgs: uploads/20240703/files/1719972587819IMG_20240703_100702.jpg
+    # 举报原因
+    reason_id: 1
+    #举报来源，目前只有1，代表路线库评论
+    source_type: 1
+
+

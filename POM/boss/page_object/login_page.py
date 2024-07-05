@@ -1,28 +1,30 @@
 import time
 
-from Page_Object_Model.Boss.Base.Base_Page import BasePage
-from Common.logger import log_decorator
+from POM.boss.base.base_page import BossBasePage
+from common.logger import log_decorator
 from loguru import logger
 from pytest_check import check_func
 
 
-class LoginPage(BasePage):
-    """
+class LoginPageBoss(BossBasePage):
     def __init__(self):
         super().__init__()
-    """
 
     @log_decorator
     @check_func
-    def login(self):
+    def get_onelap_url(self):
         self.get_url('login')
 
+    def enter_username_and_password(self):
         self.element_locator_sendkeys(page_name='login', element_name='input_username', input_data='onelap')
         self.element_locator_sendkeys(page_name='login', element_name='input_password', input_data='onelap@123')
+
+    def login_and_save_cookies(self):
         self.element_locator(page_name='login', element_name='login_button').click()
 
         self.save_boss_cookies_to_json()
 
+    def assert_login(self):
         home_page_title = self.element_locator(page_name='home', element_name='page_title')
 
         try:
@@ -33,5 +35,9 @@ class LoginPage(BasePage):
 
 
 if __name__ == '__main__':
-    a = LoginPage()
-    a.login()
+    a = LoginPageBoss()
+    a.get_onelap_url()
+    a.enter_username_and_password()
+    a.login_and_save_cookies()
+    a.assert_login()
+    a.driver.quit()

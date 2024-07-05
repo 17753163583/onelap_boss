@@ -5,14 +5,14 @@ from pytest_check import check_func
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 
-from Common.get_token import GetToken
-from Common.logger import log_decorator
-from Page_Object_Model.Boss.Base.Base_Page import BasePage
+from common.get_token import GetToken
+from common.logger import log_decorator
+from POM.boss.base.base_page import BossBasePage
 
 get_token = GetToken()
 
 
-class ReportPage(BasePage):
+class ReportPageBoss(BossBasePage):
 
     def __init__(self):
         # 启动浏览器，进入boss_home页
@@ -29,7 +29,7 @@ class ReportPage(BasePage):
         self.desc = "测试"
         self.imgs = None
 
-        self.headers = {'Authorization': self.report_token, 'UserId': self.user_id}
+        self.headers = {'Authorization': self.report_token, 'UserId': str(self.user_id)}
         self.data = {"desc": self.desc,
                      "source_id": self.source_id,
                      "reason_id": self.reason_id,
@@ -43,12 +43,19 @@ class ReportPage(BasePage):
         self.add_report_message_with_request_post('add_report', self.headers, self.data)
         # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140')
         # self.element_locator('report', 'table')
+
         self.element_locator('report', 'report_tr')
         self.element_locator('report', 'open_report_review_button').click()
-        time.sleep(1)
+
+        # 等待审核窗口
+        time.sleep(0.5)
+
         self.element_locator('report', 'review_failure_button').click()
         self.element_locator('report', 'review_success_button').click()
-        time.sleep(1)
+
+        # 等待alert
+        time.sleep(0.5)
+
         self.switch_to_alert_accept()
         status = self.element_locator('report', 'table_review_status').text
         assert status == "审核未通过"
@@ -68,12 +75,17 @@ class ReportPage(BasePage):
         # reason_select = self.element_locator('report', 'reason_select')
         # Select(reason_select).select_by_value('4')
 
+        self.element_locator('report', 'report_tr')
+        self.element_locator('report', 'open_report_review_button').click()
+
+        time.sleep(0.5)
+        self.element_locator('report', 'review_pass_button').click()
         method_select = self.element_locator('report', 'method_select')
         Select(method_select).select_by_value('is_notice_warning')
 
         self.element_locator('report', 'review_success_button').click()
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.switch_to_alert_accept()
 
         status = self.element_locator('report', 'table_review_status').text
@@ -98,6 +110,11 @@ class ReportPage(BasePage):
         # reason_select = self.element_locator('report', 'reason_select')
         # Select(reason_select).select_by_value('4')
 
+        self.element_locator('report', 'report_tr')
+        self.element_locator('report', 'open_report_review_button').click()
+
+        time.sleep(0.5)
+        self.element_locator('report', 'review_pass_button').click()
         method_select = self.element_locator('report', 'method_select')
 
         Select(method_select).select_by_value('is_forbid_speak')
@@ -111,7 +128,7 @@ class ReportPage(BasePage):
 
         self.element_locator('report', 'review_success_button').click()
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.switch_to_alert_accept()
 
         status = self.element_locator('report', 'table_review_status').text
@@ -120,7 +137,7 @@ class ReportPage(BasePage):
         try:
             assert status == "审核通过"
             logger.info(f"{status}断言成功")
-            assert method == "禁言"
+            assert method == "禁言1小时"
             logger.info(f"{method}断言成功")
         except AssertionError as error:
             logger.error(f"断言失败{error}")
@@ -137,6 +154,11 @@ class ReportPage(BasePage):
         # reason_select = self.element_locator('report', 'reason_select')
         # Select(reason_select).select_by_value('4')
 
+        self.element_locator('report', 'report_tr')
+        self.element_locator('report', 'open_report_review_button').click()
+
+        time.sleep(0.5)
+        self.element_locator('report', 'review_pass_button').click()
         method_select = self.element_locator('report', 'method_select')
 
         Select(method_select).select_by_value('is_forbid_login')
@@ -150,7 +172,7 @@ class ReportPage(BasePage):
 
         self.element_locator('report', 'review_success_button').click()
 
-        time.sleep(1)
+        time.sleep(0.5)
         self.switch_to_alert_accept()
 
         status = self.element_locator('report', 'table_review_status').text
@@ -166,5 +188,9 @@ class ReportPage(BasePage):
 
 
 if __name__ == '__main__':
-    a = ReportPage()
+    a = ReportPageBoss()
+    a.report_review_failure()
+    a.report_review_pass_warning()
+    a.report_review_pass_forbid_speak_hours()
     a.report_review_pass_forbid_login_hours()
+    a.driver.quit()
