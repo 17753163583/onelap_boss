@@ -4,9 +4,12 @@ from loguru import logger
 from pytest_check import check_func
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
-
+from selenium.common.exceptions import UnexpectedAlertPresentException
+from common.handle_md5 import md5_encrypt
 from common.get_token import GetToken
 from common.logger import log_decorator
+from common.submit_comment import send_comment
+from common.report_publish_message import append_data_key_to_json
 from POM.boss.base.base_page import BossBasePage
 
 get_token = GetToken()
@@ -19,17 +22,16 @@ class ReportPageBoss(BossBasePage):
         super().__init__()
         self.login_with_cookie()
 
-        # 添加举报记录的必备数据
-        self.user_id = 238492
-        self.report_token = get_token.get_onelap_login_token()
+        self.report_account_token = get_token.onelap_login('17753163583', md5_encrypt('zhang107'))['data']['token']
 
+        # 添加举报记录的必备数据
         self.source_id = 714
         self.reason_id = 1
         self.source_type = 1
         self.desc = "测试"
         self.imgs = None
 
-        self.headers = {'Authorization': self.report_token, 'UserId': str(self.user_id)}
+        self.headers = {'Authorization': self.report_account_token}
         self.data = {"desc": self.desc,
                      "source_id": self.source_id,
                      "reason_id": self.reason_id,
@@ -45,6 +47,7 @@ class ReportPageBoss(BossBasePage):
         # self.element_locator('report', 'table')
 
         self.element_locator('report', 'report_tr')
+
         self.element_locator('report', 'open_report_review_button').click()
 
         # 等待审核窗口
@@ -104,13 +107,15 @@ class ReportPageBoss(BossBasePage):
     def report_review_pass_forbid_speak_hours(self):
         # 添加一条举报记录，在列表中筛选report_id
         self.add_report_message_with_request_post('add_report', self.headers, self.data)
-        # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=138')
+        # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=158')
 
         # 自动同步举报记录中的违规原因，无需更改
         # reason_select = self.element_locator('report', 'reason_select')
         # Select(reason_select).select_by_value('4')
 
-        self.element_locator('report', 'report_tr')
+        data_key = self.element_locator('report', 'report_tr').get_attribute('data-key')
+        logger.info(f"读取data-key：{data_key}")
+
         self.element_locator('report', 'open_report_review_button').click()
 
         time.sleep(0.5)
@@ -130,7 +135,22 @@ class ReportPageBoss(BossBasePage):
 
         time.sleep(0.5)
         self.switch_to_alert_accept()
+        try:
+            self.driver.switch_to.alert.accept()
+            logger.info("更新惩罚时间弹窗")
+        except UnexpectedAlertPresentException:
+            pass
 
+        # 访问评论接口（被禁言账号），读取禁言的开始时间和截止时间
+        response_json = send_comment('13001723386', md5_encrypt('zhang107.'))
+        data_key_dict = {
+            'data_key': data_key,
+            'start_time': response_json['data']['start_time'],
+            'end_time': response_json['data']['end_time']
+        }
+        append_data_key_to_json(publish='is_forbid_speak', key_dict=data_key_dict)
+
+        # 回到审核管理页做断言
         status = self.element_locator('report', 'table_review_status').text
         method = self.element_locator('report', 'table_review_method').text
 
@@ -147,14 +167,17 @@ class ReportPageBoss(BossBasePage):
     def report_review_pass_forbid_login_hours(self):
         # 添加一条举报记录，在列表中筛选report_id
         self.add_report_message_with_request_post('add_report', self.headers, self.data)
-        # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=138')
+        # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=162')
         # self.element_locator('report', 'table')
 
         # 自动同步举报记录中的违规原因，无需更改
         # reason_select = self.element_locator('report', 'reason_select')
         # Select(reason_select).select_by_value('4')
 
-        self.element_locator('report', 'report_tr')
+        # 定位到目标举报记录
+        data_key = self.element_locator('report', 'report_tr').get_attribute('data-key')
+        logger.info(f"读取data-key：{data_key}")
+
         self.element_locator('report', 'open_report_review_button').click()
 
         time.sleep(0.5)
@@ -174,6 +197,20 @@ class ReportPageBoss(BossBasePage):
 
         time.sleep(0.5)
         self.switch_to_alert_accept()
+        try:
+            self.switch_to_alert_accept()
+            logger.info("更新惩罚时间弹窗")
+        except UnexpectedAlertPresentException:
+            pass
+
+        # 访问登录接口（被禁言账号），读取禁言的开始时间和截止时间
+        response = get_token.onelap_login('13001723386', md5_encrypt('zhang107.'))
+        data_key_dict = {
+            'data_key': data_key,
+            'start_time': response['data']['start_time'],
+            'end_time': response['data']['end_time']
+        }
+        append_data_key_to_json(publish='is_forbid_login', key_dict=data_key_dict)
 
         status = self.element_locator('report', 'table_review_status').text
         method = self.element_locator('report', 'table_review_method').text
@@ -189,8 +226,6 @@ class ReportPageBoss(BossBasePage):
 
 if __name__ == '__main__':
     a = ReportPageBoss()
-    a.report_review_failure()
-    a.report_review_pass_warning()
     a.report_review_pass_forbid_speak_hours()
-    a.report_review_pass_forbid_login_hours()
+    # a.report_review_pass_forbid_login_hours()
     a.driver.quit()

@@ -7,5 +7,3 @@ from common.get_yaml import GetYamlData
 class OnelapBasePage(GetYamlData):
     def __init__(self):
         self.onelap_element = GetYamlData.get_onelap_element_data()
-
-    def connect_device

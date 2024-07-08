@@ -14,7 +14,7 @@ class OnelapLogin(BasePage):
         body = {"account": str(username), "password": str(passwd_md5)}
         headers = self.api_params[api_name]['headers']
         response = self.post_request(api_name=api_name, headers=headers, data=body)
-
+        logger.info(f'登录成功，获取{username}用户信息成功')
         self.login_token = str(response.json()['data']['token'])
         logger.info(f"记录token：{self.login_token}")
         return response
@@ -41,3 +41,8 @@ class OnelapLogin(BasePage):
         response = self.get_request(api_name=api_name, headers=headers)
 
         return response
+
+
+if __name__ == '__main__':
+    x = OnelapLogin()
+    print(x.login('17753163583', 'zhang107').json())

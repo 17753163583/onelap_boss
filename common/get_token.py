@@ -1,24 +1,33 @@
 import requests
 from common.get_yaml import GetYamlData
 from common.find_ele import find_ele
-
 from loguru import logger
+from common.handle_md5 import md5_encrypt
 
 
-class GetToken:
+class GetToken(GetYamlData):
     def __init__(self):
-        self.onelap_login_url = 'https://rfs-fitness-informal.rfsvr.net/api/account/v1/login'
-        self.onelap_login_body = {"account": "17753163583", "password": "dc158e485dba3cb7a6cfc9063568ac9e"}
+        self.boss_element = self.get_boss_element_data()
+        self.onelap_api = self.get_onelap_api_param_data()
 
-    def get_onelap_login_token(self):
-        response = requests.post(self.onelap_login_url, data=self.onelap_login_body)
-        onelap_login_token = response.json()['data']['token']
-        logger.info("获取onelap登录token")
-        return onelap_login_token
+    def onelap_login(self, account, password):
+        data = self.onelap_api['onelap_login']['data']
+        data['account'] = account
+        data['password'] = password
 
-    @staticmethod
-    def get_boss_login_button_token(driver):
-        login_token_data = GetYamlData.get_boss_element_data()['login']['hidden_token']
+        response = requests.post(url=self.onelap_api['onelap_login']['url'],
+                                 headers=self.onelap_api['onelap_login']['headers'],
+                                 data=data)
+
+        if response.json()['code'] == 200:
+            logger.info("获取onelap登录token")
+            return response.json()
+        elif response.json()['code'] == 204:
+            logger.info("账号被限制登录")
+            return response.json()
+
+    def get_boss_login_button_token(self, driver):
+        login_token_data = self.boss_element['login']['hidden_token']
 
         find_type = login_token_data['type']
         find_key = login_token_data['key']
@@ -29,3 +38,7 @@ class GetToken:
         logger.info('获取boss_login_button_token获取成功')
 
         return boss_login_button_token
+
+
+if __name__ == '__main__':
+    print(GetToken().onelap_login('13001723386', md5_encrypt('zhang107.')))
