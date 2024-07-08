@@ -1,0 +1,1172 @@
+2024-07-08 09:57:43.491 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 09:57:43.492 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:01:14.742 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:01:14.743 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:03:01.183 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:03:01.184 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:07:09.474 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:07:09.475 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:07:26.465 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:07:26.466 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:08:22.009 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:08:22.009 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:10:47.583 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:10:47.584 | INFO | __main__:append_data_key_to_json:40 | 惩罚信息已在文件中创建
+2024-07-08 10:11:27.047 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:11:27.048 | INFO | __main__:append_data_key_to_json:40 | 惩罚信息已在文件中创建
+2024-07-08 10:11:27.049 | INFO | __main__:append_data_key_to_json:44 | 惩罚信息已更新
+2024-07-08 10:12:41.966 | INFO | __main__:check_publish_json_exist:22 | 惩罚信息json文件创建成功
+2024-07-08 10:12:41.967 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:12:41.968 | INFO | __main__:append_data_key_to_json:42 | 惩罚信息已更新
+2024-07-08 10:13:04.900 | INFO | __main__:check_publish_json_exist:12 | 惩罚信息json文件已存在，无需创建
+2024-07-08 10:13:04.901 | INFO | __main__:append_data_key_to_json:38 | 惩罚信息已在文件中创建
+2024-07-08 10:14:07.591 | INFO | __main__:check_publish_json_exist:12 | 惩罚信息json文件已存在，无需创建
+2024-07-08 10:26:08.714 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 10:26:08.729 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 10:29:21.851 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 10:29:21.862 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 10:29:49.493 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 10:29:49.504 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 10:29:49.514 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 10:29:50.687 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 10:31:26.810 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 10:31:26.821 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 10:31:26.830 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 10:31:28.058 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 10:31:28.330 | INFO | common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-08 10:31:28.332 | INFO | common.logger:wrapper:44 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000024878870CB0>,){}
+2024-07-08 10:31:30.044 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 10:31:30.055 | INFO | __main__:report_review_failure:48 | 获取data_ket:None
+2024-07-08 10:31:30.064 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 10:31:30.627 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_failure_button定位成功
+2024-07-08 10:31:30.663 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 10:31:31.191 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 10:31:31.911 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 10:31:31.920 | INFO | common.logger:wrapper:49 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-08 10:32:26.487 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 10:32:26.502 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 10:32:26.511 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 10:32:27.787 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 10:32:28.353 | INFO | common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-08 10:32:28.354 | INFO | common.logger:wrapper:44 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000270D252CDD0>,){}
+2024-07-08 10:32:29.788 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 10:32:29.797 | INFO | __main__:report_review_failure:48 | 获取data_ket:6684ebc77890ec4bf171a126
+2024-07-08 10:32:29.805 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 10:32:30.350 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_failure_button定位成功
+2024-07-08 10:32:30.387 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 10:32:30.915 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 10:32:31.662 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 10:32:31.672 | INFO | common.logger:wrapper:49 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-08 10:32:54.569 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 10:32:54.581 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 10:32:54.589 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 10:32:55.870 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 10:32:56.170 | INFO | common.get_token:get_onelap_login_token:16 | 获取onelap登录token
+2024-07-08 10:32:56.171 | INFO | common.logger:wrapper:44 | 函数 report_review_failure 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001F42B590D40>,){}
+2024-07-08 10:32:56.958 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 10:32:56.967 | INFO | __main__:report_review_failure:49 | 获取data_ket:6684ebc77890ec4bf171a126
+2024-07-08 10:32:56.976 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 10:32:57.535 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_failure_button定位成功
+2024-07-08 10:32:57.572 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 10:32:58.098 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 10:32:58.865 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 10:32:58.875 | INFO | common.logger:wrapper:49 | 函数 report_review_failure 执行完成，函数返回结果：True
+
+2024-07-08 10:40:40.347 | INFO | __main__:check_publish_json_exist:21 | 惩罚信息json文件创建成功
+2024-07-08 10:40:40.348 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:40:57.021 | INFO | __main__:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 10:40:57.022 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:42:11.023 | INFO | __main__:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 10:42:11.024 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:42:11.025 | INFO | __main__:append_data_key_to_json:41 | 惩罚信息的data-key已添加进列表
+2024-07-08 10:42:25.241 | INFO | __main__:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 10:42:25.242 | INFO | __main__:append_data_key_to_json:35 | 惩罚信息已更新
+2024-07-08 10:42:25.243 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:42:25.243 | INFO | __main__:append_data_key_to_json:41 | 惩罚信息的data-key已添加进列表
+2024-07-08 10:43:04.148 | INFO | __main__:check_publish_json_exist:21 | 惩罚信息json文件创建成功
+2024-07-08 10:43:04.149 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:43:04.150 | INFO | __main__:append_data_key_to_json:41 | 惩罚信息的data-key已添加进列表
+2024-07-08 10:43:04.150 | INFO | __main__:append_data_key_to_json:35 | 惩罚信息已更新
+2024-07-08 10:48:50.364 | INFO | __main__:check_publish_json_exist:21 | 惩罚信息json文件创建成功
+2024-07-08 10:48:50.365 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:48:50.365 | INFO | __main__:append_data_key_to_json:41 | 惩罚信息的data-key已添加进列表
+2024-07-08 10:48:50.366 | INFO | __main__:append_data_key_to_json:35 | 惩罚信息已更新
+2024-07-08 10:49:14.850 | INFO | __main__:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 10:49:14.851 | INFO | __main__:append_data_key_to_json:39 | 惩罚信息已在文件中创建
+2024-07-08 10:49:14.851 | INFO | __main__:append_data_key_to_json:41 | 惩罚信息的data-key已添加进列表
+2024-07-08 10:49:14.852 | INFO | __main__:append_data_key_to_json:35 | 惩罚信息已更新
+2024-07-08 10:49:14.853 | INFO | __main__:remove_data_key_to_json:61 | 删除成功
+2024-07-08 14:16:07.267 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 14:16:43.593 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 14:16:43.593 | ERROR | __main__:send_comment:23 | 账号被限制登录，无法评论,错误信息:'token'
+2024-07-08 14:19:23.897 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 14:19:23.898 | ERROR | __main__:send_comment:25 | 账号状态异常，无法评论,错误信息:'token'
+2024-07-08 14:20:18.369 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 14:20:18.370 | ERROR | __main__:send_comment:26 | 账号状态异常，无法评论,错误信息:'token'
+2024-07-08 14:20:36.354 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:20:46.980 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:21:07.867 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:21:08.053 | INFO | __main__:send_comment:22 | 账号被禁言
+2024-07-08 14:21:22.957 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:21:23.199 | INFO | __main__:send_comment:23 | 账号被禁言
+2024-07-08 14:21:30.793 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:21:30.985 | INFO | __main__:send_comment:23 | 账号被禁言
+2024-07-08 14:21:46.969 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:21:47.151 | INFO | __main__:send_comment:22 | 账号被禁言
+2024-07-08 14:26:14.117 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:26:14.131 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:26:14.141 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:26:16.282 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:26:16.550 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:26:16.550 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000023DD53D1DC0>,){}
+2024-07-08 14:26:17.432 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:26:17.444 | INFO | __main__:report_review_pass_forbid_speak_hours:116 | 读取data-key：66864de84da1895fd2698c66
+2024-07-08 14:26:17.452 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:26:18.029 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:26:18.068 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:26:18.125 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:26:18.213 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:26:19.130 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:26:20.134 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:26:20.331 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 14:26:20.333 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 142, in report_review_pass_forbid_speak_hours
+    'start_time': response['data']['start_time'],
+                  ~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+
+2024-07-08 14:27:09.296 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:27:09.308 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:27:09.317 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:27:11.564 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:27:11.823 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:27:11.824 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000178A3E31E50>,){}
+2024-07-08 14:27:12.706 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:27:12.724 | INFO | __main__:report_review_pass_forbid_speak_hours:116 | 读取data-key：66864de6d2389931cc5318b3
+2024-07-08 14:27:12.733 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:27:13.280 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:27:13.318 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:27:13.374 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:27:13.464 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:27:14.387 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:27:15.355 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:27:15.534 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 14:27:15.536 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 142, in report_review_pass_forbid_speak_hours
+    'start_time': response['data']['start_time'],
+                  ~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+
+2024-07-08 14:29:23.866 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:29:23.878 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:29:23.888 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:29:25.941 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:29:26.136 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:29:26.137 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000028934E15CD0>,){}
+2024-07-08 14:29:27.009 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:29:27.021 | INFO | __main__:report_review_pass_forbid_speak_hours:116 | 读取data-key：66864de358c2ef1b0309ad13
+2024-07-08 14:29:27.029 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:29:27.613 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:29:27.658 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:29:27.715 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:29:27.806 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:29:28.713 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:29:30.947 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:29:31.128 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 14:29:31.130 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 142, in report_review_pass_forbid_speak_hours
+    'start_time': response_json['data']['start_time'],
+                  ~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+
+2024-07-08 14:30:49.213 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:30:49.227 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:30:49.240 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:30:51.114 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:30:51.345 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:30:51.346 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000024CA1591B20>,){}
+2024-07-08 14:30:52.174 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:30:52.184 | INFO | __main__:report_review_pass_forbid_speak_hours:116 | 读取data-key：668646bca6bc0f4f6a3adf74
+2024-07-08 14:30:52.193 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:30:52.757 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:30:52.796 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:30:52.852 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:30:52.940 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:30:53.730 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:30:54.689 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:30:54.881 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 14:30:54.883 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 145, in report_review_pass_forbid_speak_hours
+    append_data_key_to_json(publish='is_forbid_speak', key_dict=data_key_dict)
+  File "D:\python_project\onelap_boss\common\report_publish_message.py", line 25, in append_data_key_to_json
+    check_publish_json_exist()
+  File "D:\python_project\onelap_boss\common\report_publish_message.py", line 19, in check_publish_json_exist
+    with open(data_key_json_file_name, 'w', encoding='utf-8') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../POM/boss/test_data/publish_data.json'
+
+
+2024-07-08 14:34:04.058 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:34:04.071 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:34:04.079 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:34:05.966 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:34:06.189 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:34:06.190 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000021D401D1BB0>,){}
+2024-07-08 14:34:07.000 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:34:07.012 | INFO | __main__:report_review_pass_forbid_speak_hours:116 | 读取data-key：668646b9f870a2464f6b7893
+2024-07-08 14:34:07.021 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:34:07.568 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:34:07.615 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:34:07.679 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:34:07.784 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:34:08.712 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:34:09.720 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:34:09.932 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 14:34:09.934 | INFO | common.report_publish_message:check_publish_json_exist:21 | 惩罚信息json文件创建成功
+2024-07-08 14:34:09.934 | INFO | common.report_publish_message:append_data_key_to_json:40 | 惩罚信息已在文件中创建
+2024-07-08 14:34:09.935 | INFO | common.report_publish_message:append_data_key_to_json:42 | 惩罚信息的data-key已添加进列表
+2024-07-08 14:34:09.944 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 14:34:09.961 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_method定位成功
+2024-07-08 14:34:09.966 | INFO | __main__:report_review_pass_forbid_speak_hours:153 | 审核通过断言成功
+2024-07-08 14:34:09.966 | INFO | __main__:report_review_pass_forbid_speak_hours:155 | 禁言1小时断言成功
+2024-07-08 14:34:09.967 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_speak_hours 执行完成，函数返回结果：True
+
+2024-07-08 14:34:36.641 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:34:36.652 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:34:36.661 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:34:38.600 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:34:38.831 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:34:38.831 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001C5BAE65A90>,){}
+2024-07-08 14:34:39.634 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:34:39.645 | INFO | __main__:report_review_pass_forbid_speak_hours:116 | 读取data-key：668646b758c2ef1b0309ad12
+2024-07-08 14:34:39.655 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:34:40.199 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:34:40.239 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:34:40.297 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:34:40.387 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:34:41.212 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:34:41.897 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:34:42.088 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 14:34:42.088 | INFO | common.report_publish_message:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 14:34:42.089 | INFO | common.report_publish_message:append_data_key_to_json:40 | 惩罚信息已在文件中创建
+2024-07-08 14:34:42.089 | INFO | common.report_publish_message:append_data_key_to_json:42 | 惩罚信息的data-key已添加进列表
+2024-07-08 14:34:42.096 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 148, in report_review_pass_forbid_speak_hours
+    status = self.element_locator('report', 'table_review_status').text
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 57, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: 审核完成，请刷新数据
+Message: unexpected alert open: {Alert text : 审核完成，请刷新数据}
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DB0F3E32+31618]
+	(No symbol) [0x00007FF7DB06B099]
+	(No symbol) [0x00007FF7DAF2888A]
+	(No symbol) [0x00007FF7DAFBD226]
+	(No symbol) [0x00007FF7DAF9CEB3]
+	(No symbol) [0x00007FF7DAF6A46B]
+	(No symbol) [0x00007FF7DAF6B001]
+	GetHandleVerifier [0x00007FF7DB3F9FFD+3202381]
+	GetHandleVerifier [0x00007FF7DB446A1D+3516269]
+	GetHandleVerifier [0x00007FF7DB43C490+3473888]
+	GetHandleVerifier [0x00007FF7DB1A5D36+760454]
+	(No symbol) [0x00007FF7DB076B3F]
+	(No symbol) [0x00007FF7DB071CD4]
+	(No symbol) [0x00007FF7DB071E62]
+	(No symbol) [0x00007FF7DB06120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 14:47:22.550 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 14:47:22.565 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 14:47:22.576 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 14:47:24.462 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 14:47:24.697 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 14:47:24.698 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000021425A21F40>,){}
+2024-07-08 14:47:25.590 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 14:47:25.599 | INFO | __main__:report_review_pass_forbid_login_hours:179 | 读取data-key：66864de6d2389931cc5318b3
+2024-07-08 14:47:25.608 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 14:47:26.184 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 14:47:26.224 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 14:47:26.279 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 14:47:26.379 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 14:47:27.316 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:47:27.735 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 14:47:29.804 | INFO | __main__:report_review_pass_forbid_login_hours:202 | 更新惩罚时间弹窗
+2024-07-08 14:47:29.984 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 14:47:29.985 | INFO | common.report_publish_message:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 14:47:29.986 | INFO | common.report_publish_message:append_data_key_to_json:34 | 惩罚信息已在文件中创建
+2024-07-08 14:47:29.986 | INFO | common.report_publish_message:append_data_key_to_json:36 | 惩罚信息的data-key已添加进列表
+2024-07-08 14:47:29.997 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 14:47:30.017 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_method定位成功
+2024-07-08 14:47:30.023 | INFO | __main__:report_review_pass_forbid_login_hours:220 | 审核通过断言成功
+2024-07-08 14:47:30.023 | INFO | __main__:report_review_pass_forbid_login_hours:222 | 封号1小时断言成功
+2024-07-08 14:47:30.023 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_login_hours 执行完成，函数返回结果：True
+
+2024-07-08 15:38:48.266 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:38:48.280 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:38:48.289 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:38:50.203 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:40:55.641 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:40:55.653 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:40:55.662 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:40:57.230 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:41:45.758 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:41:45.771 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:41:45.782 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:41:47.721 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:42:01.148 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:42:01.161 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:42:01.170 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:42:03.369 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:50:22.996 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:50:23.010 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:50:23.018 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:50:25.005 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:50:25.005 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x000001CCF3B0B800>,){}
+2024-07-08 15:50:26.093 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x000001CCF3B0B800>,){'publish': 'is_forbid_speak'}
+2024-07-08 15:50:26.094 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668646b9f870a2464f6b7893', '668646b758c2ef1b0309ad12']
+
+2024-07-08 15:50:36.150 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    if find_ele(self.driver, 'xpath', f'//*[@data-key="{data_key}"]'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF642818524]
+	(No symbol) [0x00007FF64281862C]
+	(No symbol) [0x00007FF64285F787]
+	(No symbol) [0x00007FF64283D14F]
+	(No symbol) [0x00007FF64285CA80]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 15:51:45.093 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:51:45.105 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:51:45.115 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:51:46.950 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:51:46.950 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x0000024FD683B740>,){}
+2024-07-08 15:51:47.970 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x0000024FD683B740>,){'publish': 'is_forbid_speak'}
+2024-07-08 15:51:47.971 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668646b9f870a2464f6b7893', '668646b758c2ef1b0309ad12']
+
+2024-07-08 15:51:55.208 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    if find_ele(self.driver, 'xpath', '//*[@data-key="{}"]'.format(data_key)):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF64279DAE5]
+	(No symbol) [0x00007FF6428445A7]
+	(No symbol) [0x00007FF64285C131]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 15:52:16.508 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:52:16.525 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:52:16.535 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:52:18.370 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:52:18.370 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x0000029682D1B770>,){}
+2024-07-08 15:52:19.841 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x0000029682D1B770>,){'publish': 'is_forbid_speak'}
+2024-07-08 15:52:19.842 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668646b9f870a2464f6b7893', '668646b758c2ef1b0309ad12']
+
+2024-07-08 15:52:19.869 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    if find_ele(self.driver, 'xpath', f'//*[@data-key={data_key}]'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@data-key=668646b9f870a2464f6b7893] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@data-key=668646b9f870a2464f6b7893]' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF6427CE6BE]
+	(No symbol) [0x00007FF6427D1011]
+	(No symbol) [0x00007FF6427D10B0]
+	(No symbol) [0x00007FF64281805C]
+	(No symbol) [0x00007FF64281862C]
+	(No symbol) [0x00007FF64285F787]
+	(No symbol) [0x00007FF64283D14F]
+	(No symbol) [0x00007FF64285CA80]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 15:52:51.017 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:52:51.029 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:52:51.037 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:52:53.055 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:52:53.056 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x000001697A70B800>,){}
+2024-07-08 15:52:54.201 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x000001697A70B800>,){'publish': 'is_forbid_speak'}
+2024-07-08 15:52:54.202 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668646b9f870a2464f6b7893', '668646b758c2ef1b0309ad12']
+
+2024-07-08 15:53:04.344 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    if find_ele(self.driver, 'xpath', f'//*[@data-key="{data_key}"]'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF642818524]
+	(No symbol) [0x00007FF64281862C]
+	(No symbol) [0x00007FF64285F787]
+	(No symbol) [0x00007FF64283D14F]
+	(No symbol) [0x00007FF64285CA80]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 15:54:00.752 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:54:00.765 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:54:00.774 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:54:03.053 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:54:03.054 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x000001EA13C6B7D0>,){}
+2024-07-08 15:54:04.301 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x000001EA13C6B7D0>,){'publish': 'is_forbid_speak'}
+2024-07-08 15:54:04.302 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668646b9f870a2464f6b7893', '668646b758c2ef1b0309ad12']
+
+2024-07-08 15:54:14.363 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    find_ele(self.driver, 'xpath', f'//*[@data-key="{data_key}"]')
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF642818524]
+	(No symbol) [0x00007FF64281862C]
+	(No symbol) [0x00007FF64285F787]
+	(No symbol) [0x00007FF64283D14F]
+	(No symbol) [0x00007FF64285CA80]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 15:54:31.973 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:54:31.986 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:54:31.997 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:54:33.895 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:54:33.895 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x0000018615DEB6E0>,){}
+2024-07-08 15:54:34.914 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x0000018615DEB6E0>,){'publish': 'is_forbid_speak'}
+2024-07-08 15:54:34.915 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668646b9f870a2464f6b7893', '668646b758c2ef1b0309ad12']
+
+2024-07-08 15:54:45.032 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    find_ele(self.driver, 'xpath', f'//*[@data-key="668646b9f870a2464f6b7893"]')
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF642818524]
+	(No symbol) [0x00007FF64281862C]
+	(No symbol) [0x00007FF64285F787]
+	(No symbol) [0x00007FF64283D14F]
+	(No symbol) [0x00007FF64285CA80]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 15:56:12.593 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:56:12.605 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:56:12.615 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:56:14.575 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:56:14.819 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 15:56:14.819 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000232D5B71D00>,){}
+2024-07-08 15:56:14.825 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 109, in report_review_pass_forbid_speak_hours
+    self.add_report_message_with_request_post('add_report', self.headers, self.data)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 91, in add_report_message_with_request_post
+    response = requests.post(report_url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_headers(headers)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 490, in prepare_headers
+    check_header_validity(header)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1042, in check_header_validity
+    _validate_header_part(header, value, 1)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1051, in _validate_header_part
+    raise InvalidHeader(
+requests.exceptions.InvalidHeader: Header part ({'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425407, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjA1MTE4MDd9.7t-Gqi2xqZxZHP-tYy3M-_vm92XiPvxFJN6tnJdvGNA', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjMwMTc0MDcsImxvZ2luX2F0IjoxNzIwNDI1NDA3fQ==.Fw0pJq0RT1aFzLe_V0qdIKrWGb0='}}) from ('Authorization', {'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425407, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjA1MTE4MDd9.7t-Gqi2xqZxZHP-tYy3M-_vm92XiPvxFJN6tnJdvGNA', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjMwMTc0MDcsImxvZ2luX2F0IjoxNzIwNDI1NDA3fQ==.Fw0pJq0RT1aFzLe_V0qdIKrWGb0='}}) must be of type str or bytes, not <class 'dict'>
+
+
+2024-07-08 15:56:14.825 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000232D5B71D00>,){}
+2024-07-08 15:56:14.831 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_login_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 169, in report_review_pass_forbid_login_hours
+    self.add_report_message_with_request_post('add_report', self.headers, self.data)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 91, in add_report_message_with_request_post
+    response = requests.post(report_url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_headers(headers)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 490, in prepare_headers
+    check_header_validity(header)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1042, in check_header_validity
+    _validate_header_part(header, value, 1)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1051, in _validate_header_part
+    raise InvalidHeader(
+requests.exceptions.InvalidHeader: Header part ({'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425407, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjA1MTE4MDd9.7t-Gqi2xqZxZHP-tYy3M-_vm92XiPvxFJN6tnJdvGNA', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjMwMTc0MDcsImxvZ2luX2F0IjoxNzIwNDI1NDA3fQ==.Fw0pJq0RT1aFzLe_V0qdIKrWGb0='}}) from ('Authorization', {'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425407, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjA1MTE4MDd9.7t-Gqi2xqZxZHP-tYy3M-_vm92XiPvxFJN6tnJdvGNA', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1MzQ3LCJleHAiOjE3MjMwMTc0MDcsImxvZ2luX2F0IjoxNzIwNDI1NDA3fQ==.Fw0pJq0RT1aFzLe_V0qdIKrWGb0='}}) must be of type str or bytes, not <class 'dict'>
+
+
+2024-07-08 15:58:51.804 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 15:58:51.817 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 15:58:51.827 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 15:58:54.394 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 15:58:54.624 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 15:58:54.624 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000021A55EC1FA0>,){}
+2024-07-08 15:58:54.627 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 109, in report_review_pass_forbid_speak_hours
+    self.add_report_message_with_request_post('add_report', self.headers, self.data)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 91, in add_report_message_with_request_post
+    response = requests.post(report_url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_headers(headers)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 490, in prepare_headers
+    check_header_validity(header)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1042, in check_header_validity
+    _validate_header_part(header, value, 1)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1051, in _validate_header_part
+    raise InvalidHeader(
+requests.exceptions.InvalidHeader: Header part ({'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425567, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjA1MTE5Njd9._5fdV51uvLYBcBKkQ-DVYLsafiUYqN5ftldf1mSyOZg', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjMwMTc1NjcsImxvZ2luX2F0IjoxNzIwNDI1NTY3fQ==.AIMxcDGMZRWQ3B-vHjIVieTQlak='}}) from ('Authorization', {'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425567, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjA1MTE5Njd9._5fdV51uvLYBcBKkQ-DVYLsafiUYqN5ftldf1mSyOZg', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjMwMTc1NjcsImxvZ2luX2F0IjoxNzIwNDI1NTY3fQ==.AIMxcDGMZRWQ3B-vHjIVieTQlak='}}) must be of type str or bytes, not <class 'dict'>
+
+
+2024-07-08 15:58:54.630 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000021A55EC1FA0>,){}
+2024-07-08 15:58:54.632 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_login_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 169, in report_review_pass_forbid_login_hours
+    self.add_report_message_with_request_post('add_report', self.headers, self.data)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 91, in add_report_message_with_request_post
+    response = requests.post(report_url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_headers(headers)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 490, in prepare_headers
+    check_header_validity(header)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1042, in check_header_validity
+    _validate_header_part(header, value, 1)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1051, in _validate_header_part
+    raise InvalidHeader(
+requests.exceptions.InvalidHeader: Header part ({'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425567, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjA1MTE5Njd9._5fdV51uvLYBcBKkQ-DVYLsafiUYqN5ftldf1mSyOZg', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjMwMTc1NjcsImxvZ2luX2F0IjoxNzIwNDI1NTY3fQ==.AIMxcDGMZRWQ3B-vHjIVieTQlak='}}) from ('Authorization', {'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425567, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjA1MTE5Njd9._5fdV51uvLYBcBKkQ-DVYLsafiUYqN5ftldf1mSyOZg', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1NTA3LCJleHAiOjE3MjMwMTc1NjcsImxvZ2luX2F0IjoxNzIwNDI1NTY3fQ==.AIMxcDGMZRWQ3B-vHjIVieTQlak='}}) must be of type str or bytes, not <class 'dict'>
+
+
+2024-07-08 16:04:23.336 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:04:23.350 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:04:23.360 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:04:25.533 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:04:25.783 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:04:25.784 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001B59BE51D90>,){}
+2024-07-08 16:04:25.786 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 109, in report_review_pass_forbid_speak_hours
+    self.add_report_message_with_request_post('add_report', self.headers, self.data)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 91, in add_report_message_with_request_post
+    response = requests.post(report_url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_headers(headers)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 490, in prepare_headers
+    check_header_validity(header)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1042, in check_header_validity
+    _validate_header_part(header, value, 1)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1051, in _validate_header_part
+    raise InvalidHeader(
+requests.exceptions.InvalidHeader: Header part ({'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425898, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjA1MTIyOTh9.j7eJVM1oDDRgTpO4w85BYtq-suv-ppzUqSMFIS8b9Tc', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjMwMTc4OTgsImxvZ2luX2F0IjoxNzIwNDI1ODk4fQ==.AB3-WwzXWaPX7udDHGdBRjKK2lI='}}) from ('Authorization', {'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425898, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjA1MTIyOTh9.j7eJVM1oDDRgTpO4w85BYtq-suv-ppzUqSMFIS8b9Tc', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjMwMTc4OTgsImxvZ2luX2F0IjoxNzIwNDI1ODk4fQ==.AB3-WwzXWaPX7udDHGdBRjKK2lI='}}) must be of type str or bytes, not <class 'dict'>
+
+
+2024-07-08 16:04:25.787 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001B59BE51D90>,){}
+2024-07-08 16:04:25.788 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_login_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 169, in report_review_pass_forbid_login_hours
+    self.add_report_message_with_request_post('add_report', self.headers, self.data)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 91, in add_report_message_with_request_post
+    response = requests.post(report_url, headers=headers, data=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_headers(headers)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\models.py", line 490, in prepare_headers
+    check_header_validity(header)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1042, in check_header_validity
+    _validate_header_part(header, value, 1)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\requests\utils.py", line 1051, in _validate_header_part
+    raise InvalidHeader(
+requests.exceptions.InvalidHeader: Header part ({'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425898, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjA1MTIyOTh9.j7eJVM1oDDRgTpO4w85BYtq-suv-ppzUqSMFIS8b9Tc', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjMwMTc4OTgsImxvZ2luX2F0IjoxNzIwNDI1ODk4fQ==.AB3-WwzXWaPX7udDHGdBRjKK2lI='}}) from ('Authorization', {'code': 200, 'error': '', 'data': {'uid': 238492, 'userinfo': {'id': 238492, 'email': '', 'tac': '+86', 'mobile': '17753163583', 'height': 182, 'weight': 68, 'MHR': 198, 'LTHR': 197, 'mhr_mode': 0, 'sex': 1, 'birthday': '2001-06-13', 'age': 23, 'nickname': 'zhangzhibo123', 'first_name': '', 'last_name': '', 'skin': 3, 'FTP': 170, 'point': 0, 'spin_ability': 100, 'BWD': 2050, 'login_at': 1720425898, 'complete_step': 2}, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiJkaXN0cmljdF9yZWxlYXNlIiwiaXNzIjoyMzg0OTIsInBsYXRmb3JtIjoyMiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjA1MTIyOTh9.j7eJVM1oDDRgTpO4w85BYtq-suv-ppzUqSMFIS8b9Tc', 'refresh_token': 'eyJpc3MiOjIzODQ5MiwibmJmIjoxNzIwNDI1ODM4LCJleHAiOjE3MjMwMTc4OTgsImxvZ2luX2F0IjoxNzIwNDI1ODk4fQ==.AB3-WwzXWaPX7udDHGdBRjKK2lI='}}) must be of type str or bytes, not <class 'dict'>
+
+
+2024-07-08 16:05:20.028 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:05:20.044 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:05:20.055 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:05:21.956 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:05:22.181 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:05:22.181 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001D817192AE0>,){}
+2024-07-08 16:05:23.197 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:05:23.214 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:05:23.222 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:05:23.786 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:05:23.788 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:103 | 跳转home页
+2024-07-08 16:05:24.562 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:115 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=171
+2024-07-08 16:05:24.572 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 16:05:24.584 | INFO | __main__:report_review_pass_forbid_speak_hours:117 | 读取data-key：668b9de373b6d907d1776f64
+2024-07-08 16:05:24.594 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 16:05:25.144 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 16:05:25.183 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 16:05:25.243 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 16:05:25.335 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 16:05:26.143 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 16:05:26.919 | ERROR | POM.boss.base.base_page:switch_to_alert_accept:83 | 切换alert弹窗失败：Message: no such alert
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C86B9]
+	(No symbol) [0x00007FF6427B8237]
+	(No symbol) [0x00007FF6427EBEEF]
+	(No symbol) [0x00007FF64283D1BD]
+	(No symbol) [0x00007FF6427EBD6B]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+2024-07-08 16:05:27.705 | INFO | __main__:report_review_pass_forbid_speak_hours:140 | 更新惩罚时间弹窗
+2024-07-08 16:05:27.929 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:05:28.124 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 16:05:28.125 | INFO | common.report_publish_message:check_publish_json_exist:21 | 惩罚信息json文件创建成功
+2024-07-08 16:05:28.126 | INFO | common.report_publish_message:append_data_key_to_json:34 | 惩罚信息已在文件中创建
+2024-07-08 16:05:28.126 | INFO | common.report_publish_message:append_data_key_to_json:36 | 惩罚信息的data-key已添加进列表
+2024-07-08 16:05:28.137 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 16:05:28.156 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_method定位成功
+2024-07-08 16:05:28.163 | INFO | __main__:report_review_pass_forbid_speak_hours:159 | 审核通过断言成功
+2024-07-08 16:05:28.163 | INFO | __main__:report_review_pass_forbid_speak_hours:161 | 禁言1小时断言成功
+2024-07-08 16:05:28.163 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_speak_hours 执行完成，函数返回结果：True
+
+2024-07-08 16:05:28.163 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001D817192AE0>,){}
+2024-07-08 16:05:30.213 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:05:30.233 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:05:30.286 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:05:30.943 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:05:30.946 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:103 | 跳转home页
+2024-07-08 16:05:31.706 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:115 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=172
+2024-07-08 16:05:31.714 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 16:05:31.722 | INFO | __main__:report_review_pass_forbid_login_hours:179 | 读取data-key：668b9de9bbee8d3701163164
+2024-07-08 16:05:31.727 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 16:05:32.261 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 16:05:32.293 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 16:05:32.334 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 16:05:32.415 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 16:05:33.191 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 16:05:33.948 | ERROR | POM.boss.base.base_page:switch_to_alert_accept:83 | 切换alert弹窗失败：Message: no such alert
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C86B9]
+	(No symbol) [0x00007FF6427B8237]
+	(No symbol) [0x00007FF6427EBEEF]
+	(No symbol) [0x00007FF64283D1BD]
+	(No symbol) [0x00007FF6427EBD6B]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+2024-07-08 16:05:34.716 | INFO | __main__:report_review_pass_forbid_login_hours:202 | 更新惩罚时间弹窗
+2024-07-08 16:05:34.890 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 16:05:34.890 | INFO | common.report_publish_message:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 16:05:34.891 | INFO | common.report_publish_message:append_data_key_to_json:34 | 惩罚信息已在文件中创建
+2024-07-08 16:05:34.891 | INFO | common.report_publish_message:append_data_key_to_json:36 | 惩罚信息的data-key已添加进列表
+2024-07-08 16:05:34.898 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 16:05:34.909 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_method定位成功
+2024-07-08 16:05:34.914 | INFO | __main__:report_review_pass_forbid_login_hours:220 | 审核通过断言成功
+2024-07-08 16:05:34.915 | INFO | __main__:report_review_pass_forbid_login_hours:222 | 封号1小时断言成功
+2024-07-08 16:05:34.915 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_login_hours 执行完成，函数返回结果：True
+
+2024-07-08 16:07:09.054 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:07:09.068 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:07:09.077 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:07:11.155 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:07:11.409 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:07:11.410 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000002C7DB201C10>,){}
+2024-07-08 16:07:12.648 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:07:12.665 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:07:12.677 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:07:13.364 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:07:13.366 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:103 | 跳转home页
+2024-07-08 16:07:14.177 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:115 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=173
+2024-07-08 16:07:14.191 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 16:07:14.244 | INFO | __main__:report_review_pass_forbid_speak_hours:117 | 读取data-key：668b9e50c3daf64bb246a5e3
+2024-07-08 16:07:14.305 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 16:07:14.864 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 16:07:14.902 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 16:07:14.962 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 16:07:15.051 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 16:07:15.862 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 16:07:16.344 | INFO | __main__:report_review_pass_forbid_speak_hours:140 | 更新惩罚时间弹窗
+2024-07-08 16:07:16.593 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-08 16:07:16.593 | ERROR | common.submit_comment:send_comment:27 | 账号状态异常，无法评论,错误信息:'token'
+2024-07-08 16:07:16.594 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 148, in report_review_pass_forbid_speak_hours
+    'start_time': response_json['data']['start_time'],
+                  ~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+
+2024-07-08 16:09:21.301 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:09:21.315 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:09:21.325 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:09:23.376 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:09:23.612 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:09:23.613 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000012A4FCAD910>,){}
+2024-07-08 16:09:24.719 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:09:24.779 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:09:24.790 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:09:25.405 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:09:25.410 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:103 | 跳转home页
+2024-07-08 16:09:26.307 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:115 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=174
+2024-07-08 16:09:26.318 | INFO | POM.boss.base.base_page:element_locator:59 | report_report_tr定位成功
+2024-07-08 16:09:26.344 | INFO | __main__:report_review_pass_forbid_speak_hours:117 | 读取data-key：668b9ed4b011b32b9b39d556
+2024-07-08 16:09:26.360 | INFO | POM.boss.base.base_page:element_locator:59 | report_open_report_review_button定位成功
+2024-07-08 16:09:26.908 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_pass_button定位成功
+2024-07-08 16:09:26.947 | INFO | POM.boss.base.base_page:element_locator:59 | report_method_select定位成功
+2024-07-08 16:09:27.005 | INFO | POM.boss.base.base_page:element_locator:59 | report_publish_time_input_hours定位成功
+2024-07-08 16:09:27.098 | INFO | POM.boss.base.base_page:element_locator:59 | report_review_success_button定位成功
+2024-07-08 16:09:27.919 | INFO | POM.boss.base.base_page:switch_to_alert_accept:81 | alert弹窗处理
+2024-07-08 16:09:28.476 | INFO | __main__:report_review_pass_forbid_speak_hours:140 | 更新惩罚时间弹窗
+2024-07-08 16:09:29.333 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:09:30.053 | ERROR | common.submit_comment:send_comment:22 | 账号被禁言, 无法评论
+2024-07-08 16:09:30.054 | INFO | common.report_publish_message:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 16:09:30.055 | INFO | common.report_publish_message:append_data_key_to_json:34 | 惩罚信息已在文件中创建
+2024-07-08 16:09:30.055 | INFO | common.report_publish_message:append_data_key_to_json:36 | 惩罚信息的data-key已添加进列表
+2024-07-08 16:09:30.128 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_status定位成功
+2024-07-08 16:09:30.146 | INFO | POM.boss.base.base_page:element_locator:59 | report_table_review_method定位成功
+2024-07-08 16:09:30.151 | ERROR | __main__:report_review_pass_forbid_speak_hours:163 | 断言失败
+2024-07-08 16:09:30.151 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_speak_hours 执行完成，函数返回结果：True
+
+2024-07-08 16:10:18.651 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:10:18.662 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:10:18.671 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:10:20.733 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:10:20.733 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x0000027855A0B6E0>,){}
+2024-07-08 16:10:21.843 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x0000027855A0B6E0>,){'publish': 'is_forbid_speak'}
+2024-07-08 16:10:21.843 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668b9de373b6d907d1776f64', '668b9ed4b011b32b9b39d556']
+
+2024-07-08 16:10:31.899 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 30, in check_report
+    find_ele(self.driver, 'xpath', f'//*[@data-key="668646b9f870a2464f6b7893"]')
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642993E32+31618]
+	(No symbol) [0x00007FF64290B099]
+	(No symbol) [0x00007FF6427C888A]
+	(No symbol) [0x00007FF642818524]
+	(No symbol) [0x00007FF64281862C]
+	(No symbol) [0x00007FF64285F787]
+	(No symbol) [0x00007FF64283D14F]
+	(No symbol) [0x00007FF64285CA80]
+	(No symbol) [0x00007FF64283CEB3]
+	(No symbol) [0x00007FF64280A46B]
+	(No symbol) [0x00007FF64280B001]
+	GetHandleVerifier [0x00007FF642C99FFD+3202381]
+	GetHandleVerifier [0x00007FF642CE6A1D+3516269]
+	GetHandleVerifier [0x00007FF642CDC490+3473888]
+	GetHandleVerifier [0x00007FF642A45D36+760454]
+	(No symbol) [0x00007FF642916B3F]
+	(No symbol) [0x00007FF642911CD4]
+	(No symbol) [0x00007FF642911E62]
+	(No symbol) [0x00007FF64290120F]
+	BaseThreadInitThunk [0x00007FFC71EB7034+20]
+	RtlUserThreadStart [0x00007FFC73D226A1+33]
+
+
+
+2024-07-08 16:10:54.234 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:10:54.247 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:10:54.254 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:10:56.355 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:10:56.355 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x000001DF966DB7D0>,){}
+2024-07-08 16:10:57.414 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x000001DF966DB7D0>,){'publish': 'is_forbid_speak'}
+2024-07-08 16:10:57.415 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668b9de373b6d907d1776f64', '668b9ed4b011b32b9b39d556']
+
+2024-07-08 16:10:57.448 | INFO | __main__:check_report:31 | 禁言惩罚记录定位成功，data-key:668b9de373b6d907d1776f64
+2024-07-08 16:10:57.471 | INFO | __main__:check_report:31 | 禁言惩罚记录定位成功，data-key:668b9ed4b011b32b9b39d556
+2024-07-08 16:10:57.472 | INFO | common.logger:wrapper:49 | 函数 check_report 执行完成，函数返回结果：None
+
+2024-07-08 16:16:04.969 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:16:04.982 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:16:04.991 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:16:06.955 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:16:06.955 | INFO | common.logger:wrapper:44 | 函数 check_report 开始执行，入参:(<__main__.ReportResult object at 0x000001A87B39BE90>,){}
+2024-07-08 16:16:08.020 | INFO | common.logger:wrapper:44 | 函数 get_publish_data_key_list 开始执行，入参:(<__main__.ReportResult object at 0x000001A87B39BE90>,){'publish': 'is_forbid_speak'}
+2024-07-08 16:16:08.020 | INFO | common.logger:wrapper:49 | 函数 get_publish_data_key_list 执行完成，函数返回结果：['668b9de373b6d907d1776f64', '668b9ed4b011b32b9b39d556']
+
+2024-07-08 16:16:08.087 | ERROR | common.logger:wrapper:54 | 函数 check_report 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 31, in check_report
+    assert result_bool is True
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+2024-07-08 16:42:10.797 | INFO | POM.boss.base.base_page:get_url:22 | login页面跳转
+2024-07-08 16:42:10.812 | INFO | POM.boss.base.base_page:login_with_cookie:37 | 清理Cookies
+2024-07-08 16:42:10.822 | INFO | POM.boss.base.base_page:login_with_cookie:42 | 导入cookies
+2024-07-08 16:42:12.687 | INFO | POM.boss.base.base_page:login_with_cookie:47 | 跳转https://boss-informal.rfsvr.net/
+2024-07-08 16:42:12.694 | INFO | common.logger:wrapper:44 | 函数 check_report_result_sheet 开始执行，入参:(<__main__.ReportResult object at 0x000002BA9DD2B6B0>,){}
+2024-07-08 16:42:14.179 | INFO | __main__:check_report_result_sheet:25 | 禁言惩罚记录定位成功，data-key:668b9de373b6d907d1776f64
+2024-07-08 16:42:14.187 | INFO | __main__:check_report_result_sheet:25 | 禁言惩罚记录定位成功，data-key:668b9ed4b011b32b9b39d556
+2024-07-08 16:42:14.188 | INFO | common.logger:wrapper:49 | 函数 check_report_result_sheet 执行完成，函数返回结果：None
+
+2024-07-08 16:42:15.700 | INFO | common.report_publish_message:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 16:42:15.700 | INFO | common.report_publish_message:remove_data_key_to_json:64 | 惩罚信息删除成功
+2024-07-08 16:42:15.701 | INFO | __main__:cancel_one_forbid_speak_publish:39 | 撤销禁言处罚668b9de373b6d907d1776f64
+2024-07-08 16:42:15.767 | INFO | common.report_publish_message:check_publish_json_exist:11 | 惩罚信息json文件已存在，无需创建
+2024-07-08 16:42:15.767 | INFO | common.report_publish_message:remove_data_key_to_json:64 | 惩罚信息删除成功
+2024-07-08 16:42:15.768 | INFO | __main__:cancel_one_forbid_speak_publish:39 | 撤销禁言处罚668b9ed4b011b32b9b39d556
+2024-07-08 16:42:16.169 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-08 16:42:16.169 | INFO | __main__:cancel_one_forbid_speak_publish:44 | 评论功能恢复
