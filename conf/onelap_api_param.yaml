@@ -62,4 +62,24 @@ change_passwd_verification_code:
     password:
     code:
 
+data_analysis:
+  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/analysis/data
+  headers:
+    Authorization:
+  params:
+    start_time:
+    end_time:
 
+detail_analysis:
+  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/analysis/detail
+  headers:
+    Authorization:
+  params:
+    start_time:
+    end_time:
+    type:
+
+more_user_info:
+  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/info/more
+  headers:
+    Authorization:

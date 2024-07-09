@@ -2,15 +2,15 @@ import time
 
 from loguru import logger
 from pytest_check import check_func
+from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
-from selenium.common.exceptions import UnexpectedAlertPresentException
-from common.handle_md5 import md5_encrypt
+
+from POM.boss.base.base_page import BossBasePage
 from common.get_token import GetToken
 from common.logger import log_decorator
-from common.submit_comment import send_comment
 from common.report_publish_message import append_data_key_to_json
-from POM.boss.base.base_page import BossBasePage
+from common.submit_comment import send_comment
 
 get_token = GetToken()
 
@@ -22,7 +22,7 @@ class ReportPageBoss(BossBasePage):
         super().__init__()
         self.login_with_cookie()
 
-        self.report_account_token = get_token.onelap_login('17753163583', md5_encrypt('zhang107'))['data']['token']
+        self.report_account_token = get_token.onelap_login('17753163583', 'zhang107')['data']['token']
 
         # 添加举报记录的必备数据
         self.source_id = 714
@@ -138,11 +138,11 @@ class ReportPageBoss(BossBasePage):
         try:
             self.driver.switch_to.alert.accept()
             logger.info("更新惩罚时间弹窗")
-        except UnexpectedAlertPresentException:
+        except NoAlertPresentException:
             pass
 
         # 访问评论接口（被禁言账号），读取禁言的开始时间和截止时间
-        response_json = send_comment('13001723386', md5_encrypt('zhang107.'))
+        response_json = send_comment('13001723386', 'zhang107.')
         data_key_dict = {
             'data_key': data_key,
             'start_time': response_json['data']['start_time'],
@@ -198,13 +198,13 @@ class ReportPageBoss(BossBasePage):
         time.sleep(0.5)
         self.switch_to_alert_accept()
         try:
-            self.switch_to_alert_accept()
+            self.driver.switch_to.alert.accept()
             logger.info("更新惩罚时间弹窗")
-        except UnexpectedAlertPresentException:
+        except NoAlertPresentException:
             pass
 
         # 访问登录接口（被禁言账号），读取禁言的开始时间和截止时间
-        response = get_token.onelap_login('13001723386', md5_encrypt('zhang107.'))
+        response = get_token.onelap_login('13001723386', 'zhang107.')
         data_key_dict = {
             'data_key': data_key,
             'start_time': response['data']['start_time'],
@@ -227,5 +227,5 @@ class ReportPageBoss(BossBasePage):
 if __name__ == '__main__':
     a = ReportPageBoss()
     a.report_review_pass_forbid_speak_hours()
-    # a.report_review_pass_forbid_login_hours()
+    a.report_review_pass_forbid_login_hours()
     a.driver.quit()

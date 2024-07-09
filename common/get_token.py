@@ -13,7 +13,7 @@ class GetToken(GetYamlData):
     def onelap_login(self, account, password):
         data = self.onelap_api['onelap_login']['data']
         data['account'] = account
-        data['password'] = password
+        data['password'] = md5_encrypt(password)
 
         response = requests.post(url=self.onelap_api['onelap_login']['url'],
                                  headers=self.onelap_api['onelap_login']['headers'],
@@ -41,4 +41,4 @@ class GetToken(GetYamlData):
 
 
 if __name__ == '__main__':
-    print(GetToken().onelap_login('13001723386', md5_encrypt('zhang107.')))
+    print(GetToken().onelap_login('13001723386', 'zhang107.'))

@@ -13,8 +13,12 @@ comment_api_data = GetYamlData().get_onelap_api_param_data()['send_comment']
 def send_comment(account, password):
     try:
         url = comment_api_data['url']
-        comment_api_data['headers']['Authorization'] = GetToken().onelap_login(account, password)['data']['token']
         headers = comment_api_data['headers']
+        login_res = GetToken().onelap_login(account, password)
+        print(login_res)
+        print(type(login_res))
+        headers['Authorization'] = login_res['data']['token']
+
         body = json.dumps(comment_api_data['data'])
 
         response = requests.post(url=url, headers=headers, data=body)
@@ -28,5 +32,5 @@ def send_comment(account, password):
 
 
 if __name__ == '__main__':
-    res = send_comment('13001723386', md5_encrypt('zhang107.'))
+    res = send_comment('13001723386', 'zhang107.')
     print(res)

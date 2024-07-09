@@ -48,7 +48,7 @@ class ReportResult(BossBasePage):
 
         elif publish == 'is_forbid_login':
             # 访问登录接口，查看登录功能是否恢复
-            response = self.get_login_token.onelap_login('13001723386', md5_encrypt('zhang107.'))
+            response = self.get_login_token.onelap_login('13001723386', 'zhang107.')
             if response['code'] == 200:
                 logger.info("登录功能恢复")
 
