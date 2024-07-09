@@ -4,8 +4,6 @@ from common.report_publish_message import get_publish_data_key_list, remove_data
 from loguru import logger
 from common.find_ele import find_ele
 from common.get_path import project_path
-from common.handle_md5 import md5_encrypt
-from common.get_token import GetToken
 from common.submit_comment import send_comment
 
 
@@ -13,7 +11,6 @@ class ReportResult(BossBasePage):
     def __init__(self):
         super().__init__()
         self.login_with_cookie()
-        self.get_login_token = GetToken()
         self.publish_message_path = project_path() + '/POM/boss/test_data/publish_data.json'
 
     @log_decorator
@@ -42,19 +39,19 @@ class ReportResult(BossBasePage):
 
         if publish == 'is_forbid_speak':
             # 访问评论接口，查看评论功能是否恢复
-            response_json = send_comment('13001723386', md5_encrypt('zhang107.'))
+            response_json = send_comment('13001723386', 'zhang107.')
             if response_json['code'] == 200:
                 logger.info("评论功能恢复")
 
         elif publish == 'is_forbid_login':
             # 访问登录接口，查看登录功能是否恢复
-            response = self.get_login_token.onelap_login('13001723386', 'zhang107.')
+            response = self.onelap_login_res
             if response['code'] == 200:
                 logger.info("登录功能恢复")
 
 
 if __name__ == '__main__':
     x = ReportResult()
-    x.check_report_result_sheet()
+    x.check_report_result_sheet('is_forbid_speak')
     x.cancel_forbid_publish('is_forbid_speak')
     x.driver.quit()

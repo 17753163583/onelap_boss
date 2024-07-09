@@ -384,3 +384,196 @@ TypeError: 'NoneType' object is not subscriptable
 2024-07-09 13:30:38.381 | INFO | __main__:report_review_pass_forbid_login_hours:222 | 封号1小时断言成功
 2024-07-09 13:30:38.381 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_login_hours 执行完成，函数返回结果：True
 
+2024-07-09 17:19:00.999 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-09 17:19:01.936 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:19:01.950 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:19:01.959 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:19:03.910 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:19:03.911 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001A63E75DAC0>,){}
+2024-07-09 17:19:04.922 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:19:04.944 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:19:04.953 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:19:05.596 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:19:05.599 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:105 | 跳转home页
+2024-07-09 17:19:06.463 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:117 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=186
+2024-07-09 17:19:06.473 | INFO | POM.boss.base.base_page:element_locator:61 | report_report_tr定位成功
+2024-07-09 17:19:06.480 | INFO | __main__:report_review_pass_forbid_speak_hours:114 | 读取data-key：668d00aa2fc60c520f5d6153
+2024-07-09 17:19:06.502 | INFO | POM.boss.base.base_page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-09 17:19:07.052 | INFO | POM.boss.base.base_page:element_locator:61 | report_review_pass_button定位成功
+2024-07-09 17:19:07.092 | INFO | POM.boss.base.base_page:element_locator:61 | report_method_select定位成功
+2024-07-09 17:19:07.140 | INFO | POM.boss.base.base_page:element_locator:61 | report_publish_time_input_hours定位成功
+2024-07-09 17:19:07.231 | INFO | POM.boss.base.base_page:element_locator:61 | report_review_success_button定位成功
+2024-07-09 17:19:08.030 | INFO | POM.boss.base.base_page:switch_to_alert_accept:83 | alert弹窗处理
+2024-07-09 17:19:09.173 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-09 17:19:09.367 | ERROR | common.submit_comment:send_comment:26 | 账号被禁言, 无法评论
+2024-07-09 17:19:09.368 | INFO | common.report_publish_message:check_publish_json_exist:21 | 惩罚信息json文件创建成功
+2024-07-09 17:19:09.368 | INFO | common.report_publish_message:append_data_key_to_json:41 | 惩罚信息已在文件中创建
+2024-07-09 17:19:09.369 | INFO | common.report_publish_message:append_data_key_to_json:43 | 惩罚信息的data-key已添加进列表
+2024-07-09 17:19:09.380 | INFO | POM.boss.base.base_page:element_locator:61 | report_table_review_status定位成功
+2024-07-09 17:19:09.398 | INFO | POM.boss.base.base_page:element_locator:61 | report_table_review_method定位成功
+2024-07-09 17:19:09.406 | INFO | __main__:report_review_pass_forbid_speak_hours:156 | 审核通过断言成功
+2024-07-09 17:19:09.407 | INFO | __main__:report_review_pass_forbid_speak_hours:158 | 禁言1小时断言成功
+2024-07-09 17:19:09.407 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_speak_hours 执行完成，函数返回结果：True
+
+2024-07-09 17:19:09.407 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001A63E75DAC0>,){}
+2024-07-09 17:19:10.589 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:19:10.651 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:19:10.659 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:19:11.375 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:19:11.380 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:105 | 跳转home页
+2024-07-09 17:19:12.286 | INFO | POM.boss.base.base_page:add_report_message_with_request_post:117 | 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=187
+2024-07-09 17:19:12.294 | INFO | POM.boss.base.base_page:element_locator:61 | report_report_tr定位成功
+2024-07-09 17:19:12.299 | INFO | __main__:report_review_pass_forbid_login_hours:176 | 读取data-key：668d00b07138bb4857459469
+2024-07-09 17:19:12.304 | INFO | POM.boss.base.base_page:element_locator:61 | report_open_report_review_button定位成功
+2024-07-09 17:19:12.831 | INFO | POM.boss.base.base_page:element_locator:61 | report_review_pass_button定位成功
+2024-07-09 17:19:12.860 | INFO | POM.boss.base.base_page:element_locator:61 | report_method_select定位成功
+2024-07-09 17:19:12.899 | INFO | POM.boss.base.base_page:element_locator:61 | report_publish_time_input_hours定位成功
+2024-07-09 17:19:12.975 | INFO | POM.boss.base.base_page:element_locator:61 | report_review_success_button定位成功
+2024-07-09 17:19:13.764 | INFO | POM.boss.base.base_page:switch_to_alert_accept:83 | alert弹窗处理
+2024-07-09 17:19:14.666 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_login_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 207, in report_review_pass_forbid_login_hours
+    'start_time': response['data']['start_time'],
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'start_time'
+
+
+2024-07-09 17:22:13.932 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-09 17:22:14.797 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:22:14.809 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:22:14.819 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:22:16.802 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:30:25.899 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-09 17:30:26.931 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:30:26.942 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:30:26.951 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:30:29.518 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:37:08.145 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-09 17:37:09.016 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:37:09.028 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:37:09.037 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:37:10.942 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:37:10.943 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000012D18A1FD10>,){}
+2024-07-09 17:37:10.945 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 121, in report_review_pass_forbid_speak_hours
+    headers, data = self.get_headers_and_data()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 30, in get_headers_and_data
+    if self.onelap_login_res['data']['code'] == 204:
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'code'
+
+
+2024-07-09 17:37:10.945 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x0000012D18A1FD10>,){}
+2024-07-09 17:37:10.946 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_login_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 187, in report_review_pass_forbid_login_hours
+    headers, data = self.get_headers_and_data()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 30, in get_headers_and_data
+    if self.onelap_login_res['data']['code'] == 204:
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'code'
+
+
+2024-07-09 17:38:05.997 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-09 17:38:06.970 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:38:06.983 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:38:06.992 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:38:09.207 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:38:09.207 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000256F45946B0>,){}
+2024-07-09 17:38:09.207 | ERROR | __main__:get_headers_and_data:31 | 账号被封禁，请撤销处罚后再试
+2024-07-09 17:38:09.208 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_speak_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 121, in report_review_pass_forbid_speak_hours
+    headers, data = self.get_headers_and_data()
+    ^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+
+
+2024-07-09 17:38:09.209 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000256F45946B0>,){}
+2024-07-09 17:38:09.209 | ERROR | __main__:get_headers_and_data:31 | 账号被封禁，请撤销处罚后再试
+2024-07-09 17:38:09.209 | ERROR | common.logger:wrapper:54 | 函数 report_review_pass_forbid_login_hours 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_page.py", line 187, in report_review_pass_forbid_login_hours
+    headers, data = self.get_headers_and_data()
+    ^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
+
+
+2024-07-09 17:39:41.138 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-09 17:39:41.979 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:39:41.992 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:39:42.001 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:39:43.924 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:39:43.924 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001920C731370>,){}
+2024-07-09 17:39:43.924 | ERROR | __main__:get_headers_and_data:31 | 账号被封禁，请撤销处罚后再试
+2024-07-09 17:39:43.925 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_speak_hours 执行完成，函数返回结果：True
+
+2024-07-09 17:39:43.925 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x000001920C731370>,){}
+2024-07-09 17:39:43.925 | ERROR | __main__:get_headers_and_data:31 | 账号被封禁，请撤销处罚后再试
+2024-07-09 17:39:43.925 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_login_hours 执行完成，函数返回结果：True
+
+2024-07-09 17:40:19.585 | INFO | common.get_token:onelap_login:26 | 账号被限制登录
+2024-07-09 17:40:20.426 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:40:20.440 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:40:20.449 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:40:22.408 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:40:22.409 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_speak_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000227DDD133B0>,){}
+2024-07-09 17:40:22.409 | ERROR | __main__:get_headers_and_data:31 | 账号被封禁，请撤销处罚后再试
+2024-07-09 17:40:22.409 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_speak_hours 执行完成，函数返回结果：True
+
+2024-07-09 17:40:22.409 | INFO | common.logger:wrapper:44 | 函数 report_review_pass_forbid_login_hours 开始执行，入参:(<__main__.ReportPageBoss object at 0x00000227DDD133B0>,){}
+2024-07-09 17:40:22.410 | ERROR | __main__:get_headers_and_data:31 | 账号被封禁，请撤销处罚后再试
+2024-07-09 17:40:22.410 | INFO | common.logger:wrapper:49 | 函数 report_review_pass_forbid_login_hours 执行完成，函数返回结果：True
+
+2024-07-09 17:41:53.933 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-09 17:41:54.837 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-09 17:41:54.852 | INFO | POM.boss.base.base_page:login_with_cookie:39 | 清理Cookies
+2024-07-09 17:41:54.862 | INFO | POM.boss.base.base_page:login_with_cookie:44 | 导入cookies
+2024-07-09 17:41:56.859 | INFO | POM.boss.base.base_page:login_with_cookie:49 | 跳转https://boss-informal.rfsvr.net/
+2024-07-09 17:41:56.859 | INFO | common.logger:wrapper:44 | 函数 check_report_result_sheet 开始执行，入参:(<__main__.ReportResult object at 0x00000206D01DA780>,){}
+2024-07-09 17:41:56.860 | ERROR | common.logger:wrapper:54 | 函数 check_report_result_sheet 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ReportResult.check_report_result_sheet() missing 1 required positional argument: 'publish'
+
+
+2024-07-09 17:41:56.860 | INFO | common.logger:wrapper:44 | 函数 cancel_forbid_publish 开始执行，入参:(<__main__.ReportResult object at 0x00000206D01DA780>, 'is_forbid_speak'){}
+2024-07-09 17:41:57.975 | INFO | common.report_publish_message:remove_data_key_to_json:63 | 惩罚信息删除成功
+2024-07-09 17:41:57.975 | INFO | __main__:cancel_forbid_publish:39 | 撤销is_forbid_speak处罚668d00aa2fc60c520f5d6153
+2024-07-09 17:41:58.181 | ERROR | common.logger:wrapper:54 | 函数 cancel_forbid_publish 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 43, in cancel_forbid_publish
+    response_json = send_comment('13001723386', md5_encrypt('zhang107.'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\submit_comment.py", line 20, in send_comment
+    headers['Authorization'] = login_res['data']['token']
+                               ~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+

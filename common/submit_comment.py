@@ -4,7 +4,7 @@ import requests
 
 from common.get_yaml import GetYamlData
 from common.get_token import GetToken
-from common.handle_md5 import md5_encrypt
+
 from loguru import logger
 
 comment_api_data = GetYamlData().get_onelap_api_param_data()['send_comment']

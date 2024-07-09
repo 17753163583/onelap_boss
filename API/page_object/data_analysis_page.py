@@ -1,5 +1,5 @@
 from API.base_page.base_page import BasePage
-from common.get_token import GetToken
+
 from common.get_time_stamp import get_pre_days_time_stamp, get_pre_year_time_stamp, get_total_time_stamp
 
 
@@ -12,15 +12,14 @@ class DataAnalysis(BasePage):
 
     def data_analysis(self, nums):
         headers = self.api_params[self.data_api_name]['headers']
-        headers['Authorization'] = GetToken().onelap_login('13001723386', 'zhang107.')['data']['token']
+        headers['Authorization'] = self.onelap_login_res['data']['token']
 
         params = self.api_params[self.data_api_name]['params']
 
         if nums == 1:
-            params['type'] = 'm'
             params['start_time'], params['end_time'] = get_pre_year_time_stamp()
+            print(params)
         else:
-            params['type'] = 'd'
             params['start_time'], params['end_time'] = get_pre_days_time_stamp(nums)
 
         response_analysis = self.get_request(api_name=self.data_api_name, headers=headers, param=params)
@@ -29,13 +28,14 @@ class DataAnalysis(BasePage):
 
     def detail_analysis(self, nums):
         headers = self.api_params[self.detail_api_name]['headers']
-        headers['Authorization'] = GetToken().onelap_login('13001723386', 'zhang107.')['data']['token']
+        headers['Authorization'] = self.onelap_login_res['data']['token']
 
         params = self.api_params[self.detail_api_name]['params']
 
         if nums == 1:
             params['type'] = 'm'
             params['start_time'], params['end_time'] = get_pre_year_time_stamp()
+            print(params)
         else:
             params['type'] = 'd'
             params['start_time'], params['end_time'] = get_pre_days_time_stamp(nums)
@@ -47,7 +47,7 @@ class DataAnalysis(BasePage):
 
     def total_data_analysis(self):
         headers = self.api_params[self.detail_api_name]['headers']
-        headers['Authorization'] = GetToken().onelap_login('13001723386', 'zhang107.')['data']['token']
+        headers['Authorization'] = self.onelap_login_res['data']['token']
 
         params = self.api_params[self.detail_api_name]['params']
         params['start_time'], params['end_time'] = (0, 0)
@@ -59,7 +59,7 @@ class DataAnalysis(BasePage):
 
     def total_detail_analysis(self):
         headers = self.api_params[self.more_info_api_name]['headers']
-        headers['Authorization'] = GetToken().onelap_login('13001723386', 'zhang107.')['data']['token']
+        headers['Authorization'] = self.onelap_login_res['data']['token']
         response_more_info = self.get_request(self.more_info_api_name, headers=headers).json()
         start_ride_time_stamp = response_more_info['data']['start_ride_at']
 
@@ -74,8 +74,9 @@ class DataAnalysis(BasePage):
 if __name__ == '__main__':
     x = DataAnalysis()
     # print(x.data_analysis(7))
-    # print(x.data_analysis(28))
+    # print(x.data_analysis(7*4))
     # print(x.data_analysis(7*12))
     # print(x.data_analysis(1))
+    # print(x.detail_analysis(1))
     # print(x.total_data_analysis())
     # print(x.total_detail_analysis())

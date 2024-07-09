@@ -1,11 +1,13 @@
 import requests
 from common.get_yaml import GetYamlData
+from common.get_token import GetToken
 from loguru import logger
 
 
 class BasePage(GetYamlData):
     def __init__(self):
         self.api_params = self.get_onelap_api_param_data()
+        self.onelap_login_res = GetToken().onelap_login('13001723386', 'zhang107.')
 
     def post_request(self, api_name, headers=None, data=None):
         url = self.api_params[api_name]['url']
@@ -24,9 +26,3 @@ class BasePage(GetYamlData):
             return response
         except Exception as error:
             logger.error(f"发送GET请求{url}失败:{error}")
-
-
-if __name__ == '__main__':
-    params = GetYamlData.get_onelap_api_param_data()['check_verification_code']['params']
-    params['mobile'] = '17753163583'
-    params['code'] = ''

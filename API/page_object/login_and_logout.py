@@ -7,7 +7,6 @@ class OnelapLogin(BasePage):
     def __init__(self):
         super().__init__()
         self.login_token = 0
-        self.userid = '23842'
 
     def login(self, username, passwd):
         api_name = 'onelap_login'
@@ -16,6 +15,7 @@ class OnelapLogin(BasePage):
         headers = self.api_params[api_name]['headers']
         response = self.post_request(api_name=api_name, headers=headers, data=body)
         logger.info(f'登录成功，获取{username}用户信息成功')
+
         self.login_token = str(response.json()['data']['token'])
         logger.info(f"记录token：{self.login_token}")
         return response.json()
@@ -26,7 +26,6 @@ class OnelapLogin(BasePage):
 
         headers = self.api_params[api_name]['headers']
         headers['Authorization'] = self.login_token
-        headers['UserId'] = self.userid
         body = {"password": passwd_md5}
 
         response = self.post_request(api_name, headers=headers, data=body)
@@ -41,7 +40,6 @@ class OnelapLogin(BasePage):
         api_name = 'account_cancellation'
         headers = self.api_params['account_cancellation']['headers']
         headers['Authorization'] = self.login_token
-        headers['UserId'] = self.userid
 
         response = self.get_request(api_name=api_name, headers=headers)
         if response.json()['code'] == 200:
@@ -51,6 +49,6 @@ class OnelapLogin(BasePage):
 
 if __name__ == '__main__':
     x = OnelapLogin()
-    x.login('17753163583', 'zhang107')
-    x.check_passwd('zhang107')
-    print(x.account_cancellation())
+    x.login('13001723386', 'zhang107.')
+    x.check_passwd('zhang107.')
+    x.account_cancellation()

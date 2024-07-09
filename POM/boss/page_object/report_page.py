@@ -7,12 +7,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 
 from POM.boss.base.base_page import BossBasePage
-from common.get_token import GetToken
 from common.logger import log_decorator
 from common.report_publish_message import append_data_key_to_json
 from common.submit_comment import send_comment
-
-get_token = GetToken()
 
 
 class ReportPageBoss(BossBasePage):
@@ -22,8 +19,6 @@ class ReportPageBoss(BossBasePage):
         super().__init__()
         self.login_with_cookie()
 
-        self.report_account_token = get_token.onelap_login('17753163583', 'zhang107')['data']['token']
-
         # 添加举报记录的必备数据
         self.source_id = 714
         self.reason_id = 1
@@ -31,18 +26,30 @@ class ReportPageBoss(BossBasePage):
         self.desc = "测试"
         self.imgs = None
 
-        self.headers = {'Authorization': self.report_account_token}
-        self.data = {"desc": self.desc,
-                     "source_id": self.source_id,
-                     "reason_id": self.reason_id,
-                     "source_type": self.source_type,
-                     "imgs": self.imgs}
+    def get_headers_and_data(self):
+        if self.onelap_login_res['code'] == 204:
+            logger.error("账号被封禁，请撤销处罚后再试")
+            return
+        elif self.onelap_login_res['data']['code'] == 200:
+            headers = {'Authorization': self.onelap_login_res['data']['token']}
+            data = {"desc": self.desc,
+                    "source_id": self.source_id,
+                    "reason_id": self.reason_id,
+                    "source_type": self.source_type,
+                    "imgs": self.imgs}
+            return headers, data
 
     @log_decorator
     @check_func
     def report_review_failure(self):
+        if self.get_headers_and_data() is None:
+            # 流程阻塞，退出函数
+            return
+        else:
+            headers, data = self.get_headers_and_data()
+
         # 添加一条举报记录，在列表中筛选report_id
-        self.add_report_message_with_request_post('add_report', self.headers, self.data)
+        self.add_report_message_with_request_post('add_report', headers, data)
         # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=140')
         # self.element_locator('report', 'table')
 
@@ -70,8 +77,14 @@ class ReportPageBoss(BossBasePage):
     @log_decorator
     @check_func
     def report_review_pass_warning(self):
+        if self.get_headers_and_data() is None:
+            # 流程阻塞，退出函数
+            return
+        else:
+            headers, data = self.get_headers_and_data()
+
         # 添加一条举报记录，在列表中筛选report_id
-        self.add_report_message_with_request_post('add_report', self.headers, self.data)
+        self.add_report_message_with_request_post('add_report', headers, data)
 
         # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=139')
         # 自动同步举报记录中的违规原因，无需更改
@@ -105,8 +118,14 @@ class ReportPageBoss(BossBasePage):
     @log_decorator
     @check_func
     def report_review_pass_forbid_speak_hours(self):
+        if self.get_headers_and_data() is None:
+            # 流程阻塞，退出函数
+            return
+        else:
+            headers, data = self.get_headers_and_data()
+
         # 添加一条举报记录，在列表中筛选report_id
-        self.add_report_message_with_request_post('add_report', self.headers, self.data)
+        self.add_report_message_with_request_post('add_report', headers, data)
         # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=158')
 
         # 自动同步举报记录中的违规原因，无需更改
@@ -165,8 +184,14 @@ class ReportPageBoss(BossBasePage):
     @log_decorator
     @check_func
     def report_review_pass_forbid_login_hours(self):
+        if self.get_headers_and_data() is None:
+            # 流程阻塞，退出函数
+            return
+        else:
+            headers, data = self.get_headers_and_data()
+
         # 添加一条举报记录，在列表中筛选report_id
-        self.add_report_message_with_request_post('add_report', self.headers, self.data)
+        self.add_report_message_with_request_post('add_report', headers, data)
         # self.driver.get('https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=162')
         # self.element_locator('report', 'table')
 
@@ -204,11 +229,11 @@ class ReportPageBoss(BossBasePage):
             pass
 
         # 访问登录接口（被禁言账号），读取禁言的开始时间和截止时间
-        response = get_token.onelap_login('13001723386', 'zhang107.')
+        login_response = self.onelap_login_res
         data_key_dict = {
             'data_key': data_key,
-            'start_time': response['data']['start_time'],
-            'end_time': response['data']['end_time']
+            'start_time': login_response['data']['start_time'],
+            'end_time': login_response['data']['end_time']
         }
         append_data_key_to_json(publish='is_forbid_login', key_dict=data_key_dict)
 

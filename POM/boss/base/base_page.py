@@ -2,19 +2,21 @@ import json
 import selenium.common.exceptions
 from loguru import logger
 from selenium import webdriver
-
+from common.get_token import GetToken
 from common.get_path import project_path
 from common.find_ele import find_ele
 from common.get_yaml import GetYamlData
 from common.get_boss_login_cookies import get_login_cookies
+from selenium.webdriver.chrome.service import Service
 import requests
 
 
 class BossBasePage(GetYamlData):
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(service=Service(project_path() + "/conf/chromedriver_126.0.6478.126.exe"))
         self.boss_element = GetYamlData.get_boss_element_data()
         self.onelap_api_param = GetYamlData.get_onelap_api_param_data()
+        self.onelap_login_res = GetToken().onelap_login('13001723386', 'zhang107.')
 
     def get_url(self, page_name):
         login_url = self.boss_element[page_name]['url']
@@ -115,3 +117,7 @@ class BossBasePage(GetYamlData):
             logger.info(f'跳转{report_id_url}')
         except AssertionError as error:
             logger.error(f"跳转{report_id_url}失败：{error}")
+
+
+if __name__ == '__main__':
+    print(BossBasePage().onelap_login_res['data']['start_time'])
