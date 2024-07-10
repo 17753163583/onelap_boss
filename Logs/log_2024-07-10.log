@@ -1,0 +1,1450 @@
+2024-07-10 10:01:14.204 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:('onelap', 'onelap@123'){}
+2024-07-10 10:01:14.206 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+TypeError: LoginPageBoss.login() missing 1 required positional argument: 'password'
+
+
+2024-07-10 10:02:12.487 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 10:02:12.488 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+TypeError: LoginPageBoss.login() missing 1 required positional argument: 'self'
+
+
+2024-07-10 10:02:35.052 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 10:02:35.053 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+TypeError: LoginPageBoss.login() missing 1 required positional argument: 'self'
+
+
+2024-07-10 10:02:59.982 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:02:59.983 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000116A60688C0>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 10:03:00.938 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-10 10:03:00.947 | INFO | POM.boss.base.base_page:element_locator_sendkeys:72 | login_input_username定位成功
+2024-07-10 10:03:00.996 | INFO | POM.boss.base.base_page:element_locator_sendkeys:76 | login_input_username输入数据：onelap成功
+2024-07-10 10:03:01.004 | INFO | POM.boss.base.base_page:element_locator_sendkeys:72 | login_input_password定位成功
+2024-07-10 10:03:01.042 | INFO | POM.boss.base.base_page:element_locator_sendkeys:76 | login_input_password输入数据：onelap@123成功
+2024-07-10 10:03:01.050 | INFO | POM.boss.base.base_page:element_locator:61 | login_login_button定位成功
+2024-07-10 10:03:03.261 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:28 | 读取Cookies成功
+2024-07-10 10:03:03.263 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 21, in login
+    self.save_boss_cookies_to_json()
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 31, in save_boss_cookies_to_json
+    with open(project_path() + "/test_data/boss_login_cookies.json", 'w') as file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\python_project\\onelap_boss/test_data/boss_login_cookies.json'
+
+
+2024-07-10 10:03:58.032 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:03:58.033 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002C8AEAAEC00>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 10:03:58.958 | INFO | POM.boss.base.base_page:get_url:24 | login页面跳转
+2024-07-10 10:03:58.969 | INFO | POM.boss.base.base_page:element_locator_sendkeys:72 | login_input_username定位成功
+2024-07-10 10:03:59.019 | INFO | POM.boss.base.base_page:element_locator_sendkeys:76 | login_input_username输入数据：onelap成功
+2024-07-10 10:03:59.027 | INFO | POM.boss.base.base_page:element_locator_sendkeys:72 | login_input_password定位成功
+2024-07-10 10:03:59.066 | INFO | POM.boss.base.base_page:element_locator_sendkeys:76 | login_input_password输入数据：onelap@123成功
+2024-07-10 10:03:59.074 | INFO | POM.boss.base.base_page:element_locator:61 | login_login_button定位成功
+2024-07-10 10:04:01.427 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:28 | 读取Cookies成功
+2024-07-10 10:04:01.428 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:33 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:04:01.448 | INFO | POM.boss.base.base_page:element_locator:61 | home_page_title定位成功
+2024-07-10 10:04:01.460 | INFO | POM.boss.page_object.login_page:login:26 | 登录操作完成
+2024-07-10 10:04:01.460 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 10:51:28.821 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:51:28.822 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000244AFDF8920>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 10:51:29.639 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:51:29.650 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:51:29.695 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 10:51:29.703 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:51:29.741 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@123成功
+2024-07-10 10:51:29.749 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:51:31.857 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:51:31.859 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:51:31.868 | INFO | POM.boss.base.base_page:element_locator:64 | home_page_title定位成功
+2024-07-10 10:51:31.879 | INFO | POM.boss.page_object.login_page:login:26 | 登录操作完成
+2024-07-10 10:51:31.879 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 10:51:35.302 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:51:35.303 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000244AD867C20>,){'username': 'admin', 'password': 'Magene@1230'}
+2024-07-10 10:51:36.132 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:51:36.140 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:51:36.185 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 10:51:36.193 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:51:36.232 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@1230成功
+2024-07-10 10:51:36.239 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:51:38.367 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:51:38.367 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:51:38.377 | INFO | POM.boss.base.base_page:element_locator:64 | home_page_title定位成功
+2024-07-10 10:51:38.387 | INFO | POM.boss.page_object.login_page:login:26 | 登录操作完成
+2024-07-10 10:51:38.387 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 10:52:01.850 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:52:01.851 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000023267DE5460>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 10:52:02.688 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:52:02.698 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:52:02.748 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 10:52:02.756 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:52:02.794 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 10:52:02.802 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:52:03.517 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:52:03.518 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:52:13.560 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 22, in login
+    home_page_title = self.element_locator(page_name='home', element_name='page_title')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 10:52:16.964 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:52:16.965 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000023267C7B4D0>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 10:52:17.727 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:52:17.737 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:52:17.781 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 10:52:17.789 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:52:17.828 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 10:52:17.835 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:52:18.532 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:52:18.533 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:52:28.584 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 22, in login
+    home_page_title = self.element_locator(page_name='home', element_name='page_title')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 10, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 10:58:15.678 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:58:15.679 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002605E524890>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 10:58:16.606 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:58:16.616 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:58:16.672 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 10:58:16.681 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:58:16.719 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 10:58:16.721 | INFO | POM.boss.page_object.login_page:login:23 | 账号密码输入正确
+2024-07-10 10:58:16.728 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:58:17.481 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:58:17.483 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:58:20.579 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 27, in login
+    home_page_title = self.element_locator(page_name='home', element_name='page_title')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 10:58:24.004 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:58:24.005 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002605F0206B0>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 10:58:24.807 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:58:24.817 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:58:24.861 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 10:58:24.869 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:58:24.908 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 10:58:24.910 | INFO | POM.boss.page_object.login_page:login:23 | 账号密码输入正确
+2024-07-10 10:58:24.918 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:58:26.630 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:58:26.630 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:58:29.719 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 27, in login
+    home_page_title = self.element_locator(page_name='home', element_name='page_title')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 10:59:37.438 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:59:37.439 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000186A58CD340>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 10:59:38.320 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:59:38.330 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:59:38.376 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 10:59:38.384 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:59:38.422 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 10:59:38.436 | INFO | POM.boss.page_object.login_page:login:23 | 账号密码输入正确
+2024-07-10 10:59:38.443 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:59:39.236 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:59:39.238 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:59:42.335 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 27, in login
+    home_page_title = self.element_locator(page_name='home', element_name='page_title')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 10:59:45.817 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 10:59:45.817 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000186A58A1D30>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 10:59:46.749 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 10:59:46.758 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 10:59:46.797 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 10:59:46.804 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 10:59:46.833 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 10:59:46.846 | INFO | POM.boss.page_object.login_page:login:23 | 账号密码输入正确
+2024-07-10 10:59:46.854 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 10:59:47.632 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 10:59:47.633 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 10:59:50.717 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 27, in login
+    home_page_title = self.element_locator(page_name='home', element_name='page_title')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:00:28.522 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:00:28.523 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x0000024E5521ADE0>,){}
+2024-07-10 11:00:28.524 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+TypeError: LoginPageBoss.login() missing 2 required positional arguments: 'username' and 'password'
+
+
+2024-07-10 11:00:35.353 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:00:35.354 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000169BA275BE0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:00:36.198 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:00:36.209 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:00:36.255 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:00:36.264 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:00:36.304 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:00:36.321 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 19, in login
+    self.element_locator(page_name='login', element_name='account_input_error')
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@class=form-group has-feedback has-error]/label/i because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@class=form-group has-feedback has-error]/label/i' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF6935DE55E]
+	(No symbol) [0x00007FF6935E0EB1]
+	(No symbol) [0x00007FF6935E0F50]
+	(No symbol) [0x00007FF693627F6C]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:00:39.761 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:00:39.762 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000169B95DF830>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:00:40.533 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:00:40.547 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:00:40.597 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:00:40.605 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:00:40.646 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:00:40.660 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 19, in login
+    self.element_locator(page_name='login', element_name='account_input_error')
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@class=form-group has-feedback has-error]/label/i because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@class=form-group has-feedback has-error]/label/i' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF6935DE55E]
+	(No symbol) [0x00007FF6935E0EB1]
+	(No symbol) [0x00007FF6935E0F50]
+	(No symbol) [0x00007FF693627F6C]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:01:50.913 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:01:50.914 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002810BD754C0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:01:51.754 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:01:51.763 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:01:51.806 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:01:51.814 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:01:51.850 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:01:51.865 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 19, in login
+    self.element_locator(page_name='login', element_name='account_input_error')
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@class=form-group has-feedback has-error]/label because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@class=form-group has-feedback has-error]/label' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF6935DE55E]
+	(No symbol) [0x00007FF6935E0EB1]
+	(No symbol) [0x00007FF6935E0F50]
+	(No symbol) [0x00007FF693627F6C]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:01:55.302 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:01:55.303 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000028109919970>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:01:56.146 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:01:56.155 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:01:56.202 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:01:56.210 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:01:56.257 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:01:56.272 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 19, in login
+    self.element_locator(page_name='login', element_name='account_input_error')
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //*[@class=form-group has-feedback has-error]/label because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@class=form-group has-feedback has-error]/label' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF6935DE55E]
+	(No symbol) [0x00007FF6935E0EB1]
+	(No symbol) [0x00007FF6935E0F50]
+	(No symbol) [0x00007FF693627F6C]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:03:55.311 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:03:55.312 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001D5A91E54C0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:03:56.216 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:03:56.226 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:03:56.271 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:03:56.280 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:03:56.316 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:03:59.404 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 19, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:04:02.812 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:04:02.813 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001D5A6A57B90>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:04:03.644 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:04:03.654 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:04:03.692 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:04:03.700 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:04:03.729 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:04:06.826 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 19, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:04:37.555 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:04:37.557 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002010B94CC80>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:04:38.457 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:04:38.467 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:04:38.515 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:04:38.523 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:04:38.561 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:04:42.156 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 20, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:04:45.626 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:04:45.627 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000201091FD1F0>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:04:46.500 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:04:46.510 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:04:46.552 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:04:46.561 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:04:46.592 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:04:50.188 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 20, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:08:15.956 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:08:15.957 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001D3F2A3B1D0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:08:16.746 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:08:16.754 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:08:16.799 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:08:16.808 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:08:16.844 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:08:20.438 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 20, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:08:23.899 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:08:23.900 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001D3F03D2930>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:08:24.761 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:08:24.765 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\pytest_check\check_functions.py", line 39, in wrapper
+    func(*args, **kwds)
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 17, in login
+    self.element_locator_sendkeys(page_name='login', element_name='input_username', input_data=username)
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 73, in element_locator_sendkeys
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF6935AD995]
+	(No symbol) [0x00007FF6936544D7]
+	(No symbol) [0x00007FF69366C051]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:08:42.729 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:08:42.730 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002C439F216D0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:08:43.593 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:08:43.602 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:08:43.648 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:08:43.655 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:08:43.692 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:08:43.700 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:08:44.409 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:08:44.410 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:08:47.823 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:08:47.823 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002C439D5BB30>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:08:48.646 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:08:48.654 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:08:48.702 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:08:48.711 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:08:48.750 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:08:48.758 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:08:49.435 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:08:49.435 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:11:14.133 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:11:14.133 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001B746C9ECC0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:11:14.951 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:11:14.961 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:11:15.007 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:11:15.015 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:11:15.051 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:11:15.060 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:11:15.804 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:11:15.804 | ERROR | POM.boss.page_object.login_page:login:23 | 账号密码不匹配
+2024-07-10 11:11:15.805 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:11:19.240 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:11:19.241 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001B746C9ECC0>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:11:20.130 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:11:20.139 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:11:20.184 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:11:20.192 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:11:20.230 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:11:20.237 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:11:21.021 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:11:21.021 | ERROR | POM.boss.page_object.login_page:login:23 | 账号密码不匹配
+2024-07-10 11:11:21.021 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:11:44.391 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:11:44.392 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000023541B586E0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:11:45.195 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:11:45.205 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:11:45.252 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:11:45.261 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:11:45.299 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:11:45.308 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:11:45.994 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:11:45.994 | ERROR | POM.boss.page_object.login_page:login:23 | 账号密码不匹配
+2024-07-10 11:11:45.994 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:11:49.439 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:11:49.439 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000023542663560>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:11:50.262 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:11:50.271 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:11:50.313 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:11:50.321 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:11:50.349 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:11:50.357 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:11:51.043 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:11:51.044 | ERROR | POM.boss.page_object.login_page:login:23 | 账号密码不匹配
+2024-07-10 11:11:51.044 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:12:35.393 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:12:35.394 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000209D88F4B00>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:12:36.253 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:12:36.263 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:12:36.306 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:12:36.314 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:12:36.357 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:12:36.364 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:12:37.067 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:12:37.067 | ERROR | POM.boss.page_object.login_page:login:23 | 账号密码不匹配
+2024-07-10 11:12:37.068 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:12:40.498 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:12:40.499 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000209D63E7E60>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:12:41.326 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:12:41.335 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:12:41.376 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:12:41.384 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:12:41.413 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:12:41.420 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:12:42.112 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:12:42.113 | ERROR | POM.boss.page_object.login_page:login:23 | 账号密码不匹配
+2024-07-10 11:12:42.113 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:13:11.083 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:13:11.084 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x000001744B375DC0>, 'onelap', 'onelap@12'){}
+2024-07-10 11:13:12.037 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:13:12.048 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:13:12.095 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:13:12.102 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:13:12.141 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:13:12.149 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:13:12.850 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:13:12.850 | ERROR | __main__:login:23 | 账号密码不匹配
+2024-07-10 11:13:12.850 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:13:47.244 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:13:47.245 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x00000204C75E9130>, 'onelap', 'onelap@12'){}
+2024-07-10 11:13:48.161 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:13:48.170 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:13:48.216 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:13:48.224 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:13:48.259 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:13:48.267 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:13:48.978 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:13:48.978 | ERROR | __main__:login:23 | 账号密码不匹配
+2024-07-10 11:13:48.978 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:14:16.553 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:14:16.554 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x000002569851B050>, 'onelap', 'onelap@12'){}
+2024-07-10 11:14:17.401 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:14:17.411 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:14:17.456 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:14:17.464 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:14:17.502 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:14:17.511 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:14:18.185 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:14:18.185 | ERROR | __main__:login:23 | 账号密码不匹配
+2024-07-10 11:14:18.186 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:15:54.829 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:15:54.830 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002A85648CC80>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:15:55.662 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:15:55.671 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:15:55.717 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:15:55.725 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:15:55.761 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:15:55.769 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:15:56.419 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:15:56.420 | ERROR | POM.boss.page_object.login_page:login:24 | 账号密码不匹配
+2024-07-10 11:15:56.420 | INFO | common.logger:wrapper:50 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:15:59.895 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:15:59.896 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002A856500470>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:16:00.696 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:16:00.708 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:16:00.747 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:16:00.755 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:16:00.783 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:16:00.792 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:16:01.525 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:16:01.526 | ERROR | POM.boss.page_object.login_page:login:24 | 账号密码不匹配
+2024-07-10 11:16:01.526 | INFO | common.logger:wrapper:50 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:17:13.972 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:17:13.972 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x000001EC8286BB60>, 'onelap', 'onelap@12'){}
+2024-07-10 11:17:14.746 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:17:14.754 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:17:14.800 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:17:14.808 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:17:14.852 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:17:14.861 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:17:15.592 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:17:15.593 | ERROR | __main__:login:24 | 账号密码不匹配
+2024-07-10 11:17:15.593 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:19:18.937 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:19:18.938 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x0000013350B08380>, 'onelap', 'onelap@12'){}
+2024-07-10 11:19:19.814 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:19:19.823 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:19:19.870 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:19:19.879 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:19:19.914 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:19:19.922 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:19:20.751 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:19:20.751 | ERROR | __main__:login:25 | 账号密码不匹配
+2024-07-10 11:19:20.752 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：True
+
+2024-07-10 11:19:42.600 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:19:42.601 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x0000021F282B1B50>, 'onelap', 'onelap@12'){}
+2024-07-10 11:19:43.504 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:19:43.513 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:19:43.550 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:19:43.557 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:19:43.585 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:19:43.594 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:19:44.335 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:19:44.335 | ERROR | __main__:login:23 | 账号密码不匹配
+2024-07-10 11:19:44.335 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:20:05.399 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:20:05.400 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x0000021E26CCA990>, 'onelap', 'onelap@12'){}
+2024-07-10 11:20:06.286 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:20:06.298 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:20:06.343 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:20:06.351 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:20:06.387 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:20:06.396 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:20:07.177 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:20:07.177 | ERROR | __main__:login:23 | 账号密码不匹配
+2024-07-10 11:20:07.177 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:20:31.008 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:20:31.009 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<__main__.LoginPageBoss object at 0x000002C3DEE8E8A0>, 'onelap', 'onelap@12'){}
+2024-07-10 11:20:31.842 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:20:31.850 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:20:31.895 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:20:31.903 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:20:31.941 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:20:31.949 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:20:32.654 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:20:32.654 | ERROR | __main__:login:22 | 账号密码不匹配
+2024-07-10 11:20:32.654 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:20:44.695 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:20:44.696 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001F5454485C0>,){'username': 'onelap', 'password': 'onelap@12'}
+2024-07-10 11:20:45.526 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:20:45.535 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:20:45.579 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:20:45.587 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:20:45.624 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@12成功
+2024-07-10 11:20:45.632 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:20:46.400 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:20:46.400 | ERROR | POM.boss.page_object.login_page:login:22 | 账号密码不匹配
+2024-07-10 11:20:46.400 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:20:49.925 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:20:49.926 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000001F5461E7140>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:20:50.765 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:20:50.775 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:20:50.820 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:20:50.829 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:20:50.867 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:20:50.875 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:20:51.615 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:20:51.615 | ERROR | POM.boss.page_object.login_page:login:22 | 账号密码不匹配
+2024-07-10 11:20:51.615 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:23:31.993 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:23:31.994 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000250ECFCEBD0>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 11:23:32.838 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:23:32.848 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:23:32.884 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:23:32.892 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:23:32.920 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@123成功
+2024-07-10 11:23:32.929 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:23:38.138 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 20, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:23:41.649 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:23:41.650 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000250EF7918E0>,){'username': 'admin', 'password': 'Magene@1230'}
+2024-07-10 11:23:42.436 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:23:42.447 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:23:42.492 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:23:42.500 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:23:42.540 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@1230成功
+2024-07-10 11:23:42.547 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:23:47.780 | ERROR | common.logger:wrapper:54 | 函数 login 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\login_page.py", line 20, in login
+    if self.element_locator(page_name='login', element_name='account_input_error'):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\base\base_page.py", line 62, in element_locator
+    element_locator = find_ele(self.driver, find_type, find_key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 12, in find_ele
+    raise e
+  File "D:\python_project\onelap_boss\common\find_ele.py", line 9, in find_ele
+    ele = WebDriverWait(driver, 3, 0.25).until(ec.presence_of_element_located((find_type, find_key)))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF69379EEA2+31554]
+	(No symbol) [0x00007FF693717ED9]
+	(No symbol) [0x00007FF6935D872A]
+	(No symbol) [0x00007FF693628434]
+	(No symbol) [0x00007FF69362853C]
+	(No symbol) [0x00007FF69366F6A7]
+	(No symbol) [0x00007FF69364D06F]
+	(No symbol) [0x00007FF69366C977]
+	(No symbol) [0x00007FF69364CDD3]
+	(No symbol) [0x00007FF69361A33B]
+	(No symbol) [0x00007FF69361AED1]
+	GetHandleVerifier [0x00007FF693AA8B1D+3217341]
+	GetHandleVerifier [0x00007FF693AF5AE3+3532675]
+	GetHandleVerifier [0x00007FF693AEB0E0+3489152]
+	GetHandleVerifier [0x00007FF69384E776+750614]
+	(No symbol) [0x00007FF69372375F]
+	(No symbol) [0x00007FF69371EB14]
+	(No symbol) [0x00007FF69371ECA2]
+	(No symbol) [0x00007FF69370E16F]
+	BaseThreadInitThunk [0x00007FFF29D37034+20]
+	RtlUserThreadStart [0x00007FFF2A3026A1+33]
+
+
+
+2024-07-10 11:26:17.360 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:26:17.361 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000013C41EB9820>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 11:26:18.183 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:26:18.193 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:26:18.240 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:26:18.248 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:26:18.290 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@123成功
+2024-07-10 11:26:18.297 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:26:23.546 | INFO | POM.boss.page_object.login_page:login:26 | 账号密码匹配成功
+2024-07-10 11:26:23.552 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 11:26:23.554 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 11:26:23.561 | INFO | POM.boss.base.base_page:element_locator:64 | home_page_title定位成功
+2024-07-10 11:26:23.572 | ERROR | POM.boss.page_object.login_page:login:36 | home_page_title断言失败，错误信息为：
+2024-07-10 11:26:23.572 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:26:27.093 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:26:27.094 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000013C41EF2990>,){'username': 'admin', 'password': 'Magene@1230'}
+2024-07-10 11:26:27.942 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:26:27.951 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:26:27.994 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:26:28.002 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:26:28.040 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@1230成功
+2024-07-10 11:26:28.047 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:26:33.372 | INFO | POM.boss.page_object.login_page:login:26 | 账号密码匹配成功
+2024-07-10 11:26:33.377 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 11:26:33.378 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 11:26:33.385 | INFO | POM.boss.base.base_page:element_locator:64 | home_page_title定位成功
+2024-07-10 11:26:33.394 | ERROR | POM.boss.page_object.login_page:login:36 | home_page_title断言失败，错误信息为：
+2024-07-10 11:26:33.394 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:37:58.687 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:37:58.687 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000272C5166C00>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 11:37:59.526 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:37:59.534 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:37:59.579 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:37:59.588 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:37:59.625 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@123成功
+2024-07-10 11:37:59.632 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:38:04.818 | INFO | POM.boss.page_object.login_page:login:25 | 账号密码匹配成功
+2024-07-10 11:38:04.825 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 11:38:04.826 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 11:38:04.834 | INFO | POM.boss.base.base_page:element_locator:64 | home_page_title定位成功
+2024-07-10 11:38:04.843 | INFO | POM.boss.page_object.login_page:login:31 | 登录操作完成
+2024-07-10 11:38:04.843 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：None
+
+2024-07-10 11:38:08.299 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:38:08.300 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x00000272C2B019D0>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:38:09.099 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:38:09.108 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:38:09.153 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:38:09.161 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:38:09.198 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:38:09.206 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:38:09.901 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:38:09.901 | ERROR | POM.boss.page_object.login_page:login:22 | 账号密码不匹配
+2024-07-10 11:38:09.901 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：None
+
+2024-07-10 11:39:40.770 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:39:40.770 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x000002470375CC50>,){'username': 'onelap', 'password': 'onelap@123'}
+2024-07-10 11:39:41.626 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:39:41.635 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:39:41.679 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：onelap成功
+2024-07-10 11:39:41.688 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:39:41.725 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：onelap@123成功
+2024-07-10 11:39:41.733 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:39:46.992 | INFO | POM.boss.page_object.login_page:login:25 | 账号密码匹配成功
+2024-07-10 11:39:46.997 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:31 | 读取Cookies成功
+2024-07-10 11:39:46.998 | INFO | POM.boss.base.base_page:save_boss_cookies_to_json:36 | 保存cookies至boss_login_cookies.json
+2024-07-10 11:39:47.005 | INFO | POM.boss.base.base_page:element_locator:64 | home_page_title定位成功
+2024-07-10 11:39:47.019 | ERROR | POM.boss.page_object.login_page:login:33 | home_page_title断言失败，当前结果为：Welcome to Onelap Management System.
+2024-07-10 11:39:47.020 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：False
+
+2024-07-10 11:39:50.545 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-07-10 11:39:50.547 | INFO | common.logger:wrapper:44 | 函数 login 开始执行，入参:(<POM.boss.page_object.login_page.LoginPageBoss object at 0x0000024703627290>,){'username': 'admin', 'password': 'Magene@123'}
+2024-07-10 11:39:51.410 | INFO | POM.boss.base.base_page:get_url:27 | login页面跳转
+2024-07-10 11:39:51.418 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_username定位成功
+2024-07-10 11:39:51.464 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_username输入数据：admin成功
+2024-07-10 11:39:51.472 | INFO | POM.boss.base.base_page:element_locator_sendkeys:75 | login_input_password定位成功
+2024-07-10 11:39:51.510 | INFO | POM.boss.base.base_page:element_locator_sendkeys:79 | login_input_password输入数据：Magene@123成功
+2024-07-10 11:39:51.517 | INFO | POM.boss.base.base_page:element_locator:64 | login_login_button定位成功
+2024-07-10 11:39:52.242 | INFO | POM.boss.base.base_page:element_locator:64 | login_account_input_error定位成功
+2024-07-10 11:39:52.242 | ERROR | POM.boss.page_object.login_page:login:22 | 账号密码不匹配
+2024-07-10 11:39:52.242 | INFO | common.logger:wrapper:49 | 函数 login 执行完成，函数返回结果：None
+

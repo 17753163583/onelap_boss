@@ -10,11 +10,11 @@ from loguru import logger
 comment_api_data = GetYamlData().get_onelap_api_param_data()['send_comment']
 
 
-def send_comment(account, password):
+def send_comment(username, password):
     try:
         url = comment_api_data['url']
         headers = comment_api_data['headers']
-        login_res = GetToken().onelap_login(account, password)
+        login_res = GetToken().onelap_login(username, password)
         print(login_res)
         print(type(login_res))
         headers['Authorization'] = login_res['data']['token']

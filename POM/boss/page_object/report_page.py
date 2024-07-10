@@ -1,7 +1,6 @@
 import time
 
 from loguru import logger
-from pytest_check import check_func
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
@@ -10,15 +9,16 @@ from POM.boss.base.base_page import BossBasePage
 from common.logger import log_decorator
 from common.report_publish_message import append_data_key_to_json
 from common.submit_comment import send_comment
+from common.get_yaml import GetYamlData
 
 
-class ReportPageBoss(BossBasePage):
+class Report(BossBasePage):
 
     def __init__(self):
         # 启动浏览器，进入boss_home页
         super().__init__()
         self.login_with_cookie()
-
+        self.test_account_dict = GetYamlData().get_login_accounts()['onelap_account']['account_1']
         # 添加举报记录的必备数据
         self.source_id = 714
         self.reason_id = 1
@@ -40,7 +40,6 @@ class ReportPageBoss(BossBasePage):
             return headers, data
 
     @log_decorator
-    @check_func
     def report_review_failure(self):
         if self.get_headers_and_data() is None:
             # 流程阻塞，退出函数
@@ -68,14 +67,13 @@ class ReportPageBoss(BossBasePage):
 
         self.switch_to_alert_accept()
         status = self.element_locator('report', 'table_review_status').text
-        assert status == "审核未通过"
+        return status
 
         # self.element_locator('report', 'table_review_reason').text
         # self.element_locator('report', 'table_review_method').text
         # self.element_locator('report', 'table_review_message').text
 
     @log_decorator
-    @check_func
     def report_review_pass_warning(self):
         if self.get_headers_and_data() is None:
             # 流程阻塞，退出函数
@@ -107,16 +105,17 @@ class ReportPageBoss(BossBasePage):
         status = self.element_locator('report', 'table_review_status').text
         method = self.element_locator('report', 'table_review_method').text
 
-        try:
-            assert status == "审核通过"
-            logger.info(f"{status}断言成功")
-            assert method == "通知警告"
-            logger.info(f"{method}断言成功")
-        except AssertionError as error:
-            logger.error(f"断言失败{error}")
+        return status, method
+
+    """ try:
+         assert status == "审核通过"
+         logger.info(f"{status}断言成功")
+         assert method == "通知警告"
+         logger.info(f"{method}断言成功")
+     except AssertionError as error:
+         logger.error(f"断言失败{error}")"""
 
     @log_decorator
-    @check_func
     def report_review_pass_forbid_speak_hours(self):
         if self.get_headers_and_data() is None:
             # 流程阻塞，退出函数
@@ -161,7 +160,9 @@ class ReportPageBoss(BossBasePage):
             pass
 
         # 访问评论接口（被禁言账号），读取禁言的开始时间和截止时间
-        response_json = send_comment('13001723386', 'zhang107.')
+        response_json = send_comment(username=self.test_account_dict['username'],
+                                     password=self.test_account_dict['password'])
+
         data_key_dict = {
             'data_key': data_key,
             'start_time': response_json['data']['start_time'],
@@ -172,17 +173,17 @@ class ReportPageBoss(BossBasePage):
         # 回到审核管理页做断言
         status = self.element_locator('report', 'table_review_status').text
         method = self.element_locator('report', 'table_review_method').text
+        return status, method
 
-        try:
+    """    try:
             assert status == "审核通过"
             logger.info(f"{status}断言成功")
             assert method == "禁言1小时"
             logger.info(f"{method}断言成功")
         except AssertionError as error:
-            logger.error(f"断言失败{error}")
+            logger.error(f"断言失败{error}")"""
 
     @log_decorator
-    @check_func
     def report_review_pass_forbid_login_hours(self):
         if self.get_headers_and_data() is None:
             # 流程阻塞，退出函数
@@ -240,17 +241,19 @@ class ReportPageBoss(BossBasePage):
         status = self.element_locator('report', 'table_review_status').text
         method = self.element_locator('report', 'table_review_method').text
 
-        try:
+        return status, method
+
+    """    try:
             assert status == "审核通过"
             logger.info(f"{status}断言成功")
             assert method == "封号1小时"
             logger.info(f"{method}断言成功")
         except AssertionError as error:
-            logger.error(f"断言失败{error}")
+            logger.error(f"断言失败{error}")"""
 
 
 if __name__ == '__main__':
-    a = ReportPageBoss()
+    a = Report()
     a.report_review_pass_forbid_speak_hours()
     a.report_review_pass_forbid_login_hours()
     a.driver.quit()

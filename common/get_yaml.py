@@ -27,8 +27,8 @@ class GetYamlData:
         with open(file_path, 'rb') as file:
             return yaml.safe_load(file)
 
-
-if __name__ == '__main__':
-    yaml_data = GetYamlData.get_onelap_api_param_data()['add_report']
-    # {'type': 'class name', 'key': 'glyphicon glyphicon-envelope form-control-feedback'}
-    print(yaml_data)
+    @staticmethod
+    def get_login_accounts():
+        file_path = project_path() + '/POM/boss/test_data/test_account.yaml'
+        with open(file_path, 'rb') as file:
+            return yaml.safe_load(file)

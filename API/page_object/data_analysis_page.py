@@ -1,6 +1,7 @@
 from API.base_page.base_page import BasePage
 
 from common.get_time_stamp import get_pre_days_time_stamp, get_pre_year_time_stamp, get_total_time_stamp
+from common.logger import log_decorator
 
 
 class DataAnalysis(BasePage):
@@ -10,6 +11,7 @@ class DataAnalysis(BasePage):
         self.detail_api_name = 'detail_analysis'
         self.more_info_api_name = 'more_user_info'
 
+    @log_decorator
     def data_analysis(self, nums):
         headers = self.api_params[self.data_api_name]['headers']
         headers['Authorization'] = self.onelap_login_res['data']['token']
@@ -26,6 +28,7 @@ class DataAnalysis(BasePage):
 
         return response_analysis.json()
 
+    @log_decorator
     def detail_analysis(self, nums):
         headers = self.api_params[self.detail_api_name]['headers']
         headers['Authorization'] = self.onelap_login_res['data']['token']
@@ -45,6 +48,7 @@ class DataAnalysis(BasePage):
 
         return response_records.json()
 
+    @log_decorator
     def total_data_analysis(self):
         headers = self.api_params[self.detail_api_name]['headers']
         headers['Authorization'] = self.onelap_login_res['data']['token']
@@ -57,6 +61,7 @@ class DataAnalysis(BasePage):
 
         return response_analysis.json()
 
+    @log_decorator
     def total_detail_analysis(self):
         headers = self.api_params[self.more_info_api_name]['headers']
         headers['Authorization'] = self.onelap_login_res['data']['token']

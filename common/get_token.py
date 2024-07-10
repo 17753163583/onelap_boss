@@ -10,9 +10,9 @@ class GetToken(GetYamlData):
         self.boss_element = self.get_boss_element_data()
         self.onelap_api = self.get_onelap_api_param_data()
 
-    def onelap_login(self, account, password):
+    def onelap_login(self, username, password):
         data = self.onelap_api['onelap_login']['data']
-        data['account'] = account
+        data['account'] = username
         data['password'] = md5_encrypt(password)
 
         response = requests.post(url=self.onelap_api['onelap_login']['url'],

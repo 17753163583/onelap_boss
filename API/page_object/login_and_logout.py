@@ -1,6 +1,7 @@
 from API.base_page.base_page import BasePage
 from common.handle_md5 import md5_encrypt
 from loguru import logger
+from common.logger import log_decorator
 
 
 class OnelapLogin(BasePage):
@@ -8,6 +9,7 @@ class OnelapLogin(BasePage):
         super().__init__()
         self.login_token = 0
 
+    @log_decorator
     def login(self, username, passwd):
         api_name = 'onelap_login'
         passwd_md5 = md5_encrypt(passwd)
@@ -20,6 +22,7 @@ class OnelapLogin(BasePage):
         logger.info(f"记录token：{self.login_token}")
         return response.json()
 
+    @log_decorator
     def check_passwd(self, passwd):
         api_name = 'check_passwd'
         passwd_md5 = md5_encrypt(passwd)
@@ -35,6 +38,7 @@ class OnelapLogin(BasePage):
 
         return response.json()
 
+    @log_decorator
     # 注销账号的GET请求
     def account_cancellation(self):
         api_name = 'account_cancellation'

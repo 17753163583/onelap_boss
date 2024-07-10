@@ -15,8 +15,11 @@ class BossBasePage(GetYamlData):
     def __init__(self):
         self.driver = webdriver.Chrome(service=Service(project_path() + "/conf/chromedriver_126.0.6478.126.exe"))
         self.boss_element = GetYamlData.get_boss_element_data()
+        self.test_account_dict = GetYamlData().get_login_accounts()['onelap_account']['account_1']
         self.onelap_api_param = GetYamlData.get_onelap_api_param_data()
-        self.onelap_login_res = GetToken().onelap_login('13001723386', 'zhang107.')
+
+        self.onelap_login_res = GetToken().onelap_login(self.test_account_dict['username'],
+                                                        self.test_account_dict['password'])
 
     def get_url(self, page_name):
         login_url = self.boss_element[page_name]['url']
@@ -28,7 +31,7 @@ class BossBasePage(GetYamlData):
         logger.info("读取Cookies成功")
 
         json_cookies = json.dumps(dict_cookies)
-        with open(project_path() + "/test_data/boss_login_cookies.json", 'w') as file:
+        with open(project_path() + "/POM/boss/test_data/boss_login_cookies.json", 'w') as file:
             file.write(json_cookies)
             logger.info("保存cookies至boss_login_cookies.json")
 
