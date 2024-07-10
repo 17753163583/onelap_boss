@@ -10,6 +10,7 @@ from common.logger import log_decorator
 from common.report_publish_message import append_data_key_to_json
 from common.submit_comment import send_comment
 from common.get_yaml import GetYamlData
+from common.get_token import GetToken
 
 
 class Report(BossBasePage):
@@ -30,7 +31,7 @@ class Report(BossBasePage):
         if self.onelap_login_res['code'] == 204:
             logger.error("账号被封禁，请撤销处罚后再试")
             return
-        elif self.onelap_login_res['data']['code'] == 200:
+        elif self.onelap_login_res['code'] == 200:
             headers = {'Authorization': self.onelap_login_res['data']['token']}
             data = {"desc": self.desc,
                     "source_id": self.source_id,
@@ -229,8 +230,9 @@ class Report(BossBasePage):
         except NoAlertPresentException:
             pass
 
-        # 访问登录接口（被禁言账号），读取禁言的开始时间和截止时间
-        login_response = self.onelap_login_res
+        # 重新访问登录接口（被禁言账号），读取封号的的开始时间和截止时间
+        login_response = GetToken().onelap_login(self.test_account_dict['username'],
+                                                 self.test_account_dict['password'])
         data_key_dict = {
             'data_key': data_key,
             'start_time': login_response['data']['start_time'],

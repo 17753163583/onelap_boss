@@ -78,10 +78,10 @@ class DataAnalysis(BasePage):
 
 if __name__ == '__main__':
     x = DataAnalysis()
-    # print(x.data_analysis(7))
-    # print(x.data_analysis(7*4))
-    # print(x.data_analysis(7*12))
-    # print(x.data_analysis(1))
-    # print(x.detail_analysis(1))
-    # print(x.total_data_analysis())
-    # print(x.total_detail_analysis())
+    print(x.data_analysis(7))
+    print(x.data_analysis(7*4))
+    print(x.data_analysis(7*12))
+    print(x.data_analysis(1))
+    print(x.detail_analysis(1))
+    print(x.total_data_analysis())
+    print(x.total_detail_analysis())

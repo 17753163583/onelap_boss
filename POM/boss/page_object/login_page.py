@@ -34,6 +34,6 @@ class LoginPageBoss(BossBasePage):
 
 if __name__ == '__main__':
     a = LoginPageBoss()
-    a.login('onelap', 'onelap@12')
+    a.login('onelap', 'onelap@123')
 
     a.driver.quit()
