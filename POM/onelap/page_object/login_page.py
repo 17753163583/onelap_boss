@@ -1,23 +1,28 @@
 from POM.onelap.base.base_page import OnelapBasePage
+from common.connect_device import connect_device_first, connect_device_later
+from common.logger import log_decorator
 
 
 class OnelapLogin(OnelapBasePage):
     def __init__(self):
         super().__init__()
-        self.driver = self.connect_device_first()
+        self.driver = connect_device_later()
 
+    @log_decorator
     def open_onelap_app(self, username, password):
-        self.element_locator(self.driver, 'login', 'tv_agree_privacy_dialog').click()
-        self.element_locator(self.driver, 'login', 'btn_login_index').click()
-        self.element_locator(self.driver, 'login', 'et_username_login').send_keys(username)
-        self.element_locator(self.driver, 'login', 'et_password_login').send_keys(password)
-        self.element_locator(self.driver, 'login', 'btn_check_out_login').click()
-        self.element_locator(self.driver, 'login', 'btn_login_login').click()
+        driver = connect_device_first()
+        self.element_locator(driver, 'login', 'tv_agree_privacy_dialog').click()
+        self.element_locator(driver, 'login', 'btn_login_index').click()
+        self.element_locator(driver, 'login', 'et_username_login').send_keys(username)
+        self.element_locator(driver, 'login', 'et_password_login').send_keys(password)
+        self.element_locator(driver, 'login', 'btn_check_out_login').click()
+        self.element_locator(driver, 'login', 'btn_login_login').click()
 
+    @log_decorator
     def get_app_name(self):
         self.element_locator(self.driver, 'login', 'tv_agree_privacy_dialog').click()
-        home_title = self.element_locator(self.driver, 'login',
-                                          'com.onelap.bls.dear:id/tv_app_name_main_fragment').text
+
+        home_title = self.element_locator(self.driver, 'login', 'tv_app_name_main_fragment').text
         return home_title
 
 
