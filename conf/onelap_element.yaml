@@ -1,10 +1,82 @@
 login:
   # 第一次打开app的用户服务协议和隐私协议
   # 同意
-  agree_privacy:
+  tv_agree_privacy_dialog:
     type: id
     key: com.onelap.bls.dear:id/tv_agree_privacy_dialog
-  # 不同意
-  refuse_privacy:
+  # 登录按钮
+  btn_login_index:
     type: id
-    key: com.onelap.bls.dear:id/tv_refuse_privacy_dialog
+    key: com.onelap.bls.dear:id/btn_login_index
+
+  et_username_login:
+    type: id
+    key: com.onelap.bls.dear:id/et_username_login
+
+  et_password_login:
+    type: id
+    key: com.onelap.bls.dear:id/et_password_login
+
+  btn_check_out_login:
+    type: id
+    key: com.onelap.bls.dear:id/btn_check_out_login
+
+  btn_login_login:
+    type: id
+    key: com.onelap.bls.dear:id/btn_login_login
+
+  tv_app_name_main_fragment:
+    type: id
+    key: com.onelap.bls.dear:id/tv_app_name_main_fragment
+
+
+report:
+
+  include_planet_bottom_navigation:
+    type: id
+    key: com.onelap.bls.dear:id/include_planet_bottom_navigation
+
+  tv_confirm_common_dialog:
+    type: id
+    key: com.onelap.bls.dear:id/tv_confirm_common_dialog
+
+  tv_search:
+    type: id
+    key: com.onelap.bls.dear:id/
+
+  key_input:
+    type: id
+    key: com.onelap.bls.dear:id/key_input
+
+  # 路线卡片
+  only_one_route_cards:
+    type: xpath
+    key: //androidx.recyclerview.widget.RecyclerView[@resource-id="com.onelap.bls.dear:id/rv_route_list"]/android.view.ViewGroup
+
+  route_comment:
+    type: xpath
+    key: //android.view.View[@text="骑友评论"]
+
+  specify_comment:
+    type: xpath
+    key: //android.view.View[@resource-id="content-wrap"]/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[3]
+
+  report_button:
+    type: xpath
+    key: //android.view.View[@text="举报"]
+
+  report_source:
+    type: xpath
+    key: //android.widget.TextView[@text="低俗色情"]
+
+  report_content:
+    type: id
+    key: com.onelap.bls.dear:id/tv_content
+
+  report_submit:
+    type: id
+    key: com.onelap.bls.dear:id/btn_submit
+
+  submit_success_toast:
+    type: xpath
+    key: //android.widget.Toast[@text="你的举报我们已成功收到，会尽快核实处理"]

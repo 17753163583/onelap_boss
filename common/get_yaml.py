@@ -29,6 +29,10 @@ class GetYamlData:
 
     @staticmethod
     def get_login_accounts():
-        file_path = project_path() + '/POM/boss/test_data/test_account.yaml'
+        file_path = project_path() + '/conf/test_account.yaml'
         with open(file_path, 'rb') as file:
             return yaml.safe_load(file)
+
+
+if __name__ == '__main__':
+    print(GetYamlData().get_login_accounts()['onelap_account'])

@@ -7,7 +7,9 @@ from loguru import logger
 class BasePage(GetYamlData):
     def __init__(self):
         self.api_params = self.get_onelap_api_param_data()
-        self.onelap_login_res = GetToken().onelap_login('13001723386', 'zhang107.')
+        self.onelap_account_dict = self.get_login_accounts()['onelap_account']
+        self.onelap_login_res = GetToken().onelap_login(self.onelap_account_dict['account_1']['username'],
+                                                        self.onelap_account_dict['account_1']['password'])
 
     def post_request(self, api_name, headers=None, data=None):
         url = self.api_params[api_name]['url']
@@ -26,3 +28,7 @@ class BasePage(GetYamlData):
             return response
         except Exception as error:
             logger.error(f"发送GET请求{url}失败:{error}")
+
+
+if __name__ == '__main__':
+    print(BasePage().onelap_login_res['data']['token'])

@@ -1,80 +1,53 @@
 import json
-import os
-from common.get_path import project_path
+
 from loguru import logger
 
-data_key_json_file_name = project_path() + '/POM/boss/test_data/publish_data.json'
+from common.get_path import publish_json_path
 
-
-def check_publish_json_exist():
-    if os.path.exists(data_key_json_file_name):
-        logger.info("惩罚信息json文件已存在，无需创建")
-    else:
-        json_data_dict = {
-            'is_forbid_speak': [],
-            'is_forbid_speak_list': [],
-            'is_forbid_login': [],
-            'is_forbid_login_list': []
-        }
-        with open(data_key_json_file_name, 'w', encoding='utf-8') as f:
-            json.dump(json_data_dict, f)
-            logger.info("惩罚信息json文件创建成功")
+json_path = publish_json_path()
 
 
 def get_publish_data_key_list(publish):
-    with open(data_key_json_file_name, 'r', encoding='utf-8') as file_read:
+    with open(json_path, 'r', encoding='utf-8') as file_read:
         json_data_dict = json.load(file_read)
         publish_data_key_list = json_data_dict[publish + '_list']
+        logger.info("读取文件中的data-key列表")
         return publish_data_key_list
 
 
 def append_data_key_to_json(publish, key_dict):
-    check_publish_json_exist()
     new_data_key = str(key_dict['data_key'])
-    with open(data_key_json_file_name, 'r', encoding='utf-8') as file_read:
+    with open(json_path, 'r', encoding='utf-8') as file_read:
         json_data_dict = json.load(file_read)
         publish_dict = json_data_dict[publish]
         publish_data_key_list = json_data_dict[publish + '_list']
 
-    with open(data_key_json_file_name, 'w', encoding='utf-8') as file_write:
-        publish_dict.append(key_dict)
-        logger.info("惩罚信息已在文件中创建")
-        publish_data_key_list.append(new_data_key)
-        logger.info("惩罚信息的data-key已添加进列表")
+    with open(json_path, 'w', encoding='utf-8') as file_write:
+        if publish_dict.append(key_dict):
+            logger.info("惩罚信息已在文件中创建")
+
+        if publish_data_key_list.append(new_data_key):
+            logger.info("惩罚信息的data-key已添加进列表")
 
         json.dump(json_data_dict, file_write)
 
 
 def remove_data_key_to_json(publish, data_key):
-    tar_data_key = str(data_key)
-    with open(data_key_json_file_name, 'r', encoding='utf-8') as file_read:
+    tar_data = str(data_key)
+    with open(json_path, 'r', encoding='utf-8') as file_read:
         json_data_dict = json.load(file_read)
-        publish_dict = json_data_dict[publish]
         publish_data_key_list = json_data_dict[publish + '_list']
+        publish_index = publish_data_key_list.index(tar_data)
 
-    with open(data_key_json_file_name, 'w', encoding='utf-8') as file_write:
-        list_index = publish_data_key_list.index(tar_data_key)
-        # 按索引删除，后续元素索引前移
-        publish_dict.pop(list_index)
-        # 按值删除
-        publish_data_key_list.remove(tar_data_key)
+    with open(json_path, 'w', encoding='utf-8') as file_write:
+        # 删除字典中对应的
+        json_data_dict[publish].pop(publish_index)
+        # 删除列表中对于的
+        publish_data_key_list.remove(tar_data)
 
-        json.dump(json_data_dict, file_write)
-        logger.info("惩罚信息删除成功")
+        if json.dump(json_data_dict, file_write):
+            logger.info("惩罚信息删除成功")
 
 
 if __name__ == '__main__':
-    check_publish_json_exist()
-    dict_1 = {
-        "data_key": 123,
-        "start_time": 1,
-        "end_time": 1
-    }
-    dict_2 = {
-        "data_key": 123,
-        "start_time": 1,
-        "end_time": 5
-    }
-    append_data_key_to_json('is_forbid_speak', dict_1)
-    append_data_key_to_json('is_forbid_speak', dict_2)
-    remove_data_key_to_json('is_forbid_speak', 123)
+    remove_data_key_to_json('is_forbid_login', '6695d9cb3dc8d43dab3372e6')

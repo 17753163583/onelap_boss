@@ -65,6 +65,7 @@ class DataAnalysis(BasePage):
     def total_detail_analysis(self):
         headers = self.api_params[self.more_info_api_name]['headers']
         headers['Authorization'] = self.onelap_login_res['data']['token']
+
         response_more_info = self.get_request(self.more_info_api_name, headers=headers).json()
         start_ride_time_stamp = response_more_info['data']['start_ride_at']
 
@@ -79,8 +80,8 @@ class DataAnalysis(BasePage):
 if __name__ == '__main__':
     x = DataAnalysis()
     print(x.data_analysis(7))
-    print(x.data_analysis(7*4))
-    print(x.data_analysis(7*12))
+    print(x.data_analysis(7 * 4))
+    print(x.data_analysis(7 * 12))
     print(x.data_analysis(1))
     print(x.detail_analysis(1))
     print(x.total_data_analysis())

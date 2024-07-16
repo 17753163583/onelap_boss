@@ -38,7 +38,3 @@ class GetToken(GetYamlData):
         logger.info('获取boss_login_button_token获取成功')
 
         return boss_login_button_token
-
-
-if __name__ == '__main__':
-    print(GetToken().onelap_login('13001723386', 'zhang107.'))

@@ -1,0 +1,20 @@
+2024-07-16 10:17:18.934 | INFO     | POM.boss.base.base_page:get_url:25 - login页面跳转
+2024-07-16 10:17:19.799 | INFO     | POM.boss.base.base_page:login_with_cookie:42 - 清理Cookies
+2024-07-16 10:17:19.808 | INFO     | POM.boss.base.base_page:login_with_cookie:47 - 导入cookies
+2024-07-16 10:17:22.239 | INFO     | POM.boss.base.base_page:login_with_cookie:52 - 跳转https://boss-informal.rfsvr.net/
+2024-07-16 10:17:22.239 | INFO     | common.logger:wrapper:44 - 函数 cancel_forbid_publish 开始执行，入参:(<POM.boss.page_object.report_result_page.ReportResult object at 0x0000022D7647B530>, 'is_forbid_login'){}
+2024-07-16 10:17:22.240 | INFO     | common.report_publish_message:get_publish_data_key_list:14 - 读取文件中的data-key列表
+2024-07-16 10:17:23.406 | INFO     | POM.boss.base.base_page:get_url:25 - report_result页面跳转
+2024-07-16 10:17:23.497 | ERROR    | common.logger:wrapper:54 - 函数 cancel_forbid_publish 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 45, in cancel_forbid_publish
+    if remove_data_key_to_json('is_forbid_speak', data_key):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\report_publish_message.py", line 42, in remove_data_key_to_json
+    if publish_data_key_list.remove(tar_data_key):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: list.remove(x): x not in list
+
+

@@ -1,0 +1,6 @@
+2024-07-16 10:16:06.543 | INFO     | POM.boss.base.base_page:get_url:25 - login页面跳转
+2024-07-16 10:16:06.551 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:74 - login_input_username定位成功
+2024-07-16 10:16:06.595 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:80 - login_input_username输入数据：onelap成功
+2024-07-16 10:16:06.603 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:74 - login_input_password定位成功
+2024-07-16 10:16:06.633 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:80 - login_input_password输入数据：123成功
+2024-07-16 10:16:06.641 | INFO     | POM.boss.base.base_page:element_locator:63 - login_login_button定位成功

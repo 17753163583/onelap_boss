@@ -1,0 +1,23 @@
+2024-07-16 10:16:23.045 | INFO     | POM.boss.base.base_page:get_url:25 - login页面跳转
+2024-07-16 10:16:23.843 | INFO     | POM.boss.base.base_page:login_with_cookie:42 - 清理Cookies
+2024-07-16 10:16:23.851 | INFO     | POM.boss.base.base_page:login_with_cookie:47 - 导入cookies
+2024-07-16 10:16:25.846 | INFO     | POM.boss.base.base_page:login_with_cookie:52 - 跳转https://boss-informal.rfsvr.net/
+2024-07-16 10:16:25.846 | INFO     | common.logger:wrapper:44 - 函数 report_review_pass_warning 开始执行，入参:(<POM.boss.page_object.report_page.Report object at 0x0000022D7647BD40>,){}
+2024-07-16 10:16:26.079 | INFO     | common.get_token:onelap_login:23 - 获取onelap登录token
+2024-07-16 10:16:26.280 | INFO     | common.get_token:onelap_login:23 - 获取onelap登录token
+2024-07-16 10:16:27.421 | INFO     | POM.boss.base.base_page:get_url:25 - login页面跳转
+2024-07-16 10:16:27.455 | INFO     | POM.boss.base.base_page:login_with_cookie:42 - 清理Cookies
+2024-07-16 10:16:27.462 | INFO     | POM.boss.base.base_page:login_with_cookie:47 - 导入cookies
+2024-07-16 10:16:28.199 | INFO     | POM.boss.base.base_page:login_with_cookie:52 - 跳转https://boss-informal.rfsvr.net/
+2024-07-16 10:16:28.202 | INFO     | POM.boss.base.base_page:add_report_message_with_request_post:109 - 跳转home页
+2024-07-16 10:16:29.145 | INFO     | POM.boss.base.base_page:add_report_message_with_request_post:121 - 跳转https://boss-informal.rfsvr.net/admin/wl/social/user/report/list?report_id=231
+2024-07-16 10:16:29.158 | INFO     | POM.boss.base.base_page:element_locator:63 - report_report_tr定位成功
+2024-07-16 10:16:29.166 | INFO     | POM.boss.base.base_page:element_locator:63 - report_open_report_review_button定位成功
+2024-07-16 10:16:29.711 | INFO     | POM.boss.base.base_page:element_locator:63 - report_review_pass_button定位成功
+2024-07-16 10:16:29.753 | INFO     | POM.boss.base.base_page:element_locator:63 - report_method_select定位成功
+2024-07-16 10:16:29.802 | INFO     | POM.boss.base.base_page:element_locator:63 - report_review_success_button定位成功
+2024-07-16 10:16:30.331 | INFO     | POM.boss.base.base_page:switch_to_alert_accept:87 - alert弹窗处理
+2024-07-16 10:16:31.155 | INFO     | POM.boss.base.base_page:element_locator:63 - report_table_review_status定位成功
+2024-07-16 10:16:31.179 | INFO     | POM.boss.base.base_page:element_locator:63 - report_table_review_method定位成功
+2024-07-16 10:16:31.185 | INFO     | common.logger:wrapper:49 - 函数 report_review_pass_warning 执行完成，函数返回结果：('审核通过', '通知警告')
+

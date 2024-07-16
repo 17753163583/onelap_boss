@@ -46,8 +46,9 @@ check_passwd:
   data:
     password:
 
-# 获取验证码
+
 account_cancellation:
+  depend_api: check_passwd
   url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/cancellation
   headers:
     Authorization:

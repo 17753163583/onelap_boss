@@ -7,7 +7,6 @@ from common.logger import log_decorator
 class OnelapLogin(BasePage):
     def __init__(self):
         super().__init__()
-        self.login_token = 0
 
     @log_decorator
     def login(self, username, passwd):
@@ -16,10 +15,14 @@ class OnelapLogin(BasePage):
         body = {"account": str(username), "password": str(passwd_md5)}
         headers = self.api_params[api_name]['headers']
         response = self.post_request(api_name=api_name, headers=headers, data=body)
-        logger.info(f'登录成功，获取{username}用户信息成功')
 
-        self.login_token = str(response.json()['data']['token'])
-        logger.info(f"记录token：{self.login_token}")
+        if response.json()['code'] == 200:
+            logger.info(f'登录成功，获取{username}用户信息成功')
+        else:
+            logger.error(f'登录失败，用户名为：{username}，密码为：{passwd}')
+
+        login_token = str(response.json()['data']['token'])
+        logger.info(f"记录token：{login_token}")
         return response.json()
 
     @log_decorator
@@ -28,7 +31,7 @@ class OnelapLogin(BasePage):
         passwd_md5 = md5_encrypt(passwd)
 
         headers = self.api_params[api_name]['headers']
-        headers['Authorization'] = self.login_token
+        headers['Authorization'] = self.onelap_login_res['data']['token']
         body = {"password": passwd_md5}
 
         response = self.post_request(api_name, headers=headers, data=body)
@@ -43,7 +46,7 @@ class OnelapLogin(BasePage):
     def account_cancellation(self):
         api_name = 'account_cancellation'
         headers = self.api_params['account_cancellation']['headers']
-        headers['Authorization'] = self.login_token
+        headers['Authorization'] = self.onelap_login_res['data']['token']
 
         response = self.get_request(api_name=api_name, headers=headers)
         if response.json()['code'] == 200:
@@ -54,5 +57,5 @@ class OnelapLogin(BasePage):
 if __name__ == '__main__':
     x = OnelapLogin()
     x.login('13001723386', 'zhang107.')
-    x.check_passwd('zhang107.')
+    x.check_passwd(x.onelap_account_dict['account_1']['password'])
     x.account_cancellation()

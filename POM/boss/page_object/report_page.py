@@ -9,7 +9,6 @@ from POM.boss.base.base_page import BossBasePage
 from common.logger import log_decorator
 from common.report_publish_message import append_data_key_to_json
 from common.submit_comment import send_comment
-from common.get_yaml import GetYamlData
 from common.get_token import GetToken
 
 
@@ -19,7 +18,6 @@ class Report(BossBasePage):
         # 启动浏览器，进入boss_home页
         super().__init__()
         self.login_with_cookie()
-        self.test_account_dict = GetYamlData().get_login_accounts()['onelap_account']['account_1']
         # 添加举报记录的必备数据
         self.source_id = 714
         self.reason_id = 1
@@ -28,11 +26,13 @@ class Report(BossBasePage):
         self.imgs = None
 
     def get_headers_and_data(self):
-        if self.onelap_login_res['code'] == 204:
+        onelap_login_res = GetToken().onelap_login(self.test_onelap_account_dict['account_1']['username'],
+                                                   self.test_onelap_account_dict['account_1']['password'])
+        if onelap_login_res['code'] == 204:
             logger.error("账号被封禁，请撤销处罚后再试")
             return
-        elif self.onelap_login_res['code'] == 200:
-            headers = {'Authorization': self.onelap_login_res['data']['token']}
+        elif onelap_login_res['code'] == 200:
+            headers = {'Authorization': onelap_login_res['data']['token']}
             data = {"desc": self.desc,
                     "source_id": self.source_id,
                     "reason_id": self.reason_id,
@@ -161,8 +161,8 @@ class Report(BossBasePage):
             pass
 
         # 访问评论接口（被禁言账号），读取禁言的开始时间和截止时间
-        response_json = send_comment(username=self.test_account_dict['username'],
-                                     password=self.test_account_dict['password'])
+        response_json = send_comment(username=self.test_onelap_account_dict['account_1']['username'],
+                                     password=self.test_onelap_account_dict['account_1']['password'])
 
         data_key_dict = {
             'data_key': data_key,
@@ -231,8 +231,8 @@ class Report(BossBasePage):
             pass
 
         # 重新访问登录接口（被禁言账号），读取封号的的开始时间和截止时间
-        login_response = GetToken().onelap_login(self.test_account_dict['username'],
-                                                 self.test_account_dict['password'])
+        login_response = GetToken().onelap_login(self.test_onelap_account_dict['account_1']['username'],
+                                                 self.test_onelap_account_dict['account_1']['password'])
         data_key_dict = {
             'data_key': data_key,
             'start_time': login_response['data']['start_time'],
@@ -256,6 +256,7 @@ class Report(BossBasePage):
 
 if __name__ == '__main__':
     a = Report()
-    a.report_review_pass_forbid_speak_hours()
-    a.report_review_pass_forbid_login_hours()
+    # a.report_review_failure()
+    # a.report_review_pass_forbid_speak_hours()
+    # a.report_review_pass_forbid_login_hours()
     a.driver.quit()

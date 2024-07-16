@@ -2,7 +2,6 @@ import json
 import selenium.common.exceptions
 from loguru import logger
 from selenium import webdriver
-from common.get_token import GetToken
 from common.get_path import project_path
 from common.find_ele import find_ele
 from common.get_yaml import GetYamlData
@@ -15,11 +14,10 @@ class BossBasePage(GetYamlData):
     def __init__(self):
         self.driver = webdriver.Chrome(service=Service(project_path() + "/conf/chromedriver_126.0.6478.126.exe"))
         self.boss_element = GetYamlData.get_boss_element_data()
-        self.test_account_dict = GetYamlData().get_login_accounts()['onelap_account']['account_1']
-        self.onelap_api_param = GetYamlData.get_onelap_api_param_data()
 
-        self.onelap_login_res = GetToken().onelap_login(self.test_account_dict['username'],
-                                                        self.test_account_dict['password'])
+        self.test_onelap_account_dict = GetYamlData().get_login_accounts()['onelap_account']
+        self.test_boss_account_dict = GetYamlData().get_login_accounts()['boss_account']
+        self.onelap_api_param = GetYamlData.get_onelap_api_param_data()
 
     def get_url(self, page_name):
         login_url = self.boss_element[page_name]['url']
@@ -35,6 +33,8 @@ class BossBasePage(GetYamlData):
             file.write(json_cookies)
             logger.info("保存cookies至boss_login_cookies.json")
 
+        # self.driver.delete_all_cookies()
+
     def login_with_cookie(self):
         self.get_url('login')
 
@@ -47,22 +47,21 @@ class BossBasePage(GetYamlData):
         logger.info("导入cookies")
 
         self.driver.refresh()
-        try:
-            assert self.driver.current_url == self.boss_element['home']['url']
+
+        if self.driver.current_url == self.boss_element['home']['url']:
             logger.info(f"跳转{self.driver.current_url}")
-        except AssertionError as error:
-            logger.error(f"跳转{self.boss_element['home']}失败:{error}")
+        else:
+            logger.error(f"跳转{self.boss_element['home']['url']}失败")
 
     def element_locator(self, page_name, element_name):
         locator_message = self.boss_element[page_name][element_name]
 
         find_type = locator_message['type']
         find_key = locator_message['key']
-
         element_locator = find_ele(self.driver, find_type, find_key)
-
-        logger.info(f'{page_name}_{element_name}定位成功')
-        return element_locator
+        if element_locator:
+            logger.info(f'{page_name}_{element_name}定位成功')
+            return element_locator
 
     def element_locator_sendkeys(self, page_name, element_name, input_data=None):
         locator_message = self.boss_element[page_name][element_name]
@@ -71,11 +70,13 @@ class BossBasePage(GetYamlData):
         find_key = locator_message['key']
 
         element_locator = find_ele(self.driver, find_type, find_key)
-
-        logger.info(f'{page_name}_{element_name}定位成功')
+        if element_locator:
+            logger.info(f'{page_name}_{element_name}定位成功')
+        else:
+            logger.error(f'{page_name}_{element_name}定位失败')
+            return
 
         element_locator_sendkeys = element_locator.send_keys(input_data)
-
         logger.info(f'{page_name}_{element_name}输入数据：{input_data}成功')
 
         return element_locator_sendkeys
@@ -123,4 +124,4 @@ class BossBasePage(GetYamlData):
 
 
 if __name__ == '__main__':
-    print(BossBasePage().onelap_login_res['data']['start_time'])
+    print(BossBasePage().test_boss_account_dict)

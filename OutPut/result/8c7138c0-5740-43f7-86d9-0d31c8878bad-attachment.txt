@@ -1,0 +1,29 @@
+2024-07-16 10:17:27.966 | INFO     | POM.boss.base.base_page:get_url:25 - login页面跳转
+2024-07-16 10:17:27.983 | INFO     | POM.boss.base.base_page:login_with_cookie:42 - 清理Cookies
+2024-07-16 10:17:27.993 | INFO     | POM.boss.base.base_page:login_with_cookie:47 - 导入cookies
+2024-07-16 10:17:30.386 | INFO     | POM.boss.base.base_page:login_with_cookie:52 - 跳转https://boss-informal.rfsvr.net/
+2024-07-16 10:17:30.386 | INFO     | common.logger:wrapper:44 - 函数 cancel_forbid_publish 开始执行，入参:(<POM.boss.page_object.report_result_page.ReportResult object at 0x0000022D7644F110>, 'is_forbid_speak'){}
+2024-07-16 10:17:30.388 | ERROR    | common.logger:wrapper:54 - 函数 cancel_forbid_publish 异常堆栈：Traceback (most recent call last):
+  File "D:\python_project\onelap_boss\common\logger.py", line 47, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\POM\boss\page_object\report_result_page.py", line 35, in cancel_forbid_publish
+    forbid_data_key_list = get_publish_data_key_list(publish=publish)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python_project\onelap_boss\common\report_publish_message.py", line 12, in get_publish_data_key_list
+    json_data_dict = json.load(file_read)
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+

@@ -27,8 +27,8 @@ def send_comment(username, password):
             return response.json()
         else:
             return response.json()
-    except KeyError as error:
-        logger.error(f"账号状态异常，无法评论,错误信息:{error}")
+    except KeyError:
+        logger.error(f"账号状态异常，无法评论")
 
 
 if __name__ == '__main__':

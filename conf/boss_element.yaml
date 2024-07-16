@@ -93,3 +93,5 @@ report:
     type: xpath
     key: //*[@class="table table-hover grid-table"]/tbody/tr/td[16]
 
+report_result:
+  url: https://boss-informal.rfsvr.net/admin/wl/social/user/report/handle
