@@ -4,6 +4,7 @@ login:
   tv_agree_privacy_dialog:
     type: id
     key: com.onelap.bls.dear:id/tv_agree_privacy_dialog
+
   # 登录按钮
   btn_login_index:
     type: id
@@ -42,7 +43,7 @@ report:
 
   tv_search:
     type: id
-    key: com.onelap.bls.dear:id/
+    key: com.onelap.bls.dear:id/tv_search
 
   key_input:
     type: id
@@ -59,7 +60,7 @@ report:
 
   specify_comment:
     type: xpath
-    key: //android.view.View[@resource-id="content-wrap"]/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[3]
+    key: //android.view.View[@resource-id="content-wrap"]/android.view.View[3]/android.view.View[2]/android.view.View/android.view.View[2]/android.view.View[4]
 
   report_button:
     type: xpath
@@ -73,7 +74,7 @@ report:
     type: id
     key: com.onelap.bls.dear:id/tv_content
 
-  report_submit:
+  btn_submit:
     type: id
     key: com.onelap.bls.dear:id/btn_submit
 

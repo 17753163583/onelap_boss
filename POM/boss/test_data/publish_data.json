@@ -1,1 +1,6 @@
-{"is_forbid_speak": [], "is_forbid_speak_list": [], "is_forbid_login": [], "is_forbid_login_list": []}
+{
+  "is_forbid_speak": [],
+  "is_forbid_speak_list": [],
+  "is_forbid_login": [],
+  "is_forbid_login_list": []
+}

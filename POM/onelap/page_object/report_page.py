@@ -1,26 +1,39 @@
 import time
 
-from POM.onelap.base.base_page import OnelapBasePage
+from common.connect_device import connect_device_later
+from POM.onelap.base_page.base_page import OnelapBasePage
 from selenium.webdriver import ActionChains
+from selenium.common.exceptions import TimeoutException
+from loguru import logger
+from common.logger import log_decorator
 
 
 class OnelapReport(OnelapBasePage):
     def __init__(self):
         super().__init__()
-        self.driver = self.connect_device_later()
+        self.driver = connect_device_later()
         self.action = ActionChains(self.driver)
 
+    @log_decorator
     def get_review_page(self):
         self.element_locator(self.driver, 'report', 'include_planet_bottom_navigation').click()
-        self.element_locator(self.driver, 'report', 'tv_confirm_common_dialog').click()
+        try:
+            self.element_locator(self.driver, 'report', 'tv_confirm_common_dialog').click()
+        except TimeoutException:
+            logger.info("非初次打开路线页面")
+
         self.element_locator(self.driver, 'report', 'tv_search').click()
-        self.element_locator_sendkeys(self.driver, 'report', 'key_input', 304)
+        self.element_locator_sendkeys(self.driver, 'report', 'key_input', 253)
         # 回车键
         self.driver.keyevent(66)
 
         self.element_locator(self.driver, 'report', 'only_one_route_cards').click()
 
+    @log_decorator
     def submit_report(self):
+        # 页面跳转，否则会报错
+        time.sleep(3)
+
         self.element_locator(self.driver, 'report', 'route_comment').click()
         content = self.element_locator(self.driver, 'report', 'specify_comment')
 
@@ -38,3 +51,9 @@ class OnelapReport(OnelapBasePage):
             return True
         else:
             return False
+
+
+if __name__ == '__main__':
+    x = OnelapReport()
+    x.get_review_page()
+    x.submit_report()

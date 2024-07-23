@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 
-from POM.boss.base.base_page import BossBasePage
+from POM.boss.base_page.base_page import BossBasePage
 from common.logger import log_decorator
 from common.report_publish_message import append_data_key_to_json
 from common.submit_comment import send_comment

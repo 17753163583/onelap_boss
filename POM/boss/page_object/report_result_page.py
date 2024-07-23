@@ -1,4 +1,4 @@
-from POM.boss.base.base_page import BossBasePage
+from POM.boss.base_page.base_page import BossBasePage
 from common.logger import log_decorator
 from common.report_publish_message import get_publish_data_key_list, remove_data_key_to_json
 from loguru import logger

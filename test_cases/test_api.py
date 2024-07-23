@@ -2,9 +2,9 @@ import allure
 import pytest
 import pytest_check as check
 
-from API.base_page.base_page import BasePage
-from API.page_object.login_and_logout import OnelapLogin
-from API.page_object.data_analysis_page import DataAnalysis
+from POM.api.base_page.base_page import BasePage
+from POM.api.page_object.login_and_logout import OnelapLogin
+from POM.api.page_object.data_analysis_page import DataAnalysis
 
 onelap_account_dict = BasePage().onelap_account_dict
 
@@ -25,7 +25,7 @@ class TestOnelapLogin:
     def test_login_fail(self):
         res = OnelapLogin().login(onelap_account_dict['account_1']['username'], '123')
 
-        check.not_equal(res['code'], 200)
+        check.is_false(res)
 
     @allure.story("密码核验接口")
     @allure.title("密码核验成功")

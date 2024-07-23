@@ -1,4 +1,4 @@
-from API.base_page.base_page import BasePage
+from POM.api.base_page.base_page import BasePage
 
 from common.get_time_stamp import get_pre_days_time_stamp, get_pre_year_time_stamp, get_total_time_stamp
 from common.logger import log_decorator

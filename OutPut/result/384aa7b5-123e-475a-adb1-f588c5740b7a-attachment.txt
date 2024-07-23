@@ -1,8 +1,0 @@
-2024-07-16 10:15:58.776 | INFO     | POM.boss.base.base_page:get_url:25 - login页面跳转
-2024-07-16 10:15:58.787 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:74 - login_input_username定位成功
-2024-07-16 10:15:58.832 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:80 - login_input_username输入数据：admin成功
-2024-07-16 10:15:58.841 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:74 - login_input_password定位成功
-2024-07-16 10:15:58.880 | INFO     | POM.boss.base.base_page:element_locator_sendkeys:80 - login_input_password输入数据：Magene@1230成功
-2024-07-16 10:15:58.888 | INFO     | POM.boss.base.base_page:element_locator:63 - login_login_button定位成功
-2024-07-16 10:16:01.500 | INFO     | POM.boss.base.base_page:save_boss_cookies_to_json:29 - 读取Cookies成功
-2024-07-16 10:16:01.501 | INFO     | POM.boss.base.base_page:save_boss_cookies_to_json:34 - 保存cookies至boss_login_cookies.json

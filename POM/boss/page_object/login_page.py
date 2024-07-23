@@ -1,7 +1,4 @@
-import time
-
-from POM.boss.base.base_page import BossBasePage
-from common.logger import log_decorator
+from POM.boss.base_page.base_page import BossBasePage
 
 
 class LoginPageBoss(BossBasePage):

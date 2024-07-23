@@ -6,7 +6,7 @@ def project_path():
 
 
 def api_xlsx():
-    return project_path() + "/API/test_data/api_demo.xlsx"
+    return project_path() + "/api/test_data/api_demo.xlsx"
 
 
 def publish_json_path():
