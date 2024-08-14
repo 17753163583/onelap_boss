@@ -11,12 +11,12 @@ class GetToken(GetYamlData):
         self.onelap_api = self.get_onelap_api_param_data()
 
     def onelap_login(self, username, password):
-        data = self.onelap_api['onelap_login']['data']
+        data = self.onelap_api['account_page']['onelap_login']['data']
         data['account'] = username
         data['password'] = md5_encrypt(password)
 
-        response = requests.post(url=self.onelap_api['onelap_login']['url'],
-                                 headers=self.onelap_api['onelap_login']['headers'],
+        response = requests.post(url=self.onelap_api['account_page']['onelap_login']['url'],
+                                 headers=self.onelap_api['account_page']['onelap_login']['headers'],
                                  data=data)
 
         if response.json()['code'] == 200:

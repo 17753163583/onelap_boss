@@ -3,15 +3,11 @@ import re
 
 
 def get_verification_code():
-    # 执行ADB命令打开短信APP
-    sms_result = subprocess.run(['adb', 'shell',
-                                 "content query --uri content://sms/inbox --projection body --where "
-                                 "\"address='10686060100000340718'\" | tail -n 1"],
-                                shell=True,
-                                stdout=subprocess.PIPE,
-                                stderr=subprocess.STDOUT,
-                                encoding='utf-8')
-    # print(sms_result.stdout)
+    phone = 106934450000340719
+    adb = f"adb shell content query --uri content://sms/inbox --projection body --where address='{phone}'"
+    sms_result = subprocess.check_output(adb).decode('utf-8')
+
+    print(sms_result)
 
     match = re.search(r'您的验证码是:(\d+)', str(sms_result))
 
@@ -24,4 +20,5 @@ def get_verification_code():
 
 
 if __name__ == '__main__':
-    print(type(get_verification_code()))
+    # adb shell content query --uri content://sms/inbox --projection body --where address='106934450000340719'
+    print(get_verification_code())

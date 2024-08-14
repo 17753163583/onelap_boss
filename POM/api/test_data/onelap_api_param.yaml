@@ -1,0 +1,281 @@
+# 账号相关
+account_page:
+  # 登录
+  onelap_login:
+    url: http://rfs-fitness-informal.rfsvr.net/api/account/v1/login
+    headers:
+      Platform: '22'
+      App-Version: 3.6.3
+    data:
+      account:
+      # md5加密
+      password:
+
+  # 检查密码
+  check_passwd:
+
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/passwd_check
+    headers:
+      Authorization:
+      UserId:
+    data:
+      password:
+
+  account_cancellation:
+    depend_api: check_passwd
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/cancellation
+    headers:
+      Authorization:
+      UserId:
+
+# 数据记录页
+data_record_page:
+  data_record_list:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/data/riding/detail
+    params:
+      from:
+      to: 0
+      p: 1
+      source: all
+      data_type:
+    headers:
+      Authorization:
+
+  change_data_name_type:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/record/alias
+    headers:
+      Authorization:
+    name_data:
+      alias_name:
+      did:
+    type_data:
+      custom_type:
+      did:
+
+# 首页
+home_page:
+  max_user_info:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v3/app/user/info
+    headers:
+      Authorization:
+
+  accrued_data:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v3/app/user/info
+    headers:
+      Authorization:
+
+  medal_record_share:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/social/share
+    headers:
+      Authorization:
+    data:
+      category: 2
+      platform:
+
+# 个人主页
+personal_homepage:
+  follow_others:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/social/setFollow/
+    headers:
+      Authorization:
+    data:
+      to_uid: 238492
+      type: 1
+
+  change_person_home_info:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/profile
+    headers:
+      Authorization:
+
+  like_others:
+    url: https://rfs-fitness-informal.rfsvr.net/indoor/v1/app/social/like/238493
+    headers:
+      Authorization:
+
+# 统计+PMC
+stats_pmc_page:
+  data_analysis:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/analysis/data
+    headers:
+      Authorization:
+    params:
+      start_time:
+      end_time:
+
+  detail_analysis:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/analysis/detail
+    headers:
+      Authorization:
+    params:
+      start_time:
+      end_time:
+      type:
+
+  more_user_info:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/user/info/more
+    headers:
+      Authorization:
+
+  exercise_plan:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/plan/detail?start_time=2024-05-16&end_time=2024-07-15
+    params:
+      start_time: 2023-11-11
+      end_time: 2025-11-11
+    headers:
+      Authorization:
+
+  pmc_data_show:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/wl/pmc
+    headers:
+      Authorization:
+
+  pmc_add_plan:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/plan
+    headers:
+      Authorization:
+
+plat_workshop:
+  plant_sweepstakes:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/blindbox/draw
+    headers:
+      Authorization:
+
+  show_submission_list:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/posters/self
+    headers:
+      Authorization:
+  # 1: 审核中  2：审核不通过 4：已发布
+
+  add_submission:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/poster/new
+    headers:
+      Authorization:
+    data:
+      text: 测试
+      type: text
+      cid: 26
+
+  remove_submission:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/poster/remove
+    headers:
+      Authorization:
+    data:
+      pid:
+
+  Q_plant_rank:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/user/rank
+    params:
+      season_id: # reason_id: 4,19,20,21,24
+      rank_type: distance
+    headers:
+      Authorization:
+
+  rank_record:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/user/season/records
+    params:
+      season_id:
+    headers:
+      Authorization:
+
+  rank_user_info:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/social/homePage/
+    params:
+      is_refresh: 0
+      from: rank
+    headers:
+      Authorization:
+
+  show_radio_station:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/posters
+    headers:
+      Authorization:
+
+  add_radio_interaction:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/poster/expression/add
+    headers:
+      Authorization:
+    data:
+      # 1~5
+      icon: 1
+      pid:
+
+  remove_radio_interaction:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/poster/expression/remove
+    headers:
+      Authorization:
+    data:
+      pid:
+
+  # 图片+文字投稿
+  img_text_submission:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/poster/new
+    headers:
+      Authorization:
+    data:
+      text: "123"
+      type: "image"
+      cid: 1
+      images:
+        - height: 1280
+          key: "uploads/20240808/files/1723106515134IMG_20240703141127997.jpg"
+          width: 960
+
+  # 星球排行榜——（全国、周榜）
+  rank_list:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/running/rankList
+    headers:
+      Authorization:
+    params:
+      is_week:
+      is_national:
+      from: main
+
+
+# 评论
+send_comment:
+  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/comments
+  headers:
+    Content-Type: application/json
+    Authorization:
+  data:
+    id: 304
+    text: "123"
+    type: 1
+# 添加举报
+
+add_report:
+  url: https://rfs-fitness-informal.rfsvr.net/indoor/api/user/report
+  headers:
+    token:
+  data:
+    # 详细描述
+    desc: 脚本测试——详细描
+    # 评论id
+    source_id: 714
+    # 图片地址
+    imgs: uploads/20240703/files/1719972587819IMG_20240703_100702.jpg
+    # 举报原因
+    reason_id: 1
+    #举报来源，目前只有1，代表路线库评论
+    source_type: 1
+
+# 携带验证码更改密码
+change_passwd_verification_code:
+  url: http://rfs-fitness-informal.rfsvr.net/api/account/v1/reset/mobile
+  data:
+    tac: +86
+    mobile:
+    password:
+    code:
+
+
+type_list:
+  all: 全部
+  match: 比赛
+  riding: 骑行训练
+  road: 路线训练
+  commuting: 通勤
+  test: 测试
+  other: 其他
+
+

@@ -1,0 +1,2 @@
+2024-08-06 17:33:17.858 | INFO | common.get_token:onelap_login:23 | 获取onelap登录token
+2024-08-06 17:33:18.040 | INFO | POM.api.base_page.base_page:post_request:18 | 发送POST请求http://rfs-fitness-informal.rfsvr.net/indoor/v1/star/blindbox/draw成功

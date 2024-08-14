@@ -10,7 +10,7 @@ account_dict = OnelapBasePage().test_onelap_account_dict
 class TestOnelap:
     @allure.feature("登录模块")
     def test_login(self):
-        OnelapLogin().open_onelap_app(account_dict['account_1']['username'], account_dict['account_1']['password'])
+        OnelapLogin().open_login(account_dict['account_1']['username'], account_dict['account_1']['password'])
         text = OnelapLogin().get_app_name()
 
         check.equal(text, '顽鹿运动（预发布服）')

@@ -11,8 +11,8 @@ class BasePage(GetYamlData):
         self.onelap_login_res = GetToken().onelap_login(self.onelap_account_dict['account_1']['username'],
                                                         self.onelap_account_dict['account_1']['password'])
 
-    def post_request(self, api_name, headers=None, data=None):
-        url = self.api_params[api_name]['url']
+    def post_request(self, page_name, api_name, headers, data=None):
+        url = self.api_params[page_name][api_name]['url']
         try:
             response = requests.post(url=url, headers=headers, data=data)
             logger.info(f"发送POST请求{url}成功")
@@ -20,10 +20,10 @@ class BasePage(GetYamlData):
         except Exception as error:
             logger.error(f"发送POST请求{url}失败:{error}")
 
-    def get_request(self, api_name, param=None, headers=None):
-        url = self.api_params[api_name]['url']
+    def get_request(self, page_name, api_name, params=None, headers=None):
+        url = self.api_params[page_name][api_name]['url']
         try:
-            response = requests.get(url, params=param, headers=headers)
+            response = requests.get(url, params=params, headers=headers)
             logger.info(f"发送GET请求{url}成功")
             return response
         except Exception as error:
@@ -31,4 +31,4 @@ class BasePage(GetYamlData):
 
 
 if __name__ == '__main__':
-    print(BasePage().onelap_login_res['data']['token'])
+    print(BasePage().post_request('max_user_info'))

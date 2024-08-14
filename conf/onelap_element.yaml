@@ -30,6 +30,40 @@ login:
     type: id
     key: com.onelap.bls.dear:id/tv_app_name_main_fragment
 
+forget_password:
+  btn_forget_password_login:
+    type: id
+    key: com.onelap.bls.dear:id/btn_forget_password_login
+
+  et_account_find_pwd:
+    type: id
+    key: com.onelap.bls.dear:id/et_account_find_pwd
+
+  btn_over_find_pwd:
+    type: id
+    key: com.onelap.bls.dear:id/btn_over_find_pwd
+
+  btn_over_register_code:
+    type: id
+    key: com.onelap.bls.dear:id/btn_over_register_code
+
+  et_pwd_register_pwd:
+    type: id
+    key: com.onelap.bls.dear:id/et_pwd_register_pwd
+
+
+  btn_check_out_register_pwd:
+    type: id
+    key: com.onelap.bls.dear:id/btn_check_out_register_pwd
+
+  btn_over_register_pwd:
+    type: id
+    key: com.onelap.bls.dear:id/btn_over_register_pwd
+
+  md_content:
+    type: id
+    key: com.onelap.bls.dear:id/md_content
+
 
 report:
 
