@@ -11,6 +11,7 @@ class OnelapLogin(BasePage):
 
     @log_decorator
     def login(self, username, passwd):
+        # 登录
         api_name = 'onelap_login'
         passwd_md5 = md5_encrypt(passwd)
         body = {"account": str(username), "password": str(passwd_md5)}

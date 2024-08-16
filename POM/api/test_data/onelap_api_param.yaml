@@ -230,17 +230,91 @@ plat_workshop:
       is_national:
       from: main
 
+# 路线库
+route_library:
+  # 路线列表
+  route_list:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/api/road_book/list
+    params:
+      size: 10
+      sort_time: -1
 
-# 评论
-send_comment:
-  url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/comments
-  headers:
-    Content-Type: application/json
-    Authorization:
-  data:
-    id: 304
-    text: "123"
-    type: 1
+    headers:
+      Authorization:
+
+  route_share:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/social/share
+    headers:
+      Authorization:
+    data:
+      category: 10
+      platform:
+
+  route_filter:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/api/road_book/list
+    params:
+      size: 10
+      min_climb: 0
+      max_climb: 0
+      min_distance: 0
+      max_distance: 90000
+      sort_time: -1
+      author_type:
+
+
+  route_like:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/api/road_book/733/like
+    headers:
+      Authorization:
+
+  route_favor:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/api/road_book/733/favor
+    headers:
+      Authorization:
+
+  save_gpx:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/roadbook/gpx/save
+    headers:
+      Content-Type: application/xml
+    data:
+
+  check_gpx_route:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/navigation/created?size=20
+    headers:
+      Authorization:
+
+  # 支持记录转路线的记录列表
+  record_id:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/roadbook/user/record/list
+    headers:
+      Authorization:
+    params:
+      size: 1
+
+  record_to_route:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/roadbook/riding/record/save
+    headers:
+      Authorization:
+    data:
+      id:
+      # 评论
+  send_comment:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/comments
+    headers:
+      Authorization:
+    data:
+      img: "uploads/20240816/files/1723777622651MuMu12-20240812-140921.png"
+      id:
+      text: "图片文字评论测试"
+      type: 1
+
+  map_to_route:
+    url: http://rfs-fitness-informal.rfsvr.net/indoor/v1/app/navigation/save
+    headers:
+      Authorization:
+
+
+
 # 添加举报
 
 add_report:

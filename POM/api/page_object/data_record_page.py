@@ -31,11 +31,16 @@ class DataRecordPage(BasePage):
 
         res = self.get_request(page_name=self.page_name, api_name=api_name, params=params, headers=headers).json()
 
-        # record_record_days_list = list(res['data']['days'].keys())
-        # tag_list = []
-        # for day in record_record_days_list:
-        #     for info in res['data']['days'][day]['info']:
-        #         tag_list.append(info['tag'])
+        try:
+            record_record_days_list = list(res['data']['days'].keys())
+            tag_list = []
+            for day in record_record_days_list:
+                for info in res['data']['days'][day]['info']:
+                    tag_list.append(info['tag'])
+
+        except AttributeError:
+            logger.error(f"当前类型下，数据记录为空")
+            return None
 
         return res
 
@@ -77,6 +82,7 @@ class DataRecordPage(BasePage):
 
 if __name__ == '__main__':
     x = DataRecordPage()
-    x.change_record_name_and_type(name='测试修改', data_type=x.type_list[3])
+    x.del_data_record()
+    # x.change_record_name_and_type(name='测试修改', data_type=x.type_list[3])
 
     # print(DataRecordPage().get_data_record_list(BasePage().api_params['data_record_list']['data_type'][0]))

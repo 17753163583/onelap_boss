@@ -7,6 +7,7 @@ from POM.api.page_object.account_page import OnelapLogin
 from POM.api.page_object.stats_pmc_page import Status, PMC
 from POM.api.page_object.home_page import HomePage
 from POM.api.page_object.personal_homepage import PersonalHomePage
+from POM.api.page_object.data_record_page import DataRecordPage
 
 onelap_account_dict = BasePage().onelap_account_dict
 
@@ -43,72 +44,6 @@ class TestOnelapAccount:
     @allure.title("账号注销接口")
     def test_account_cancellation(self):
         res = self.login_page.account_cancellation()
-
-        check.equal(res['code'], 200)
-
-
-@allure.feature("统计+PMC")
-class TestOnelapAnalysisPMC:
-    def setup_class(self):
-        self.analysis_page = Status()
-        self.pmc_page = PMC()
-
-    @allure.story("数据分析")
-    @allure.title("查看一周、四周、十二周、一年的统计数据")
-    @pytest.mark.parametrize('date', [7 * 1, 7 * 4, 7 * 12, 1])
-    def test_data_analysis_api(self, date):
-        res = self.analysis_page.data_analysis(date)
-
-        check.equal(res['code'], 200)
-
-    @allure.story("数据分析")
-    @allure.title("查看账号全部的统计数据")
-    def test_total_data_analysis(self):
-        res = self.analysis_page.total_data_analysis()
-
-        check.equal(res['code'], 200)
-
-    @allure.story("数据记录")
-    @allure.title("查看一周、四周、十二周、一年的骑行记录")
-    @pytest.mark.parametrize('date', [7 * 1, 7 * 4, 7 * 12, 1])
-    def test_data_detail_api(self, date):
-        res = self.analysis_page.detail_analysis(date)
-
-        check.equal(res['code'], 200)
-
-    @allure.story("数据记录")
-    @allure.title("查看账号全部的骑行记录")
-    def test_total_detail_analysis(self):
-        res = self.analysis_page.total_detail_analysis()
-
-        check.equal(res['code'], 200)
-
-    @allure.story("最佳记录")
-    @allure.title("最佳记录数据")
-    def test_best_record(self):
-        res = self.analysis_page.best_record()['data']['record']
-        best_record_keys = res.keys()
-
-        check.equal(len(best_record_keys), 6)
-
-    @allure.story("PMC")
-    @allure.title("日历板块交互")
-    def test_calendar_interact(self):
-        res = self.pmc_page.calendar_interact()
-
-        check.equal(res['code'], 200)
-
-    @allure.story("PMC")
-    @allure.title("PMC页面数据展示")
-    def test_data_show(self):
-        res = self.pmc_page.pmc_data()
-
-        check.equal(res['code'], 200)
-
-    @allure.story("PMC")
-    @allure.title("创建个人计划")
-    def test_create_personal_plan(self):
-        res = self.pmc_page.create_personal_plan()
 
         check.equal(res['code'], 200)
 
@@ -219,3 +154,102 @@ class TestOnelapPersonHome:
         _, total_data_analysis = self.person_page.check_ride_data()
 
         check.is_true(total_data_analysis['data'])
+
+
+@allure.feature("统计+PMC")
+class TestOnelapAnalysisPMC:
+    def setup_class(self):
+        self.analysis_page = Status()
+        self.pmc_page = PMC()
+
+    @allure.story("数据分析")
+    @allure.title("查看一周、四周、十二周、一年的统计数据")
+    @pytest.mark.parametrize('date', [7 * 1, 7 * 4, 7 * 12, 1])
+    def test_data_analysis_api(self, date):
+        res = self.analysis_page.data_analysis(date)
+
+        check.equal(res['code'], 200)
+
+    @allure.story("数据分析")
+    @allure.title("查看账号全部的统计数据")
+    def test_total_data_analysis(self):
+        res = self.analysis_page.total_data_analysis()
+
+        check.equal(res['code'], 200)
+
+    @allure.story("数据记录")
+    @allure.title("查看一周、四周、十二周、一年的骑行记录")
+    @pytest.mark.parametrize('date', [7 * 1, 7 * 4, 7 * 12, 1])
+    def test_data_detail_api(self, date):
+        res = self.analysis_page.detail_analysis(date)
+
+        check.equal(res['code'], 200)
+
+    @allure.story("数据记录")
+    @allure.title("查看账号全部的骑行记录")
+    def test_total_detail_analysis(self):
+        res = self.analysis_page.total_detail_analysis()
+
+        check.equal(res['code'], 200)
+
+    @allure.story("最佳记录")
+    @allure.title("最佳记录数据")
+    def test_best_record(self):
+        res = self.analysis_page.best_record()['data']['record']
+        best_record_keys = res.keys()
+
+        check.equal(len(best_record_keys), 6)
+
+    @allure.story("PMC")
+    @allure.title("日历板块交互")
+    def test_calendar_interact(self):
+        res = self.pmc_page.calendar_interact()
+
+        check.equal(res['code'], 200)
+
+    @allure.story("PMC")
+    @allure.title("PMC页面数据展示")
+    def test_data_show(self):
+        res = self.pmc_page.pmc_data()
+
+        check.equal(res['code'], 200)
+
+    @allure.story("PMC")
+    @allure.title("创建个人计划")
+    def test_create_personal_plan(self):
+        res = self.pmc_page.create_personal_plan()
+
+        check.equal(res['code'], 200)
+
+
+@allure.feature("数据记录")
+class TestDataRecord:
+    def setup_class(self):
+        self.data_page = DataRecordPage()
+
+    @allure.story("数据筛选")
+    @allure.title("分类型筛选")
+    @pytest.mark.parametrize("type_num", range(1, 7))
+    def test_record_filter(self, type_num):
+        type_text = ['比赛', '骑行训练', '路线训练', '通勤', '测试']
+        res = self.data_page.get_data_record_list(type_num)
+
+        if res is not None:
+            record_record_days_list = list(res['data']['days'].keys())
+            tag_list = []
+            for day in record_record_days_list:
+                for info in res['data']['days'][day]['info']:
+                    tag_list.append(info['tag'])
+            for tag in tag_list:
+                if type_num == 6:
+                    check.is_not_in(tag, type_text)
+                else:
+                    check.equal(tag, type_text[type_num - 1])
+        else:
+            check.is_none(res)
+
+    @allure.story("删除数据")
+    @allure.title("删除一条数据")
+    def test_delete_one_record(self):
+        res = self.data_page.del_data_record()
+        check.equal(res['error'], 'success')

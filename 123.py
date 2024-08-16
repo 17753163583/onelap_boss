@@ -1,1 +1,1 @@
-print(list(range(1,7)))
+print(list(range(1,6)))
