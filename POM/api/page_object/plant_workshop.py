@@ -70,8 +70,9 @@ class PlantPage(BasePage):
         res = self.get_request(page_name=self.page_name, api_name=api_name, headers=self.headers)
         return res.json()['data']
 
+
     @log_decorator
-    def add_radio_station(self):
+    def add_radio_interaction(self):
         api_name = 'add_radio_interaction'
         data = self.api_params[self.page_name][api_name]['data']
 

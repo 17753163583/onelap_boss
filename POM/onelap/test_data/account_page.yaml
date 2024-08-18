@@ -30,6 +30,24 @@ login:
     type: id
     key: com.onelap.bls.dear:id/tv_app_name_main_fragment
 
+sign_up:
+  btn_register_index:
+    type: id
+    key: com.onelap.bls.dear:id/btn_register_index
+
+  et_username_register:
+    type: id
+    key: com.onelap.bls.dear:id/et_username_register
+
+  btn_check_out_register:
+    type: id
+    key: com.onelap.bls.dear:id/btn_check_out_register
+
+  # 获取验证码
+  btn_over_register:
+    type: id
+    key: com.onelap.bls.dear:id/btn_over_register
+
 forget_password:
   btn_forget_password_login:
     type: id

@@ -11,8 +11,6 @@ def connect_device_first():
         "deviceName": "127.0.0.1:16384",
         "appPackage": "com.onelap.bls.dear",
         "appActivity": "com.onelap.bls.dear.activity.riding_splash.SplashActivity",
-        # 300s无动作后，退出session
-        'newCommandTimeout': "300",
         # 设置为False，对app重置全部数据（调试登录可用）
         "noReset": False
     }
@@ -55,7 +53,6 @@ def connect_device_later():
         'newCommandTimeout': "300",
         # 设置为False，对app重置全部数据（调试登录可用）
         "noReset": True
-
     }
 
     # 创建driver对象

@@ -1,0 +1,8 @@
+check_fields:
+ # 数据按钮
+ include_data_bottom_navigation:
+  type: id
+  key: com.onelap.bls.dear:id/include_data_bottom_navigation
+
+
+

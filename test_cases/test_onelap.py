@@ -1,7 +1,7 @@
 import pytest_check as check
 import allure
 from POM.onelap.base_page.base_page import OnelapBasePage
-from POM.onelap.page_object.login_page import OnelapLogin
+from POM.onelap.page_object.account_page import OnelapLogin
 from POM.onelap.page_object.report_page import OnelapReport
 
 account_dict = OnelapBasePage().test_onelap_account_dict

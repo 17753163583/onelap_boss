@@ -10,8 +10,8 @@ class GetYamlData:
             return yaml.safe_load(file)
 
     @staticmethod
-    def get_onelap_element_data():
-        file_path = project_path() + '/conf/onelap_element.yaml'
+    def get_onelap_element_data(page_name):
+        file_path = project_path() + f'/POM/onelap/test_data/{page_name}.yaml'
         with open(file_path, 'rb') as file:
             return yaml.safe_load(file)
 
@@ -35,4 +35,4 @@ class GetYamlData:
 
 
 if __name__ == '__main__':
-    print(GetYamlData().get_onelap_api_param_data()['account_page']['check_passwd'])
+    print(GetYamlData().get_onelap_element_data('account_page'))
